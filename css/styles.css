@@ -1,0 +1,3340 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* HTML element (SMACSS base) rules */
+/**
+ * @file
+ * Normalize.css is intended to be used as an alternative to CSS resets.
+ *
+ * This file is a slight fork of these original sources:
+ * - normalize.css v2.1.2 | MIT License | git.io/normalize
+ * - normalize.scss v2.1.2 | MIT/GPLv2 License | bit.ly/normalize-with-compass
+ *
+ * It's suggested that you read the normalize.scss file and customise it to meet
+ * your needs, rather then including the file in your project and overriding the
+ * defaults later in your CSS.
+ * @see http://nicolasgallagher.com/about-normalize-css/
+ *
+ * Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ *       @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+/**
+ * HTML5 display definitions
+ */
+/* Correct `block` display not defined in IE 8/9. */
+/* line 33, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Correct `inline-block` display not defined in IE 8/9. */
+/* line 40, ../sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 52, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Address styling not present in IE 8/9. */
+/* line 58, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Base
+ *
+ * Instead of relying on the fonts that are available on a user's computer, you
+ * can use web fonts which, like images, are resources downloaded to the user's
+ * browser. Because of the bandwidth and rendering resources required, web fonts
+ * should be used with care.
+ *
+ * Numerous resources for web fonts can be found on Google. Here are a few
+ * websites where you can find Open Source fonts to download:
+ * - http://www.fontsquirrel.com/fontface
+ * - http://www.theleagueofmoveabletype.com
+ *
+ * In order to use these fonts, you will need to convert them into formats
+ * suitable for web fonts. We recommend the free-to-use Font Squirrel's
+ * Font-Face Generator:
+ *   http://www.fontsquirrel.com/fontface/generator
+ *
+ * The following is an example @font-face declaration. This font can then be
+ * used in any ruleset using a property like this:  font-family: Example, serif;
+ *
+ * Since we're using Sass, you'll need to declare your font faces here, then you
+ * can add them to the font variables in the _init.scss partial.
+ */
+/*
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+/* line 106, ../sass/_normalize.scss */
+html {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  line-height: 1.5em;
+}
+
+/* Remove default margin. */
+/* line 126, ../sass/_normalize.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+/* Address `outline` inconsistency between Chrome and other browsers. */
+/* line 148, ../sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers. */
+/* line 154, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * Typography
+ *
+ * To achieve a pleasant vertical rhythm, we use Compass' Vertical Rhythm mixins
+ * so that the line height of our base font becomes the basic unit of vertical
+ * measurement. We use multiples of that unit to set the top and bottom margins
+ * for our block level elements and to set the line heights of any fonts.
+ * For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+ */
+/* Set 1 unit of vertical rhythm on the top and bottom margin. */
+/* line 170, ../sass/_normalize.scss */
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+/* line 173, ../sass/_normalize.scss */
+blockquote {
+  /* Also indent the quote on both sides. */
+  margin: 1.5em 30px;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 182, ../sass/_normalize.scss */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/* line 190, ../sass/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 195, ../sass/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+/* line 200, ../sass/_normalize.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 205, ../sass/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+/* line 210, ../sass/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
+}
+
+/* Address styling not present in IE 8/9, Safari 5, and Chrome. */
+/* line 217, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+/* line 223, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* Address styling not present in Safari 5 and Chrome. */
+/* line 228, ../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* Address differences between Firefox and other browsers. */
+/* line 233, ../sass/_normalize.scss */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 1px solid #666;
+  padding-bottom: -1px;
+  margin: 1.5em 0;
+}
+
+/* Address styling not present in IE 8/9. */
+/* line 242, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* Correct font family set oddly in Safari 5 and Chrome. */
+/* line 253, ../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* Improve readability of pre-formatted text in all browsers. */
+/* line 262, ../sass/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* Set consistent quote types. */
+/* line 274, ../sass/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Address inconsistent and variable font size in all browsers. */
+/* line 279, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+/* line 285, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 291, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 294, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * Lists
+ */
+/* line 304, ../sass/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  /* Address margins set differently in IE 6/7. */
+  margin: 1.5em 0;
+}
+
+/* line 311, ../sass/_normalize.scss */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  /* Turn off margins on nested lists. */
+  margin: 0;
+}
+
+/* line 316, ../sass/_normalize.scss */
+dd {
+  margin: 0 0 0 30px;
+  /* LTR */
+}
+
+/* Address paddings set differently in IE 6/7. */
+/* line 323, ../sass/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 30px;
+  /* LTR */
+}
+
+/**
+ * Embedded content and figures
+ *
+ * @todo Look into adding responsive embedded video.
+ */
+/* line 341, ../sass/_normalize.scss */
+img {
+  /* Remove border when inside `a` element in IE 8/9. */
+  border: 0;
+  /* Suppress the space beneath the baseline */
+  /* vertical-align: bottom; */
+  /* Responsive images */
+  max-width: 100%;
+  height: auto;
+  /* Correct IE 8 not scaling image height when resized. */
+  width: auto;
+}
+
+/* Correct overflow displayed oddly in IE 9. */
+/* line 362, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Address margin not present in IE 8/9 and Safari 5. */
+/* line 367, ../sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/**
+ * Forms
+ */
+/* Define consistent border, margin, and padding. */
+/* line 383, ../sass/_normalize.scss */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.4625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.9125em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.9125em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.9125em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 398, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ * 5. Keep form elements constrained in their containers.
+ */
+/* line 416, ../sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  max-width: 100%;
+  /* 5 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 5 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 433, ../sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 444, ../sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 460, ../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 472, ../sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 483, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 497, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 507, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Remove inner padding and border in Firefox 4+. */
+/* line 513, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 522, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* Drupal-style form labels. */
+/* line 528, ../sass/_normalize.scss */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/**
+ * Tables
+ */
+/* line 536, ../sass/_normalize.scss */
+table {
+  /* Remove most spacing between table cells. */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* Prevent cramped-looking tables */
+  /* width: 100%; */
+  /* Add vertical rhythm margins. */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Layout rules */
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+/* line 40, ../sass/layouts/_responsive.scss */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Containers for grid items and flow items. */
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#header:before, #header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+  /* line 54, ../sass/layouts/_responsive.scss */
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: 1em;
+    position: relative;
+  }
+
+  /* line 59, ../sass/layouts/_responsive.scss */
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    top: 0;
+    height: 3em;
+    width: 100%;
+  }
+}
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 480px) and (max-width: 959px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+  /* line 79, ../sass/layouts/_responsive.scss */
+  .sidebar-first {
+    /* Span 2 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+  /* line 81, ../sass/layouts/_responsive.scss */
+  .sidebar-first #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+  /* line 86, ../sass/layouts/_responsive.scss */
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+  /* line 94, ../sass/layouts/_responsive.scss */
+  .sidebar-second {
+    /* Span 2 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 3rd column from left. */
+  }
+  /* line 96, ../sass/layouts/_responsive.scss */
+  .sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+  /* line 101, ../sass/layouts/_responsive.scss */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+  /* line 109, ../sass/layouts/_responsive.scss */
+  .two-sidebars {
+    /* Span 2 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+    /* Start a new row and span all 3 columns. */
+  }
+  /* line 111, ../sass/layouts/_responsive.scss */
+  .two-sidebars #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+  /* line 116, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+  /* line 121, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: left;
+    /* Apply the shared properties of grid items in a single, efficient ruleset. */
+    /* Span 1 column, starting in the 1st column from left. */
+    /* Span 1 column, starting in the 2nd column from left. */
+    /* Span 1 column, starting in the 3rd column from left. */
+  }
+  /* line 127, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second .block {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 131, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+  /* line 136, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+  /* line 140, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+}
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+  /* line 157, ../sass/layouts/_responsive.scss */
+  .sidebar-first {
+    /* Span 4 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+  /* line 159, ../sass/layouts/_responsive.scss */
+  .sidebar-first #content {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: -100%;
+  }
+  /* line 164, ../sass/layouts/_responsive.scss */
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+  /* line 172, ../sass/layouts/_responsive.scss */
+  .sidebar-second {
+    /* Span 4 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+  /* line 174, ../sass/layouts/_responsive.scss */
+  .sidebar-second #content {
+    float: left;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: -80%;
+  }
+  /* line 179, ../sass/layouts/_responsive.scss */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+  /* line 187, ../sass/layouts/_responsive.scss */
+  .two-sidebars {
+    /* Span 3 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+  /* line 189, ../sass/layouts/_responsive.scss */
+  .two-sidebars #content {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+  }
+  /* line 194, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+  /* line 199, ../sass/layouts/_responsive.scss */
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+}
+/* Custom Responsive */
+@media (max-width: 620px) {
+  /* line 209, ../sass/layouts/_responsive.scss */
+  #block-views-nyhs-block-logo-block .view-content {
+    text-align: center;
+  }
+
+  /* line 213, ../sass/layouts/_responsive.scss */
+  .front-page-collection-view-PID-field {
+    height: 100px !important;
+  }
+
+  /* line 216, ../sass/layouts/_responsive.scss */
+  .front-page-library-view .view-content {
+    border-right: none !important;
+  }
+
+  /* line 220, ../sass/layouts/_responsive.scss */
+  #navigation .block-islandora-solr {
+    margin-top: 10px !important;
+  }
+}
+/* Component (SMACSS module) rules */
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/**
+ * Wireframes.
+ */
+/* line 22, ../sass/components/_misc.scss */
+.with-wireframes #header,
+.with-wireframes #main,
+.with-wireframes #content,
+.with-wireframes #navigation,
+.with-wireframes .region-sidebar-first,
+.with-wireframes .region-sidebar-second,
+.with-wireframes #footer,
+.with-wireframes .region-bottom {
+  outline: 1px solid #ccc;
+}
+
+/**
+ * Accessibility features.
+ */
+/* element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+/* line 40, ../sass/components/_misc.scss */
+.element-invisible,
+.element-focusable,
+#navigation .block-menu .block__title,
+#navigation .block-menu-block .block__title {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Turns off the element-invisible effect. */
+/* line 45, ../sass/components/_misc.scss */
+.element-focusable:active, .element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ */
+/* line 62, ../sass/components/_misc.scss */
+#skip-link {
+  margin: 0;
+}
+/* line 66, ../sass/components/_misc.scss */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/**
+ * Branding header.
+ */
+/* Wrapping link for logo. */
+/* line 81, ../sass/components/_misc.scss */
+.header__logo {
+  float: left;
+  /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo image. */
+/* line 88, ../sass/components/_misc.scss */
+.header__logo-image {
+  vertical-align: bottom;
+}
+
+/* Wrapper for website name and slogan. */
+/* line 93, ../sass/components/_misc.scss */
+.header__name-and-slogan {
+  float: left;
+}
+
+/* The name of the website. */
+/* line 98, ../sass/components/_misc.scss */
+.header__site-name {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* The link around the name of the website. */
+/* line 106, ../sass/components/_misc.scss */
+.header__site-link:link, .header__site-link:visited {
+  color: #000;
+  text-decoration: none;
+}
+/* line 112, ../sass/components/_misc.scss */
+.header__site-link:hover, .header__site-link:focus {
+  text-decoration: underline;
+}
+
+/* The slogan (or tagline) of a website. */
+/* line 118, ../sass/components/_misc.scss */
+.header__site-slogan {
+  margin: 0;
+}
+
+/* The secondary menu (login, etc.) */
+/* line 123, ../sass/components/_misc.scss */
+.header__secondary-menu {
+  float: right;
+  /* LTR :not(:last-child) */
+}
+/* line 125, ../sass/components/_misc.scss */
+.header__secondary-menu ul li {
+  padding-right: .5em;
+  padding-left: .5em;
+}
+/* line 129, ../sass/components/_misc.scss */
+.header__secondary-menu ul li:not(:last-child) {
+  border-right: 1px solid;
+}
+
+/* Wrapper for any blocks placed in the header region. */
+/* line 135, ../sass/components/_misc.scss */
+.header__region {
+  /* Clear the logo. */
+  clear: both;
+}
+
+/**
+ * Navigation bar.
+ */
+/* line 143, ../sass/components/_misc.scss */
+#navigation {
+  /* Sometimes you want to prevent overlapping with main div. */
+  /* overflow: hidden; */
+  /* Main menu and secondary menu links and menu block links. */
+}
+/* line 147, ../sass/components/_misc.scss */
+#navigation .block {
+  margin-bottom: 0;
+}
+/* line 158, ../sass/components/_misc.scss */
+#navigation .links,
+#navigation .menu {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  /* LTR */
+}
+/* line 163, ../sass/components/_misc.scss */
+#navigation .links li,
+#navigation .menu li {
+  /* A simple method to get navigation links to appear in one line. */
+  float: left;
+  /* LTR */
+  padding: 0 10px 0 0;
+  /* LTR */
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/**
+ * Breadcrumb navigation.
+ */
+/* line 177, ../sass/components/_misc.scss */
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 181, ../sass/components/_misc.scss */
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Titles.
+ */
+/* line 197, ../sass/components/_misc.scss */
+.page__title,
+.node__title,
+.block__title,
+.comments__title,
+.comments__form-title,
+.comment__title {
+  /* Comment title. */
+  margin: 0;
+}
+
+/**
+ * Messages.
+ */
+/* line 204, ../sass/components/_misc.scss */
+.messages, .messages--status, .messages--warning, .messages--error {
+  margin: 1.5em 0;
+  padding: 10px 10px 10px 50px;
+  /* LTR */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD6UlEQVR42s2WX0xbVRzH3YwmC4k+GF/0ZS/S267/bmnX9nL7bwstZlnbjTDYyoC5GCbB0ZW5pdJCe6swbLFA6bpWIGuRMWVjKGP+21QW3SZBSAjGh4XEaTZTH82Cm/3ztS2xs7mw4KLRk3xyzj33/H6fe5Pz7zEA/yr/vUDukj9FH6drqTaqT8EoPs/UV+nX6TD1BlUh9AqLHlmgPKLcRHmoCOWmElK/FOKTYpS8UwLJkASiUyLI3pKhlClN0g46qj+qL/pbArlbrlO1q25JeiSgR2iYJ8ywXLSg/qP6LNl2ro8+Q4MMkKCd9K2t3q3KdQnkXXIF5aISkgEJzONm1F2qW52pDJN1MI2bUBIuAdVOJWSMTPNQgX6/vkjVpvpREpag6oMqWCYta1IzbsHh9ga0RJtzY8URMdRO9U/KSuWmNQUqh2pY3CtG+fvlqJyofMAFNrZAE+7e/RWR4X4cD9tgOGsA2U2CdtMDqwqyMyIzQ5KKqAKmcyaYxkzYd3YvjGNGFtXRPRj58DT+LOemRrFnrBLyITmUDmUyO/NYgu2d26ukHVJo3tXAMGpAs+cQmh0NeClan30uwN7TgnQ6nRd4r3thOGOAJqYB2UVC79AfZAnKHGUxQa8A2tNaNLW/jKvXv8Dyb8s4yryKA4O10A3roIvpUB+swTdz1/LJZ27PQBvT5lBH1RD4BChzlQ2wBNtc22aE/ULQgzRCl4P5BPcT93GMOYz9wb2QhCRgAq35d8u/L2PXe7tADVGgBlcQ+AXQtmlvsP/gzbJZvp8PMkJCFBYh8m0knyiVSsHe0YIGZz1+/uVOvt8z7QGvnwf+ST5EIRHIUyR4fh50rbp5lsDcYR4ReAXgBrng9q/Qfa0bfy035r7Ot2dvz4IX4IEIEAXwvDzscOw4zxJUd1YfEXlE4Aa4BQHMlwzSSBeI7iXvoTxWDqKPYCFsFaKmr+YVliB0JfS89DVpiuhlB9k/tSOZTuYFvq98yI7L0/MAsVWcGp0bfW61hbahwltxSeARsIKyWKesSKQSWIwvYkvvllwfx88pgOvhwthu/AzAxlVX8vz385tLbaVxwpcLZtEw0QDjsBGctzksiE4CimZFfHp++oWHbnbuUfdB0komMgHsRN1r0MWBsEmYODF5onY92/UTwcvBxuzXcN1ccHycVSn2FaPYWwzCQUDWKIt7z3utAJ5c74Hz+OLSomynY+cVfiM/xW3JiDyZpB3FuZrj4oCwE+Ad4qWMjPHjpTtL0mzMoxyZz9yM39Q7Y85Ok930icqm+k59TL2wm9l90dZv8y/8sPAigGf/iUN/Q4anM2zOsdLe+L+4VfwBVVjDs2rTYx0AAAAASUVORK5CYII=');
+  background-position: 8px 8px;
+  /* LTR */
+  background-repeat: no-repeat;
+  border: 1px solid #be7;
+}
+
+/* line 219, ../sass/components/_misc.scss */
+.messages--warning {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
+  border-color: #ed5;
+}
+
+/* line 228, ../sass/components/_misc.scss */
+.messages--error {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
+  border-color: #ed541d;
+}
+
+/* line 238, ../sass/components/_misc.scss */
+.messages__list {
+  margin: 0;
+}
+
+/* line 241, ../sass/components/_misc.scss */
+.messages__item {
+  list-style-image: none;
+}
+
+/* Core/module installation error messages. */
+/* line 246, ../sass/components/_misc.scss */
+.messages--error p.error {
+  color: #333;
+}
+
+/* System status report. */
+/* line 252, ../sass/components/_misc.scss */
+.ok,
+.messages--status {
+  background-color: #f8fff0;
+  color: #234600;
+}
+
+/* line 257, ../sass/components/_misc.scss */
+.warning,
+.messages--warning {
+  background-color: #fffce5;
+  color: #840;
+}
+
+/* line 262, ../sass/components/_misc.scss */
+.error,
+.messages--error {
+  background-color: #fef5f1;
+  color: #8c2e0b;
+}
+
+/**
+ * Tabs.
+ */
+/* Basic positioning styles shared by primary and secondary tabs. */
+/* line 272, ../sass/components/_misc.scss */
+.tabs-primary, .tabs-secondary {
+  overflow: hidden;
+  /*@include background-image(linear-gradient(bottom, $tabs-border 1px, transparent 1px));*/
+  /* IE 9 and earlier don't understand gradients. */
+  list-style: none;
+  /*border-bottom: 1px solid $tabs-border \0/ie;*/
+  margin: 1.5em 0;
+  padding: 0 2px;
+  white-space: nowrap;
+  border: none;
+}
+
+/* line 283, ../sass/components/_misc.scss */
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  float: left;
+  /* LTR */
+  margin: 0 3px;
+}
+
+/* line 287, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
+  border: 1px solid #e9e9e9;
+  border-right: 0;
+  border-bottom: 0;
+  display: block;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+/* Primary tabs. */
+/* line 299, ../sass/components/_misc.scss */
+.tabs-primary li {
+  border-right: 1px solid grey;
+}
+/* line 302, ../sass/components/_misc.scss */
+.tabs-primary li:last-child {
+  border-right: none;
+}
+
+/* line 306, ../sass/components/_misc.scss */
+.tabs-primary__tab, .tabs-primary__tab.is-active {
+  text-shadow: 1px 1px 0 white;
+  border: 0px solid #bbbbbb;
+  border-right: 1px solid grey;
+  border-bottom-color: transparent;
+  /* IE 9 and earlier don't understand gradients. */
+  border-bottom: 0 \0/ie;
+  margin-bottom: 0em !important;
+}
+
+/* line 316, ../sass/components/_misc.scss */
+.is-active.tabs-primary__tab {
+  border-bottom-color: white;
+}
+
+/* line 324, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  color: #e28c05;
+  background-color: transparent;
+  letter-spacing: 1px;
+  padding: 0 1em;
+  text-align: center;
+}
+
+/* line 335, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
+  /*background-color: #e9e9e9;
+  border-color: #f2f2f2;*/
+}
+
+/* line 339, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
+  /*background-color: transparent;
+  @include filter-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0));
+  @include background-image(linear-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0)));
+  border-color: #fff;*/
+}
+
+/* line 346, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link {
+  border: none;
+}
+/* line 353, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link:active {
+  border: none;
+}
+
+/* line 359, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link.is-active {
+  border: none;
+}
+
+/* Secondary tabs. */
+/* line 366, ../sass/components/_misc.scss */
+.tabs-secondary {
+  font-size: .9em;
+  /* Collapse bottom margin of ul.primary. */
+  margin-top: -1.5em;
+}
+
+/* line 373, ../sass/components/_misc.scss */
+.tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  margin: 0.75em 3px;
+}
+
+/* line 379, ../sass/components/_misc.scss */
+a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -ms-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  text-shadow: 1px 1px 0 white;
+  background-color: #f2f2f2;
+  color: #666;
+  padding: 0 .5em;
+}
+
+/* line 388, ../sass/components/_misc.scss */
+a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
+  background-color: #dedede;
+  border-color: #999;
+  color: #333;
+}
+
+/* line 393, ../sass/components/_misc.scss */
+a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
+  text-shadow: 1px 1px 0 #333333;
+  background-color: #666;
+  border-color: #000;
+  color: #fff;
+}
+
+/* line 404, ../sass/components/_misc.scss */
+a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
+  color: #333;
+}
+/* line 408, ../sass/components/_misc.scss */
+a.tabs-secondary__tab-link:active {
+  color: #333;
+}
+
+/**
+ * Inline styles.
+ */
+/* List of links generated by theme_links(). */
+/* line 423, ../sass/components/_misc.scss */
+.inline {
+  display: inline;
+  padding: 0;
+}
+/* line 427, ../sass/components/_misc.scss */
+.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0;
+  /* LTR */
+}
+
+/* The inline field label used by the Fences module. */
+/* line 435, ../sass/components/_misc.scss */
+span.field-label {
+  padding: 0 1em 0 0;
+  /* LTR */
+}
+
+/**
+ * "More" links.
+ */
+/* line 442, ../sass/components/_misc.scss */
+.more-link {
+  text-align: right;
+  /* LTR */
+}
+
+/* line 445, ../sass/components/_misc.scss */
+.more-help-link {
+  text-align: right;
+  /* LTR */
+}
+
+/* line 448, ../sass/components/_misc.scss */
+.more-help-link a {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
+  background-position: 0 50%;
+  /* LTR */
+  background-repeat: no-repeat;
+  padding: 1px 0 1px 20px;
+  /* LTR */
+}
+
+/**
+ * Pager.
+ */
+/* A list of page numbers when more than 1 page of content is available. */
+/* line 463, ../sass/components/_misc.scss */
+.pager {
+  clear: both;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 468, ../sass/components/_misc.scss */
+.pager-item,
+.pager-first,
+.pager-previous,
+.pager-next,
+.pager-last,
+.pager-ellipsis, .pager-current {
+  display: inline;
+  padding: 0 0.5em;
+  list-style-type: none;
+  background-image: none;
+}
+
+/* line 480, ../sass/components/_misc.scss */
+.pager-item,
+.pager-first,
+.pager-previous,
+.pager-next,
+.pager-last,
+.pager-ellipsis {
+  /* A concatenation of several list items using an ellipsis. */
+}
+
+/* The current page's list item. */
+/* line 485, ../sass/components/_misc.scss */
+.pager-current {
+  font-weight: bold;
+}
+
+/**
+ * Blocks.
+ */
+/* Block wrapper. */
+/* line 495, ../sass/components/_misc.scss */
+.block {
+  margin-bottom: 1.5em;
+}
+
+/**
+ * Menus.
+ */
+/* line 502, ../sass/components/_misc.scss */
+.menu__item.is-leaf {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
+  list-style-type: square;
+}
+
+/* line 509, ../sass/components/_misc.scss */
+.menu__item.is-expanded {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  list-style-type: circle;
+}
+
+/* line 516, ../sass/components/_misc.scss */
+.menu__item.is-collapsed {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  /* LTR */
+  list-style-type: disc;
+}
+
+/* The active item in a Drupal menu. */
+/* line 525, ../sass/components/_misc.scss */
+.menu a.active {
+  color: #000;
+}
+
+/* line 529, ../sass/components/_misc.scss */
+#main-menu ul li a, #secondary-menu ul li a {
+  text-decoration: none;
+}
+
+/* line 533, ../sass/components/_misc.scss */
+#main-menu ul li {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+/* line 536, ../sass/components/_misc.scss */
+#main-menu ul li a {
+  font-size: 18px;
+  color: #60605B;
+}
+/* line 540, ../sass/components/_misc.scss */
+#main-menu ul li a.active {
+  color: #e28c05;
+  border-bottom: 10px solid;
+}
+
+/* line 546, ../sass/components/_misc.scss */
+body a {
+  text-decoration: none;
+  color: #e28c05;
+}
+/* line 550, ../sass/components/_misc.scss */
+body a:hover {
+  color: #60605b;
+}
+
+/* line 555, ../sass/components/_misc.scss */
+#secondary-menu ul li a {
+  font-size: 11px;
+  color: #e28c05;
+}
+
+/**
+ * Marker.
+ */
+/* The "new" or "updated" marker. */
+/* line 566, ../sass/components/_misc.scss */
+.new,
+.update {
+  color: #c00;
+  /* Remove background highlighting from <mark> in normalize. */
+  background-color: transparent;
+}
+
+/**
+ * Unpublished note.
+ */
+/* The word "Unpublished" displayed underneath the content. */
+/* line 577, ../sass/components/_misc.scss */
+.unpublished {
+  height: 0;
+  overflow: visible;
+  /* Remove background highlighting from <mark> in normalize. */
+  background-color: transparent;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  /* A very nice CSS3 property. */
+  word-wrap: break-word;
+}
+
+/**
+ * Comments.
+ */
+/* Wrapper for the list of comments and its title. */
+/* line 605, ../sass/components/_misc.scss */
+.comments {
+  margin: 1.5em 0;
+}
+
+/* Preview of the comment before submitting new or updated comment. */
+/* line 610, ../sass/components/_misc.scss */
+.comment-preview {
+  /* Drupal core will use a #ffffea background. See #1110842. */
+  background-color: #ffffea;
+}
+
+/* Wrapper for a single comment. */
+/* line 616, ../sass/components/_misc.scss */
+.comment {
+  /* Comment's permalink wrapper. */
+}
+/* line 619, ../sass/components/_misc.scss */
+.comment .permalink {
+  text-transform: uppercase;
+  font-size: 75%;
+}
+
+/* Nested comments are indented. */
+/* line 626, ../sass/components/_misc.scss */
+.indented {
+  /* Drupal core uses a 25px left margin. */
+  margin-left: 30px;
+  /* LTR */
+}
+
+/**
+ * Forms.
+ */
+/* Wrapper for a form element (or group of form elements) and its label. */
+/* line 636, ../sass/components/_misc.scss */
+.form-item {
+  margin: 1.5em 0;
+  /* Pack groups of checkboxes and radio buttons closer together. */
+  /* Form items in a table. */
+  /* Highlight the form elements that caused a form submission error. */
+  /* The descriptive help text (separate from the label). */
+}
+/* line 641, ../sass/components/_misc.scss */
+.form-checkboxes .form-item, .form-radios .form-item {
+  /* Drupal core uses "0.4em 0". */
+  margin: 0;
+}
+/* line 648, ../sass/components/_misc.scss */
+tr.odd .form-item, tr.even .form-item {
+  margin: 0;
+}
+/* line 655, ../sass/components/_misc.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #c00;
+}
+/* line 660, ../sass/components/_misc.scss */
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/* line 667, ../sass/components/_misc.scss */
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 2.4em;
+}
+
+/* The part of the label that indicates a required field. */
+/* line 673, ../sass/components/_misc.scss */
+.form-required {
+  color: #c00;
+}
+
+/* Labels for radios and checkboxes. */
+/* line 678, ../sass/components/_misc.scss */
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/* Buttons used by contrib modules like Media. */
+/* line 684, ../sass/components/_misc.scss */
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/* Password confirmation. */
+/* line 690, ../sass/components/_misc.scss */
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* Drupal's default login form block. */
+/* line 695, ../sass/components/_misc.scss */
+#user-login-form {
+  text-align: left;
+  /* LTR */
+}
+
+/**
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+/* OpenID creates a new ul above the login form's links. */
+/* line 707, ../sass/components/_misc.scss */
+.openid-links {
+  /* Position OpenID's ul next to the rest of the links. */
+  margin-bottom: 0;
+}
+
+/* The "Log in using OpenID" and "Cancel OpenID login" links. */
+/* line 714, ../sass/components/_misc.scss */
+.openid-link,
+.user-link {
+  margin-top: 1.5em;
+}
+
+/* line 718, ../sass/components/_misc.scss */
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link {
+  /* Un-do some of the padding on the ul list. */
+  margin-left: -20px;
+  /* LTR */
+}
+
+/* line 722, ../sass/components/_misc.scss */
+#user-login ul {
+  margin: 1.5em 0;
+}
+
+/**
+ * Drupal admin tables.
+ */
+/* line 730, ../sass/components/_misc.scss */
+form th {
+  text-align: left;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+/* line 735, ../sass/components/_misc.scss */
+form tbody {
+  border-top: 1px solid #ccc;
+}
+/* line 738, ../sass/components/_misc.scss */
+form table ul {
+  margin: 0;
+}
+
+/* line 743, ../sass/components/_misc.scss */
+tr.even,
+tr.odd {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 0.1em 0.6em;
+}
+
+/* line 748, ../sass/components/_misc.scss */
+tr.even {
+  background-color: #fff;
+}
+
+/* Markup generated by theme_tablesort_indicator(). */
+/* line 763, ../sass/components/_misc.scss */
+td.active {
+  background-color: #ddd;
+}
+
+/* Center checkboxes inside table cell. */
+/* line 769, ../sass/components/_misc.scss */
+td.checkbox,
+th.checkbox {
+  text-align: center;
+}
+
+/* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
+/* line 774, ../sass/components/_misc.scss */
+td.menu-disabled {
+  background: #ccc;
+}
+
+/**
+ * Autocomplete.
+ *
+ * @see autocomplete.js
+ */
+/* Suggestion list. */
+/* line 785, ../sass/components/_misc.scss */
+#autocomplete .selected {
+  background: #0072b9;
+  color: #fff;
+}
+
+/**
+ * Collapsible fieldsets.
+ *
+ * @see collapse.js
+ */
+/* line 796, ../sass/components/_misc.scss */
+html.js .collapsible .fieldset-legend {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  background-position: 5px 65%;
+  /* LTR */
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  /* LTR */
+}
+/* line 805, ../sass/components/_misc.scss */
+html.js .collapsed .fieldset-legend {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  /* LTR */
+  background-position: 5px 50%;
+  /* LTR */
+}
+/* line 812, ../sass/components/_misc.scss */
+.fieldset-legend .summary {
+  color: #999;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+}
+
+/**
+ * TableDrag behavior.
+ *
+ * @see tabledrag.js
+ */
+/* line 824, ../sass/components/_misc.scss */
+tr.drag {
+  background-color: #fffff0;
+}
+
+/* line 827, ../sass/components/_misc.scss */
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+/* line 830, ../sass/components/_misc.scss */
+.tabledrag-toggle-weight {
+  font-size: 0.9em;
+}
+
+/**
+ * TableSelect behavior.
+ *
+ * @see tableselect.js
+ */
+/* line 839, ../sass/components/_misc.scss */
+tr.selected td {
+  background: #ffc;
+}
+
+/**
+ * Progress bar.
+ *
+ * @see progress.js
+ */
+/* line 848, ../sass/components/_misc.scss */
+.progress {
+  font-weight: bold;
+}
+/* line 851, ../sass/components/_misc.scss */
+.progress .bar {
+  background: #ccc;
+  border-color: #666;
+  margin: 0 0.2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 857, ../sass/components/_misc.scss */
+.progress .filled {
+  background-color: #0072b9;
+  background-image: url('../images/progress.gif?1398863088');
+}
+
+/**
+ * @file
+ * Basic page styling
+ */
+/* line 6, ../sass/components/_page.scss */
+.block__title.block-title, #page-title, .page-content-wrapper h2, .collection-view-about-this-collection h1, .collection-view-recently-added h1, .collection-view-descriptive-meta h1, #islandora-solr-result-count h1 {
+  font-weight: normal;
+  font-family: Adobe Garamond Pro;
+}
+
+/* line 12, ../sass/components/_page.scss */
+.front-page-museum h2, .front-page-library h2 {
+  font-size: 200%;
+}
+
+/* line 17, ../sass/components/_page.scss */
+#page-title {
+  font-size: 200%;
+}
+
+/* line 24, ../sass/components/_page.scss */
+.front #content #page-title {
+  display: none;
+}
+/* line 27, ../sass/components/_page.scss */
+.front #content #first-time {
+  display: none;
+}
+
+/* line 34, ../sass/components/_page.scss */
+.not-front #content, .not-front .sidebars {
+  padding-top: 10px;
+}
+
+/* line 39, ../sass/components/_page.scss */
+body {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #60605b;
+  margin-top: 30px;
+  background: #fefefe url('../images/body-bg.jpg?1441913974');
+}
+/* line 47, ../sass/components/_page.scss */
+body #page #footer {
+  text-align: center;
+  background-color: #ECF6FF;
+}
+/* line 52, ../sass/components/_page.scss */
+body .bottom-wrapper {
+  background-color: #373634;
+}
+
+/* line 57, ../sass/components/_page.scss */
+.collection-image-service-links-wrapper {
+  display: table !important;
+  position: relative;
+}
+
+/* line 62, ../sass/components/_page.scss */
+a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
+  padding-left: 20px;
+}
+
+/* line 66, ../sass/components/_page.scss */
+.my-eye {
+  background-image: url('../images/eye46.png?1442864819');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 72, ../sass/components/_page.scss */
+.map-signs {
+  background-image: url('../images/arrows106.png?1442865328');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 78, ../sass/components/_page.scss */
+.icn-gears {
+  background-image: url('../images/gears6.png?1442865534');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 84, ../sass/components/_page.scss */
+.code-icon {
+  background-image: url('../images/web2.png?1442923921');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 90, ../sass/components/_page.scss */
+.menu-pages {
+  background-image: url('../images/stationery1.png?1442924150');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 96, ../sass/components/_page.scss */
+.menu-edit {
+  background-image: url('../images/edit34.png?1442924337');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 102, ../sass/components/_page.scss */
+.devel-link {
+  background-image: url('../images/magic20.png?1442924422');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 108, ../sass/components/_page.scss */
+.node-export {
+  background-image: url('../images/export.png?1442924545');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 114, ../sass/components/_page.scss */
+.document {
+  background-image: url('../images/text70.png?1442925592');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+/* line 121, ../sass/components/_page.scss */
+.page-islandora-search #page-title {
+  display: none;
+}
+
+/* line 126, ../sass/components/_page.scss */
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
+  padding-left: 1.7em !important;
+}
+
+/* line 130, ../sass/components/_page.scss */
+#block-service-links-service-links-not-node, .collection-image-wrapper {
+  /*   display: table-cell; */
+  /*   vertical-align: top; */
+  /*   position: absolute; */
+  /*   right: 0; */
+  /*   padding-right: 10px; */
+  /*   top: 0; */
+}
+
+/* line 139, ../sass/components/_page.scss */
+.islandora-video-content, #mediaplayer, .islandora-audio-content {
+  width: 100% !important;
+}
+
+/* line 143, ../sass/components/_page.scss */
+#block-service-links-service-links-not-node {
+  padding-left: 5px;
+}
+
+/* line 147, ../sass/components/_page.scss */
+.solid-background, #navigation {
+  background-color: white;
+  width: 100%;
+}
+/* line 150, ../sass/components/_page.scss */
+.solid-background .block-islandora-solr, #navigation .block-islandora-solr {
+  margin-top: -20px;
+}
+
+/* line 155, ../sass/components/_page.scss */
+.main-content-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 159, ../sass/components/_page.scss */
+header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-top: 10px;
+}
+
+/* line 166, ../sass/components/_page.scss */
+.fixed-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* line 172, ../sass/components/_page.scss */
+.slideshow-region.fixed-width {
+  padding-bottom: 5px;
+}
+
+/* line 176, ../sass/components/_page.scss */
+#book-page-viewer {
+  max-width: 99%;
+}
+
+/* .islandora-openseadragon, .islandora-newspaper-content{ */
+/*   display: table-cell; */
+/* } */
+/* #book-page-viewer .islandora-openseadragon{ */
+/*   display: table-cell !important; */
+/* } */
+/* line 188, ../sass/components/_page.scss */
+div#BRpage {
+  padding-left: 0px;
+}
+
+/* line 192, ../sass/components/_page.scss */
+#mediaplayer {
+  max-width: 100%;
+}
+
+/* #block-service-links-service-links-not-node, { */
+/*   display: table; */
+/* } */
+/* line 201, ../sass/components/_page.scss */
+.book-object-wrapper .block-service-links li {
+  display: inline;
+}
+
+/* line 206, ../sass/components/_page.scss */
+#book-viewer {
+  max-width: 100%;
+}
+
+/* line 209, ../sass/components/_page.scss */
+.block-service-links {
+  /*   position: absolute; */
+  /*   right: 0; */
+  /*   top: 0; */
+  /*   z-index: 100; */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 218, ../sass/components/_page.scss */
+.islandora-pdf-content {
+  width: auto;
+}
+
+/* line 222, ../sass/components/_page.scss */
+.page-inner-content-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* .page-inner-content-wrapper { */
+/*     position: relative; */
+/* } */
+/* div.islandora-basic-collection-wrapper, .islandora-newspaper-object, #book-page-viewer, .islandora-large-image-object, .book-object-wrapper, .islandora-pdf-object, .islandora-video-object, .islandora-basic-image-object, .islandora-audio-object, .islandora-video-content-wrapper{ */
+/*   background-color: white; */
+/*   border-radius: 5px; */
+/*   box-sizing: border-box; */
+/*   padding: 20px; */
+/*   margin-bottom: 20px; */
+/* } */
+/* .islandora-large-image-content{ */
+/*   display: table; */
+/* } */
+/* line 247, ../sass/components/_page.scss */
+#block-service-links-service-links-not-node {
+  display: table-cell;
+}
+
+/* line 251, ../sass/components/_page.scss */
+.header-content-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 256, ../sass/components/_page.scss */
+.breadcrumb {
+  padding-bottom: 1em;
+}
+
+/* line 260, ../sass/components/_page.scss */
+.front-page-library-view .view-content {
+  border-right-color: -moz-use-text-color;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+/* line 265, ../sass/components/_page.scss */
+.region-navigation .form-submit {
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  background: url('../images/magnifier.png?1442588181');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  text-indent: -9999px;
+}
+
+/* line 278, ../sass/components/_page.scss */
+.region-navigation .form-item-islandora-simple-search-query input {
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+  padding-left: 25px;
+  margin: 0 auto;
+  border: none;
+  border: solid 1px #60605b;
+  border-radius: 10px;
+}
+
+/* line 290, ../sass/components/_page.scss */
+.inner-div {
+  display: table;
+}
+
+/* line 294, ../sass/components/_page.scss */
+#widgets-element-socialmedia_addthis-tweet, #widgets-element-socialmedia_addthis-addthis-counter, #widgets-element-socialmedia_addthis-google-plusone {
+  display: none;
+}
+
+/**
+ * @file
+ * Basic block styling
+ */
+/* line 6, ../sass/components/_blocks.scss */
+#block-islandora-solr-simple {
+  float: right;
+  position: relative;
+}
+
+/* line 11, ../sass/components/_blocks.scss */
+#block-islandora-collection-search-islandora-collection-search {
+  text-align: center;
+}
+
+/* line 16, ../sass/components/_blocks.scss */
+#block-views-powered-by-dgi-block .views-field.views-field-title {
+  color: white;
+  display: table-cell;
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+/* line 24, ../sass/components/_blocks.scss */
+#block-views-powered-by-dgi-block .views-field.views-field-field-block-image {
+  display: table-cell;
+  padding-top: 3px;
+}
+/* line 27, ../sass/components/_blocks.scss */
+#block-views-powered-by-dgi-block .views-field.views-field-field-block-image img {
+  max-width: 114px;
+}
+
+/* line 33, ../sass/components/_blocks.scss */
+.block-islandora-collection-search .form-item-islandora-simple-search-query .form-text {
+  font-size: 70%;
+}
+
+/* line 38, ../sass/components/_blocks.scss */
+#block-views-nyhs-contact-info-view-block .field-content {
+  font-size: 85%;
+}
+
+/* line 44, ../sass/components/_blocks.scss */
+#block-islandora-collection-search-islandora-collection-search .form-submit {
+  display: none;
+}
+/* line 47, ../sass/components/_blocks.scss */
+#block-islandora-collection-search-islandora-collection-search h1 {
+  display: inline;
+  font-size: 100%;
+}
+/* line 52, ../sass/components/_blocks.scss */
+#block-islandora-collection-search-islandora-collection-search .form-item-collection-select input, #block-islandora-collection-search-islandora-collection-search .form-item-collection-select select, #block-islandora-collection-search-islandora-collection-search .form-item-islandora-simple-search-query input, #block-islandora-collection-search-islandora-collection-search .form-item-islandora-simple-search-query select {
+  width: 40%;
+}
+
+/* line 58, ../sass/components/_blocks.scss */
+#block-islandora-usage-stats-top-usage {
+  list-style-type: none;
+}
+
+/* line 63, ../sass/components/_blocks.scss */
+.block-islandora-usage-stats span {
+  color: lightgrey;
+}
+
+/* Islandora Advanced Search */
+/* line 69, ../sass/components/_blocks.scss */
+#block-islandora-solr-advanced {
+  font-weight: normal !important;
+  font-family: Adobe Garamond Pro !important;
+}
+/* line 72, ../sass/components/_blocks.scss */
+#block-islandora-solr-advanced h2 {
+  font-size: 2em;
+}
+
+/* line 78, ../sass/components/_blocks.scss */
+#islandora-solr-advanced-terms label {
+  font-weight: normal !important;
+  font-size: 2em;
+  padding-bottom: 10px;
+  color: #e28c05;
+}
+
+/* line 86, ../sass/components/_blocks.scss */
+.service-links ul {
+  padding-left: 0px;
+}
+/* line 88, ../sass/components/_blocks.scss */
+.service-links ul li {
+  list-style-type: none;
+}
+/* line 90, ../sass/components/_blocks.scss */
+.service-links ul li a {
+  font-size: 0;
+}
+
+/* line 97, ../sass/components/_blocks.scss */
+.islandora-objects-display-switch ul, .islandora-objects-display-switch li {
+  display: inline;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 10px;
+  float: right;
+}
+
+/* line 107, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid, .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
+  background-repeat: no-repeat;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  display: block;
+  height: 30px;
+  text-indent: -9999px;
+  width: 30px;
+}
+
+/* line 118, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch, #block-islandora-solr-sort, #block-islandora-solr-display-switch {
+  width: 100%;
+}
+/* line 120, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-display, #block-islandora-solr-sort ul.islandora-solr-display, #block-islandora-solr-display-switch ul.islandora-solr-display {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+/* line 123, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark {
+  background-image: url('../images/display-bookmark.png?1437665023');
+}
+/* line 127, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default {
+  background-image: url('../images/display-grid-list.png?1438019500');
+}
+/* line 131, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid {
+  background-image: url('../images/display-grid.png?1438019500');
+}
+/* line 136, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-sort, #block-islandora-solr-sort ul.islandora-solr-sort, #block-islandora-solr-display-switch ul.islandora-solr-sort {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  /*     float: left !important; */
+}
+/* line 140, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-sort li, #block-islandora-solr-sort ul.islandora-solr-sort li, #block-islandora-solr-display-switch ul.islandora-solr-sort li {
+  float: left;
+}
+/* line 142, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"] {
+  background-image: url('../images/sort.png?1442501323');
+}
+/* line 146, ../sass/components/_blocks.scss */
+.islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
+  background-image: url('../images/calendar.png?1442501390');
+}
+
+/* line 154, ../sass/components/_blocks.scss */
+#block-islandora-solr-display-switch {
+  float: right;
+  width: 100%;
+}
+
+/* line 159, ../sass/components/_blocks.scss */
+.ui-slider-handle {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 10px solid transparent !important;
+  border-right: 10px solid transparent !important;
+  border-bottom: 10px solid grey !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-top-style: none !important;
+}
+
+/* line 171, ../sass/components/_blocks.scss */
+#block-islandora-solr-basic-facets h2 {
+  line-height: 20px;
+}
+
+/* line 176, ../sass/components/_blocks.scss */
+.islandora-solr-facet-wrapper {
+  margin-bottom: 1.5em;
+}
+/* line 178, ../sass/components/_blocks.scss */
+.islandora-solr-facet-wrapper h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 183, ../sass/components/_blocks.scss */
+.ui-slider-handle {
+  top: 0px !important;
+}
+
+/* line 188, ../sass/components/_blocks.scss */
+.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  height: 1px;
+}
+
+/* line 192, ../sass/components/_blocks.scss */
+.slider-popup-to-wrapper, .slider-popup-from-wrapper {
+  display: none !important;
+}
+
+/* line 195, ../sass/components/_blocks.scss */
+#edit-range-slider-submit {
+  margin-top: 15px;
+}
+
+/* line 199, ../sass/components/_blocks.scss */
+.recently-added-to-collection-PID {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 205, ../sass/components/_blocks.scss */
+.collection-view-recently-added .views-row {
+  float: left;
+  clear: left;
+  display: inline;
+  padding: 3px;
+}
+/* line 210, ../sass/components/_blocks.scss */
+.collection-view-recently-added .views-row div.views-field {
+  float: left;
+  padding: 3px;
+}
+
+/* line 218, ../sass/components/_blocks.scss */
+.islandora-metadata-sidebar h2 {
+  display: none;
+}
+
+/* line 223, ../sass/components/_blocks.scss */
+.date-range-slider-canvas-wrapper canvas {
+  max-width: 100%;
+}
+
+/* line 227, ../sass/components/_blocks.scss */
+.islandora-large-image-content, #book-viewer {
+  position: relative;
+}
+
+/* line 231, ../sass/components/_blocks.scss */
+.subsequent-pages-wrapper {
+  padding-top: 10px;
+}
+
+/* line 236, ../sass/components/_blocks.scss */
+.view-subsequent-pages .flex-direction-nav a::before {
+  font-size: 18px !important;
+}
+/* line 239, ../sass/components/_blocks.scss */
+.view-subsequent-pages .slides > li {
+  padding-top: 20px;
+}
+/* line 242, ../sass/components/_blocks.scss */
+.view-subsequent-pages .flex-viewport {
+  margin: 20px;
+}
+/* line 245, ../sass/components/_blocks.scss */
+.view-subsequent-pages .view-content {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+/* line 249, ../sass/components/_blocks.scss */
+.view-subsequent-pages .flexslider {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* line 255, ../sass/components/_blocks.scss */
+.slideshow-subsequent-page-PID-field-wrapper {
+  text-align: center;
+}
+
+/* line 260, ../sass/components/_blocks.scss */
+.view-nyhs-contact-info-view p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 266, ../sass/components/_blocks.scss */
+#footer .block {
+  margin-bottom: .5em;
+}
+
+/* line 270, ../sass/components/_blocks.scss */
+#block-fblikebutton-fblikebutton-static-block {
+  /*   iframe{ */
+  /*     max-width: 100px; */
+  /*     position: absolute; */
+  /*   } */
+  /*   .blog-fliker-wrapper { */
+  /*     display: table-cell; */
+  /*     vertical-align: top; */
+  /*   } */
+}
+
+/* #widgets-element-addthis-share { */
+/*   display: table-cell; */
+/* } */
+/* .blog-fliker-wrapper { */
+/*   display: table-cell; */
+/*   vertical-align: middle; */
+/*   img{ */
+/*     box-sizing: border-box; */
+/*     padding: 5px; */
+/*   } */
+/* } */
+/**
+ * @file
+ * Basic view styling for the front page Library elements.
+ */
+/* line 6, ../sass/components/views/frontpage/library/_elements.scss */
+.front-page-collection-view-PID-field {
+  height: 80px;
+  width: 100%;
+}
+
+/* line 11, ../sass/components/views/frontpage/library/_elements.scss */
+.view-front-page-collection-views {
+  border-top: 1px solid;
+}
+/* line 13, ../sass/components/views/frontpage/library/_elements.scss */
+.view-front-page-collection-views .view-content {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+@media (min-width: 620px) {
+  /* line 27, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row {
+    padding-top: 20px;
+  }
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .view-front-page-collection-views .views-row:before, .view-front-page-collection-views .views-row:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .view-front-page-collection-views .views-row:after {
+    clear: both;
+  }
+  /* line 30, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-PID {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 33, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dctitle {
+    float: right;
+    width: 80%;
+    margin-right: 0%;
+    margin-left: -80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 35, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dctitle .field-content {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-size: 110%;
+  }
+  /* line 41, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dcdescription {
+    clear: right;
+    float: right;
+    width: 80%;
+    margin-right: 0%;
+    margin-left: -80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 950px) {
+  /* line 49, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row {
+    padding-top: 20px;
+  }
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .view-front-page-collection-views .views-row:before, .view-front-page-collection-views .views-row:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .view-front-page-collection-views .views-row:after {
+    clear: both;
+  }
+  /* line 52, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-PID {
+    float: left;
+    width: 40%;
+    margin-left: 0%;
+    margin-right: -40%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 55, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dctitle {
+    float: right;
+    width: 60%;
+    margin-right: 0%;
+    margin-left: -60%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 57, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dctitle .field-content {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-size: 110%;
+  }
+  /* line 63, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-front-page-collection-views .views-row .views-field-dcdescription {
+    clear: right;
+    float: right;
+    width: 60%;
+    margin-right: 0%;
+    margin-left: -60%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/**
+ * @file
+ * Basic view styling for the front page Library view.
+ */
+/* line 6, ../sass/components/views/frontpage/library/_elementsgrid.scss */
+.front-page-collection-view-PID-field {
+  height: 70px;
+  width: 100%;
+  background-color: grey;
+}
+
+/* line 12, ../sass/components/views/frontpage/library/_elementsgrid.scss */
+.front-page-collection-view-PID-field-wrapper {
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+/**
+ * @file
+ * Basic view grid styling for the Library and Museum layout.
+ */
+@media (min-width: 620px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #content:before, #content:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #content:after {
+    clear: both;
+  }
+  /* line 15, ../sass/components/views/frontpage/_viewgrid.scss */
+  #content .front-page-library {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 18, ../sass/components/views/frontpage/_viewgrid.scss */
+  #content .front-page-museum {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/**
+ * @file
+ * Basic view grid styling for the Library and Museum layout.
+ */
+/* line 6, ../sass/components/views/frontpage/_slideshow.scss */
+.front .flexslider-processed {
+  margin-bottom: 0px;
+}
+/* line 8, ../sass/components/views/frontpage/_slideshow.scss */
+.front .flexslider-processed .flex-control-nav {
+  bottom: 0;
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 35%;
+  z-index: 100;
+}
+/* line 19, ../sass/components/views/frontpage/_slideshow.scss */
+.front .flex-direction-nav a::before {
+  font-size: 20px;
+}
+/* line 23, ../sass/components/views/frontpage/_slideshow.scss */
+.front #slideshow {
+  padding-top: 10px;
+}
+/* line 28, ../sass/components/views/frontpage/_slideshow.scss */
+.front .info-content-wrapper .views-field-PID {
+  bottom: 20px;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+}
+/* line 33, ../sass/components/views/frontpage/_slideshow.scss */
+.front .info-content-wrapper .views-field-PID a, .front .info-content-wrapper .views-field-PID span {
+  color: black;
+}
+/* line 36, ../sass/components/views/frontpage/_slideshow.scss */
+.front .info-content-wrapper .views-field-PID a:hover {
+  color: white !important;
+}
+/* line 42, ../sass/components/views/frontpage/_slideshow.scss */
+.front .slideshow-item-text-top {
+  font-family: Adobe Garamond Pro;
+  line-height: 50px;
+  font-size: 30px;
+  color: black !important;
+  margin-top: 2em;
+}
+/* line 48, ../sass/components/views/frontpage/_slideshow.scss */
+.front .slideshow-item-text-top span {
+  color: black !important;
+}
+/* line 53, ../sass/components/views/frontpage/_slideshow.scss */
+.front .slideshow-item-text-subtitle {
+  font-family: Adobe Garamond Pro;
+  line-height: 50px;
+  font-size: 30px;
+  color: #60605b;
+  margin-top: 2em;
+  color: white;
+}
+/* line 61, ../sass/components/views/frontpage/_slideshow.scss */
+.front .slideshow-item-text-bottom {
+  bottom: 5em;
+  color: #ffffff !important;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  left: 20px;
+  line-height: 17px;
+  position: absolute;
+  text-transform: uppercase;
+}
+/* line 75, ../sass/components/views/frontpage/_slideshow.scss */
+.front .flexslider .slides li .info-content-wrapper {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 25px;
+  background-image: url('../images/orange-bg.png?1441994485');
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+}
+
+@media (max-width: 620px) {
+  /* line 95, ../sass/components/views/frontpage/_slideshow.scss */
+  .front .flexslider .slides li .info-content-wrapper {
+    width: 70%;
+  }
+}
+/**
+ * @file
+ * Basic view grid styling for the advanced search Layout.
+ */
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#islandora-solr-advanced-terms > div:before, #islandora-solr-advanced-terms > div:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#islandora-solr-advanced-terms > div:after {
+  clear: both;
+}
+/* line 22, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div:not(:last-child).form-type-select {
+  float: left;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: -40%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 24, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div:not(:last-child).form-type-select select {
+  width: 100%;
+}
+/* line 28, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div.form-type-textfield {
+  float: left;
+  width: 40%;
+  margin-left: 40%;
+  margin-right: -80%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 30, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div.form-type-textfield input {
+  width: 100%;
+}
+/* line 34, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div input[value="+"] {
+  float: left;
+  width: 5%;
+  margin-left: 80%;
+  margin-right: -85%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+  background: url('../images/add.png?1442595292');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  text-indent: -9999px;
+}
+/* line 44, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div input[value="-"] {
+  float: left;
+  width: 5%;
+  margin-left: 85%;
+  margin-right: -90%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+  background: url('../images/rounded.png?1442595330');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  text-indent: -9999px;
+}
+/* line 54, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div:last-child.form-type-select {
+  float: left;
+  width: 10%;
+  margin-left: 90%;
+  margin-right: -100%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+/* line 61, ../sass/layouts/_advanced-search.scss */
+#islandora-solr-advanced-terms > div div:last-child.form-type-select select {
+  width: 100%;
+}
+
+/* line 67, ../sass/layouts/_advanced-search.scss */
+.islandora-solr-advanced-controls {
+  float: right;
+}
+
+/**
+ * @file
+ * Basic view grid styling for the basic view collection.
+ */
+@media (min-width: 620px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-basic-collection-wrapper:before, .islandora-basic-collection-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-basic-collection-wrapper:after {
+    clear: both;
+  }
+  /* line 15, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .collection-image-service-links-wrapper {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 18, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .collection-view-collection-search-wrapper {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 22, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .collection-view-recently-added {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 26, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .collection-view-about-this-collection {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 29, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .collection-view-descriptive-meta {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 33, ../sass/layouts/_collection-view.scss */
+  .islandora-basic-collection-wrapper .islandora-basic-collection.clearfix {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/* line 40, ../sass/layouts/_collection-view.scss */
+.islandora-objects-grid dl {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 45, ../sass/layouts/_collection-view.scss */
+.islandora-object-thumb img {
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+/**
+ * @file
+ * Basic view grid styling for the collection search layout
+ */
+@media (max-width: 620px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple:before, #block-islandora-collection-search-islandora-collection-search #edit-simple:after, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper:before, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple:after, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper:after {
+    clear: both;
+  }
+  /* line 15, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple h1:first-of-type, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper h1:first-of-type {
+    float: left;
+    width: 42.85714%;
+    margin-left: 28.57143%;
+    margin-right: -71.42857%;
+    padding-left: 2px;
+    padding-right: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 18, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple .form-item-collection-select, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-item-collection-select {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 2px;
+    padding-right: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  /* line 23, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple .form-item-collection-select select, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-item-collection-select select {
+    width: 80%;
+  }
+  /* line 27, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple h1:last-of-type, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper h1:last-of-type {
+    clear: left;
+    float: left;
+    width: 42.85714%;
+    margin-left: 28.57143%;
+    margin-right: -71.42857%;
+    padding-left: 2px;
+    padding-right: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 31, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple .form-item-islandora-simple-search-query, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-item-islandora-simple-search-query {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 2px;
+    padding-right: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  /* line 36, ../sass/layouts/_collection-search.scss */
+  #block-islandora-collection-search-islandora-collection-search #edit-simple .form-item-islandora-simple-search-query input, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-item-islandora-simple-search-query input {
+    width: 80%;
+  }
+}
+/**
+ * @file
+ * Basic view grid styling for the static social button and fliker/blog links.
+ */
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.blog-fliker-wrapper:before, .blog-fliker-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.blog-fliker-wrapper:after {
+  clear: both;
+}
+/* line 14, ../sass/layouts/_frontpage_social.scss */
+.blog-fliker-wrapper iframe {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  max-width: 100px;
+}
+/* line 18, ../sass/layouts/_frontpage_social.scss */
+.blog-fliker-wrapper .view-flicker-and-blog {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: -23px;
+}
+/* line 21, ../sass/layouts/_frontpage_social.scss */
+.blog-fliker-wrapper .view-flicker-and-blog td {
+  padding-right: 10px;
+}
+
+/**
+ * @file
+ * Basic view grid styling for the basic islandora object view.
+ */
+@media (max-width: 620px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .social-islandora-content-wrapper:before, .social-islandora-content-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .social-islandora-content-wrapper:after {
+    clear: both;
+  }
+  /* line 15, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .block-service-links {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  /* line 19, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .block-service-links ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* line 22, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .block-service-links ul li {
+    display: inline !important;
+  }
+  /* line 27, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .page-content-wrapper {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+@media (min-width: 620px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .social-islandora-content-wrapper:before, .social-islandora-content-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .social-islandora-content-wrapper:after {
+    clear: both;
+  }
+  /* line 37, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .page-content-wrapper {
+    float: left;
+    width: 93.33333%;
+    margin-left: 0%;
+    margin-right: -93.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 40, ../sass/layouts/_islandora-object-view.scss */
+  .social-islandora-content-wrapper .block-service-links {
+    float: left;
+    width: 6.66667%;
+    margin-left: 93.33333%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+/**
+ * @file
+ * Basic view grid styling for the collection search layout
+ */
+/* line 16, ../sass/layouts/_search-results.scss */
+.solr-result-label-count div {
+  margin-top: 10px;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.solr-result-label-count:before, .solr-result-label-count:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.solr-result-label-count:after {
+  clear: both;
+}
+/* line 20, ../sass/layouts/_search-results.scss */
+.solr-result-label-count h1:first-of-type {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* line 25, ../sass/layouts/_search-results.scss */
+.solr-result-label-count div:first-of-type {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 2px;
+  padding-right: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+  /* line 16, ../sass/_print.scss */
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+  /* line 20, ../sass/_print.scss */
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+  /* line 25, ../sass/_print.scss */
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+  /* line 27, ../sass/_print.scss */
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 16px;
+  }
+  /* line 35, ../sass/_print.scss */
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+  /* line 40, ../sass/_print.scss */
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+  /* line 46, ../sass/_print.scss */
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+  /* line 57, ../sass/_print.scss */
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+  /* line 77, ../sass/_print.scss */
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */

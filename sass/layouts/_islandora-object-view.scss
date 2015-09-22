@@ -1,0 +1,45 @@
+/**
+ * @file
+ * Basic view grid styling for the basic islandora object view.
+ */
+
+@import "zen";
+
+$zen-column-count: 15;
+$zen-gutter-width: 10px;
+$zen-auto-include-item-base: true;
+
+@media (max-width: 620px) {
+  .social-islandora-content-wrapper{
+    @include zen-grid-container;
+    .block-service-links{
+      
+      @include zen-grid-item(15, 1);
+      text-align: center;
+      ul {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        li{
+          display: inline !important;
+        }
+      }
+    }
+    .page-content-wrapper{ 
+      @include zen-clear();
+      @include zen-grid-item(15, 1);
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .social-islandora-content-wrapper{
+  @include zen-grid-container;
+  .page-content-wrapper{ 
+    @include zen-grid-item(14, 1);
+  }
+  .block-service-links{
+    @include zen-grid-item(1, 15);
+    text-align: center;
+  }
+}
+}

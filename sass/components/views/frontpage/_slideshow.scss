@@ -1,0 +1,98 @@
+/**
+ * @file
+ * Basic view grid styling for the Library and Museum layout.
+ */
+.front{
+.flexslider-processed{
+  margin-bottom: 0px;
+  .flex-control-nav {
+    bottom: 0;
+    float: right;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 35%;
+    z-index: 100;
+  }
+}
+
+.flex-direction-nav a::before{
+  font-size: 20px;
+}
+
+#slideshow {
+  padding-top: 10px;
+}
+
+.info-content-wrapper{
+  .views-field-PID {
+    bottom: 20px;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    a, span{
+      color: black;
+    }
+    a:hover{
+      color: white !important;
+    }
+  }
+}
+
+.slideshow-item-text-top{
+  font-family: Adobe Garamond Pro;
+  line-height: 50px;
+  font-size: 30px;
+  color: black !important;
+  margin-top: 2em;
+  span{
+    color: black !important;
+  }
+}
+
+.slideshow-item-text-subtitle{
+  font-family: Adobe Garamond Pro;
+  line-height: 50px;
+  font-size: 30px;
+  color: $base-header-color;
+  margin-top: 2em;
+  color: white;
+}
+.slideshow-item-text-bottom{
+  bottom: 5em;
+  color: #ffffff !important;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  left: 20px;
+  line-height: 17px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.flexslider{
+  .slides{
+    li{
+      .info-content-wrapper{
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 25px;
+        background-image: image-url("orange-bg.png");
+        background-origin: padding-box;
+        background-position: 0 0;
+        background-repeat: repeat;
+        background-size: auto auto;
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 620px) {
+  .front .flexslider .slides li .info-content-wrapper{
+    width: 70%;
+  }
+}

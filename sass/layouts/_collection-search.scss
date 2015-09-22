@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Basic view grid styling for the collection search layout
+ */
+
+@import "zen";
+
+$zen-column-count: 7;
+$zen-gutter-width: 5px;
+$zen-auto-include-item-base: true;
+
+@media (max-width: 620px) {
+  #block-islandora-collection-search-islandora-collection-search #edit-simple, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper{
+    @include zen-grid-container;
+    h1:first-of-type{
+      @include zen-grid-item(3, 3);
+    }
+    .form-item-collection-select{
+      @include zen-clear();
+      @include zen-grid-item(7, 1);
+      margin-bottom: 0px;
+      margin-top: 0px;
+      select {
+        width: 80%;
+      }
+    }
+    h1:last-of-type{
+      @include zen-clear();
+      @include zen-grid-item(3, 3);
+    }
+    .form-item-islandora-simple-search-query{
+      @include zen-clear();
+      @include zen-grid-item(7, 1);
+      margin-bottom: 0px;
+      margin-top: 0px;
+      input {
+        width: 80%;
+      }
+    }
+  }
+}

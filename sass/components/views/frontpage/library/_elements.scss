@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Basic view styling for the front page Library elements.
+ */
+
+.front-page-collection-view-PID-field{
+  height: 80px;
+  width: 100%;
+}
+
+.view-front-page-collection-views {
+  border-top: 1px solid;
+  .view-content {
+    box-sizing: border-box;
+    margin: 10px;
+  }
+}
+
+@import "init";
+@import "zen";
+
+$zen-column-count: 5;
+$zen-gutter-width: 10px;
+$zen-auto-include-item-base: true;
+  
+@media (min-width: 620px) {
+  .view-front-page-collection-views .views-row{
+    padding-top: 20px;
+    @include zen-grid-container;
+    .views-field-PID{
+      @include zen-grid-item(1, 1);
+    }
+    .views-field-dctitle{
+      @include zen-grid-item(4, 1, right);
+      .field-content{
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-size: 110%;
+      }
+    }
+    .views-field-dcdescription{
+      @include zen-clear(right);
+      @include zen-grid-item(4, 1, right);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .view-front-page-collection-views .views-row{
+    padding-top: 20px;
+    @include zen-grid-container;
+    .views-field-PID{
+      @include zen-grid-item(2, 1);
+    }
+    .views-field-dctitle{
+      @include zen-grid-item(3, 1, right);
+      .field-content{
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-size: 110%;
+      }
+    }
+    .views-field-dcdescription{
+      @include zen-clear(right);
+      @include zen-grid-item(3, 1, right);
+    }
+  }
+}

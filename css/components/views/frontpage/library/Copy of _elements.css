@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Basic view styling for the front page Library view.
+ */
+/* line 6, ../../../../../sass/components/views/frontpage/library/Copy of _elements.scss */
+.front-page-collection-view-PID-field {
+  width: 80px;
+  height: 80px;
+}

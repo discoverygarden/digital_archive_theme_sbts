@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Basic page styling
+ */
+/* line 6, ../../sass/components/Copy of _page.scss */
+body {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #60605b;
+  background: #fefefe url(../images/body-bg.jpg);
+}
+/* line 12, ../../sass/components/Copy of _page.scss */
+body #page {
+  background-color: white;
+}

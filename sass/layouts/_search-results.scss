@@ -1,0 +1,29 @@
+
+
+/**
+ * @file
+ * Basic view grid styling for the collection search layout
+ */
+
+@import "zen";
+
+$zen-column-count: 6;
+$zen-gutter-width: 5px;
+$zen-auto-include-item-base: true;
+
+
+.solr-result-label-count{
+  div{
+    margin-top: 10px;
+  }
+  @include zen-grid-container;
+  h1:first-of-type{
+    @include zen-grid-item(3, 1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  div:first-of-type{
+    @include zen-grid-item(3, 4);
+    text-align: right;
+  }
+}

@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Basic view grid styling for the basic view collection.
+ */
+
+@import "zen";
+
+$zen-column-count: 6;
+$zen-gutter-width: 10px;
+$zen-auto-include-item-base: true;
+  
+@media (min-width: 620px) {
+  .islandora-basic-collection-wrapper{
+    @include zen-grid-container;
+    .collection-image-service-links-wrapper{
+      @include zen-grid-item(6, 1);
+    }
+    .collection-view-collection-search-wrapper{
+      @include zen-clear();
+      @include zen-grid-item(6, 1);
+    }
+    .collection-view-recently-added{
+      @include zen-clear();
+      @include zen-grid-item(3, 1);
+    }
+    .collection-view-about-this-collection{
+      @include zen-grid-item(3, 4);
+    }
+    .collection-view-descriptive-meta{
+      @include zen-clear();
+      @include zen-grid-item(6, 1);
+    }
+    .islandora-basic-collection.clearfix{
+      @include zen-clear();
+      @include zen-grid-item(6, 1);
+    }
+  }
+}
+
+.islandora-objects-grid dl{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.islandora-object-thumb img{
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Basic view grid styling for the Library and Museum layout.
+ */
+
+@import "zen";
+
+$zen-column-count: 6;
+$zen-gutter-width: 0px;
+$zen-auto-include-item-base: true;
+  
+@media (min-width: 620px) {
+  #content{
+    @include zen-grid-container;
+    .front-page-library{
+      @include zen-grid-item(3, 1);
+    }
+    .front-page-museum{
+      @include zen-grid-item(3, 4);
+    }
+  }
+}
