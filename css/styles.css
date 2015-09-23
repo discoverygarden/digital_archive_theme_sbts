@@ -586,6 +586,12 @@ table {
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
+@media (max-width: 700px) {
+  /* line 29, ../sass/layouts/_responsive.scss */
+  #islandora-solr-advanced-terms label {
+    font-size: 1.5em !important;
+  }
+}
 /**
  * Center the page.
  *
@@ -593,7 +599,7 @@ table {
  * by setting a max-width.
  */
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 40, ../sass/layouts/_responsive.scss */
+/* line 47, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
@@ -628,14 +634,14 @@ table {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  /* line 54, ../sass/layouts/_responsive.scss */
+  /* line 61, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 1em;
     position: relative;
   }
 
-  /* line 59, ../sass/layouts/_responsive.scss */
+  /* line 66, ../sass/layouts/_responsive.scss */
   #navigation {
     /* Move the navbar up inside #main's padding. */
     top: 0;
@@ -650,19 +656,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 79, ../sass/layouts/_responsive.scss */
+  /* line 86, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 81, ../sass/layouts/_responsive.scss */
+  /* line 88, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 86, ../sass/layouts/_responsive.scss */
+  /* line 93, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -673,19 +679,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 94, ../sass/layouts/_responsive.scss */
+  /* line 101, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 96, ../sass/layouts/_responsive.scss */
+  /* line 103, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 101, ../sass/layouts/_responsive.scss */
+  /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -696,27 +702,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 109, ../sass/layouts/_responsive.scss */
+  /* line 116, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 111, ../sass/layouts/_responsive.scss */
+  /* line 118, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 116, ../sass/layouts/_responsive.scss */
+  /* line 123, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 121, ../sass/layouts/_responsive.scss */
+  /* line 128, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -730,7 +736,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 127, ../sass/layouts/_responsive.scss */
+  /* line 134, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -740,7 +746,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 131, ../sass/layouts/_responsive.scss */
+  /* line 138, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -748,14 +754,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 136, ../sass/layouts/_responsive.scss */
+  /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 140, ../sass/layouts/_responsive.scss */
+  /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -770,19 +776,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 157, ../sass/layouts/_responsive.scss */
+  /* line 164, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 159, ../sass/layouts/_responsive.scss */
+  /* line 166, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 171, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -793,19 +799,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 172, ../sass/layouts/_responsive.scss */
+  /* line 179, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 174, ../sass/layouts/_responsive.scss */
+  /* line 181, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 179, ../sass/layouts/_responsive.scss */
+  /* line 186, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -816,27 +822,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 187, ../sass/layouts/_responsive.scss */
+  /* line 194, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 189, ../sass/layouts/_responsive.scss */
+  /* line 196, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 194, ../sass/layouts/_responsive.scss */
+  /* line 201, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 199, ../sass/layouts/_responsive.scss */
+  /* line 206, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -846,22 +852,22 @@ table {
 }
 /* Custom Responsive */
 @media (max-width: 620px) {
-  /* line 209, ../sass/layouts/_responsive.scss */
+  /* line 216, ../sass/layouts/_responsive.scss */
   #block-views-nyhs-block-logo-block .view-content {
     text-align: center;
   }
 
-  /* line 213, ../sass/layouts/_responsive.scss */
+  /* line 220, ../sass/layouts/_responsive.scss */
   .front-page-collection-view-PID-field {
     height: 100px !important;
   }
 
-  /* line 216, ../sass/layouts/_responsive.scss */
+  /* line 223, ../sass/layouts/_responsive.scss */
   .front-page-library-view .view-content {
     border-right: none !important;
   }
 
-  /* line 220, ../sass/layouts/_responsive.scss */
+  /* line 227, ../sass/layouts/_responsive.scss */
   #navigation .block-islandora-solr {
     margin-top: 10px !important;
   }
@@ -1040,15 +1046,24 @@ table {
   list-style-image: none;
 }
 
+/* line 174, ../sass/components/_misc.scss */
+.not-front #main {
+  padding-top: 0px !important;
+}
+
 /**
  * Breadcrumb navigation.
  */
-/* line 177, ../sass/components/_misc.scss */
+/* line 181, ../sass/components/_misc.scss */
+.breadcrumb {
+  padding-bottom: 0.2em !important;
+}
+/* line 183, ../sass/components/_misc.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 181, ../sass/components/_misc.scss */
+/* line 187, ../sass/components/_misc.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -1059,7 +1074,7 @@ table {
 /**
  * Titles.
  */
-/* line 197, ../sass/components/_misc.scss */
+/* line 203, ../sass/components/_misc.scss */
 .page__title,
 .node__title,
 .block__title,
@@ -1073,7 +1088,7 @@ table {
 /**
  * Messages.
  */
-/* line 204, ../sass/components/_misc.scss */
+/* line 210, ../sass/components/_misc.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   margin: 1.5em 0;
   padding: 10px 10px 10px 50px;
@@ -1085,50 +1100,50 @@ table {
   border: 1px solid #be7;
 }
 
-/* line 219, ../sass/components/_misc.scss */
+/* line 225, ../sass/components/_misc.scss */
 .messages--warning {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
   border-color: #ed5;
 }
 
-/* line 228, ../sass/components/_misc.scss */
+/* line 234, ../sass/components/_misc.scss */
 .messages--error {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
   border-color: #ed541d;
 }
 
-/* line 238, ../sass/components/_misc.scss */
+/* line 244, ../sass/components/_misc.scss */
 .messages__list {
   margin: 0;
 }
 
-/* line 241, ../sass/components/_misc.scss */
+/* line 247, ../sass/components/_misc.scss */
 .messages__item {
   list-style-image: none;
 }
 
 /* Core/module installation error messages. */
-/* line 246, ../sass/components/_misc.scss */
+/* line 252, ../sass/components/_misc.scss */
 .messages--error p.error {
   color: #333;
 }
 
 /* System status report. */
-/* line 252, ../sass/components/_misc.scss */
+/* line 258, ../sass/components/_misc.scss */
 .ok,
 .messages--status {
   background-color: #f8fff0;
   color: #234600;
 }
 
-/* line 257, ../sass/components/_misc.scss */
+/* line 263, ../sass/components/_misc.scss */
 .warning,
 .messages--warning {
   background-color: #fffce5;
   color: #840;
 }
 
-/* line 262, ../sass/components/_misc.scss */
+/* line 268, ../sass/components/_misc.scss */
 .error,
 .messages--error {
   background-color: #fef5f1;
@@ -1139,7 +1154,7 @@ table {
  * Tabs.
  */
 /* Basic positioning styles shared by primary and secondary tabs. */
-/* line 272, ../sass/components/_misc.scss */
+/* line 278, ../sass/components/_misc.scss */
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   /*@include background-image(linear-gradient(bottom, $tabs-border 1px, transparent 1px));*/
@@ -1152,7 +1167,7 @@ table {
   border: none;
 }
 
-/* line 283, ../sass/components/_misc.scss */
+/* line 289, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
@@ -1160,7 +1175,7 @@ table {
   margin: 0 3px;
 }
 
-/* line 287, ../sass/components/_misc.scss */
+/* line 293, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border: 1px solid #e9e9e9;
   border-right: 0;
@@ -1171,16 +1186,16 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
 }
 
 /* Primary tabs. */
-/* line 299, ../sass/components/_misc.scss */
+/* line 305, ../sass/components/_misc.scss */
 .tabs-primary li {
   border-right: 1px solid grey;
 }
-/* line 302, ../sass/components/_misc.scss */
+/* line 308, ../sass/components/_misc.scss */
 .tabs-primary li:last-child {
   border-right: none;
 }
 
-/* line 306, ../sass/components/_misc.scss */
+/* line 312, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   text-shadow: 1px 1px 0 white;
   border: 0px solid #bbbbbb;
@@ -1191,12 +1206,12 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   margin-bottom: 0em !important;
 }
 
-/* line 316, ../sass/components/_misc.scss */
+/* line 322, ../sass/components/_misc.scss */
 .is-active.tabs-primary__tab {
   border-bottom-color: white;
 }
 
-/* line 324, ../sass/components/_misc.scss */
+/* line 330, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1215,13 +1230,13 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   text-align: center;
 }
 
-/* line 335, ../sass/components/_misc.scss */
+/* line 341, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   /*background-color: #e9e9e9;
   border-color: #f2f2f2;*/
 }
 
-/* line 339, ../sass/components/_misc.scss */
+/* line 345, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   /*background-color: transparent;
   @include filter-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0));
@@ -1229,35 +1244,41 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   border-color: #fff;*/
 }
 
-/* line 346, ../sass/components/_misc.scss */
+/* line 352, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link {
   border: none;
 }
-/* line 353, ../sass/components/_misc.scss */
+/* line 359, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:active {
   border: none;
 }
 
-/* line 359, ../sass/components/_misc.scss */
+/* line 365, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link.is-active {
   border: none;
 }
 
+/* line 371, ../sass/components/_misc.scss */
+ul.tabs-primary {
+  margin-top: .2em !important;
+  margin-bottom: .8em !important;
+}
+
 /* Secondary tabs. */
-/* line 366, ../sass/components/_misc.scss */
+/* line 378, ../sass/components/_misc.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-/* line 373, ../sass/components/_misc.scss */
+/* line 385, ../sass/components/_misc.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-/* line 379, ../sass/components/_misc.scss */
+/* line 391, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1274,14 +1295,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-/* line 388, ../sass/components/_misc.scss */
+/* line 400, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-/* line 393, ../sass/components/_misc.scss */
+/* line 405, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1289,11 +1310,11 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #fff;
 }
 
-/* line 404, ../sass/components/_misc.scss */
+/* line 416, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   color: #333;
 }
-/* line 408, ../sass/components/_misc.scss */
+/* line 420, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:active {
   color: #333;
 }
@@ -1302,12 +1323,12 @@ a.tabs-secondary__tab-link:active {
  * Inline styles.
  */
 /* List of links generated by theme_links(). */
-/* line 423, ../sass/components/_misc.scss */
+/* line 435, ../sass/components/_misc.scss */
 .inline {
   display: inline;
   padding: 0;
 }
-/* line 427, ../sass/components/_misc.scss */
+/* line 439, ../sass/components/_misc.scss */
 .inline li {
   display: inline;
   list-style-type: none;
@@ -1316,7 +1337,7 @@ a.tabs-secondary__tab-link:active {
 }
 
 /* The inline field label used by the Fences module. */
-/* line 435, ../sass/components/_misc.scss */
+/* line 447, ../sass/components/_misc.scss */
 span.field-label {
   padding: 0 1em 0 0;
   /* LTR */
@@ -1325,19 +1346,19 @@ span.field-label {
 /**
  * "More" links.
  */
-/* line 442, ../sass/components/_misc.scss */
+/* line 454, ../sass/components/_misc.scss */
 .more-link {
   text-align: right;
   /* LTR */
 }
 
-/* line 445, ../sass/components/_misc.scss */
+/* line 457, ../sass/components/_misc.scss */
 .more-help-link {
   text-align: right;
   /* LTR */
 }
 
-/* line 448, ../sass/components/_misc.scss */
+/* line 460, ../sass/components/_misc.scss */
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   background-position: 0 50%;
@@ -1351,14 +1372,14 @@ span.field-label {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-/* line 463, ../sass/components/_misc.scss */
+/* line 475, ../sass/components/_misc.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-/* line 468, ../sass/components/_misc.scss */
+/* line 480, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1371,7 +1392,7 @@ span.field-label {
   background-image: none;
 }
 
-/* line 480, ../sass/components/_misc.scss */
+/* line 492, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1382,7 +1403,7 @@ span.field-label {
 }
 
 /* The current page's list item. */
-/* line 485, ../sass/components/_misc.scss */
+/* line 497, ../sass/components/_misc.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1391,7 +1412,7 @@ span.field-label {
  * Blocks.
  */
 /* Block wrapper. */
-/* line 495, ../sass/components/_misc.scss */
+/* line 507, ../sass/components/_misc.scss */
 .block {
   margin-bottom: 1.5em;
 }
@@ -1399,19 +1420,19 @@ span.field-label {
 /**
  * Menus.
  */
-/* line 502, ../sass/components/_misc.scss */
+/* line 514, ../sass/components/_misc.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 509, ../sass/components/_misc.scss */
+/* line 521, ../sass/components/_misc.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 516, ../sass/components/_misc.scss */
+/* line 528, ../sass/components/_misc.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   /* LTR */
@@ -1419,43 +1440,43 @@ span.field-label {
 }
 
 /* The active item in a Drupal menu. */
-/* line 525, ../sass/components/_misc.scss */
+/* line 537, ../sass/components/_misc.scss */
 .menu a.active {
   color: #000;
 }
 
-/* line 529, ../sass/components/_misc.scss */
+/* line 541, ../sass/components/_misc.scss */
 #main-menu ul li a, #secondary-menu ul li a {
   text-decoration: none;
 }
 
-/* line 533, ../sass/components/_misc.scss */
+/* line 545, ../sass/components/_misc.scss */
 #main-menu ul li {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
-/* line 536, ../sass/components/_misc.scss */
+/* line 548, ../sass/components/_misc.scss */
 #main-menu ul li a {
   font-size: 18px;
   color: #60605B;
 }
-/* line 540, ../sass/components/_misc.scss */
+/* line 552, ../sass/components/_misc.scss */
 #main-menu ul li a.active {
   color: #e28c05;
   border-bottom: 10px solid;
 }
 
-/* line 546, ../sass/components/_misc.scss */
+/* line 558, ../sass/components/_misc.scss */
 body a {
   text-decoration: none;
   color: #e28c05;
 }
-/* line 550, ../sass/components/_misc.scss */
+/* line 562, ../sass/components/_misc.scss */
 body a:hover {
   color: #60605b;
 }
 
-/* line 555, ../sass/components/_misc.scss */
+/* line 567, ../sass/components/_misc.scss */
 #secondary-menu ul li a {
   font-size: 11px;
   color: #e28c05;
@@ -1465,7 +1486,7 @@ body a:hover {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-/* line 566, ../sass/components/_misc.scss */
+/* line 578, ../sass/components/_misc.scss */
 .new,
 .update {
   color: #c00;
@@ -1477,7 +1498,7 @@ body a:hover {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-/* line 577, ../sass/components/_misc.scss */
+/* line 589, ../sass/components/_misc.scss */
 .unpublished {
   height: 0;
   overflow: visible;
@@ -1498,31 +1519,31 @@ body a:hover {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-/* line 605, ../sass/components/_misc.scss */
+/* line 617, ../sass/components/_misc.scss */
 .comments {
   margin: 1.5em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-/* line 610, ../sass/components/_misc.scss */
+/* line 622, ../sass/components/_misc.scss */
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-/* line 616, ../sass/components/_misc.scss */
+/* line 628, ../sass/components/_misc.scss */
 .comment {
   /* Comment's permalink wrapper. */
 }
-/* line 619, ../sass/components/_misc.scss */
+/* line 631, ../sass/components/_misc.scss */
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-/* line 626, ../sass/components/_misc.scss */
+/* line 638, ../sass/components/_misc.scss */
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;
@@ -1533,7 +1554,7 @@ body a:hover {
  * Forms.
  */
 /* Wrapper for a form element (or group of form elements) and its label. */
-/* line 636, ../sass/components/_misc.scss */
+/* line 648, ../sass/components/_misc.scss */
 .form-item {
   margin: 1.5em 0;
   /* Pack groups of checkboxes and radio buttons closer together. */
@@ -1541,47 +1562,47 @@ body a:hover {
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
 }
-/* line 641, ../sass/components/_misc.scss */
+/* line 653, ../sass/components/_misc.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Drupal core uses "0.4em 0". */
   margin: 0;
 }
-/* line 648, ../sass/components/_misc.scss */
+/* line 660, ../sass/components/_misc.scss */
 tr.odd .form-item, tr.even .form-item {
   margin: 0;
 }
-/* line 655, ../sass/components/_misc.scss */
+/* line 667, ../sass/components/_misc.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-/* line 660, ../sass/components/_misc.scss */
+/* line 672, ../sass/components/_misc.scss */
 .form-item .description {
   font-size: 0.85em;
 }
 
-/* line 667, ../sass/components/_misc.scss */
+/* line 679, ../sass/components/_misc.scss */
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em;
 }
 
 /* The part of the label that indicates a required field. */
-/* line 673, ../sass/components/_misc.scss */
+/* line 685, ../sass/components/_misc.scss */
 .form-required {
   color: #c00;
 }
 
 /* Labels for radios and checkboxes. */
-/* line 678, ../sass/components/_misc.scss */
+/* line 690, ../sass/components/_misc.scss */
 label.option {
   display: inline;
   font-weight: normal;
 }
 
 /* Buttons used by contrib modules like Media. */
-/* line 684, ../sass/components/_misc.scss */
+/* line 696, ../sass/components/_misc.scss */
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -1589,14 +1610,14 @@ a.button {
 }
 
 /* Password confirmation. */
-/* line 690, ../sass/components/_misc.scss */
+/* line 702, ../sass/components/_misc.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
 }
 
 /* Drupal's default login form block. */
-/* line 695, ../sass/components/_misc.scss */
+/* line 707, ../sass/components/_misc.scss */
 #user-login-form {
   text-align: left;
   /* LTR */
@@ -1609,20 +1630,20 @@ a.button {
  * styling of list items.
  */
 /* OpenID creates a new ul above the login form's links. */
-/* line 707, ../sass/components/_misc.scss */
+/* line 719, ../sass/components/_misc.scss */
 .openid-links {
   /* Position OpenID's ul next to the rest of the links. */
   margin-bottom: 0;
 }
 
 /* The "Log in using OpenID" and "Cancel OpenID login" links. */
-/* line 714, ../sass/components/_misc.scss */
+/* line 726, ../sass/components/_misc.scss */
 .openid-link,
 .user-link {
   margin-top: 1.5em;
 }
 
-/* line 718, ../sass/components/_misc.scss */
+/* line 730, ../sass/components/_misc.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
@@ -1630,7 +1651,7 @@ html.js #user-login-form li.openid-link,
   /* LTR */
 }
 
-/* line 722, ../sass/components/_misc.scss */
+/* line 734, ../sass/components/_misc.scss */
 #user-login ul {
   margin: 1.5em 0;
 }
@@ -1638,7 +1659,7 @@ html.js #user-login-form li.openid-link,
 /**
  * Drupal admin tables.
  */
-/* line 730, ../sass/components/_misc.scss */
+/* line 742, ../sass/components/_misc.scss */
 form th {
   text-align: left;
   /* LTR */
@@ -1646,16 +1667,16 @@ form th {
   /* LTR */
   border-bottom: 3px solid #ccc;
 }
-/* line 735, ../sass/components/_misc.scss */
+/* line 747, ../sass/components/_misc.scss */
 form tbody {
   border-top: 1px solid #ccc;
 }
-/* line 738, ../sass/components/_misc.scss */
+/* line 750, ../sass/components/_misc.scss */
 form table ul {
   margin: 0;
 }
 
-/* line 743, ../sass/components/_misc.scss */
+/* line 755, ../sass/components/_misc.scss */
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -1663,26 +1684,26 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-/* line 748, ../sass/components/_misc.scss */
+/* line 760, ../sass/components/_misc.scss */
 tr.even {
   background-color: #fff;
 }
 
 /* Markup generated by theme_tablesort_indicator(). */
-/* line 763, ../sass/components/_misc.scss */
+/* line 775, ../sass/components/_misc.scss */
 td.active {
   background-color: #ddd;
 }
 
 /* Center checkboxes inside table cell. */
-/* line 769, ../sass/components/_misc.scss */
+/* line 781, ../sass/components/_misc.scss */
 td.checkbox,
 th.checkbox {
   text-align: center;
 }
 
 /* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
-/* line 774, ../sass/components/_misc.scss */
+/* line 786, ../sass/components/_misc.scss */
 td.menu-disabled {
   background: #ccc;
 }
@@ -1693,7 +1714,7 @@ td.menu-disabled {
  * @see autocomplete.js
  */
 /* Suggestion list. */
-/* line 785, ../sass/components/_misc.scss */
+/* line 797, ../sass/components/_misc.scss */
 #autocomplete .selected {
   background: #0072b9;
   color: #fff;
@@ -1704,7 +1725,7 @@ td.menu-disabled {
  *
  * @see collapse.js
  */
-/* line 796, ../sass/components/_misc.scss */
+/* line 808, ../sass/components/_misc.scss */
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
@@ -1713,18 +1734,23 @@ html.js .collapsible .fieldset-legend {
   padding-left: 15px;
   /* LTR */
 }
-/* line 805, ../sass/components/_misc.scss */
+/* line 817, ../sass/components/_misc.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   /* LTR */
   background-position: 5px 50%;
   /* LTR */
 }
-/* line 812, ../sass/components/_misc.scss */
+/* line 824, ../sass/components/_misc.scss */
 .fieldset-legend .summary {
   color: #999;
   font-size: 0.9em;
   margin-left: 0.5em;
+}
+
+/* line 831, ../sass/components/_misc.scss */
+fieldset {
+  border: none;
 }
 
 /**
@@ -1732,17 +1758,17 @@ html.js .collapsed .fieldset-legend {
  *
  * @see tabledrag.js
  */
-/* line 824, ../sass/components/_misc.scss */
+/* line 840, ../sass/components/_misc.scss */
 tr.drag {
   background-color: #fffff0;
 }
 
-/* line 827, ../sass/components/_misc.scss */
+/* line 843, ../sass/components/_misc.scss */
 tr.drag-previous {
   background-color: #ffd;
 }
 
-/* line 830, ../sass/components/_misc.scss */
+/* line 846, ../sass/components/_misc.scss */
 .tabledrag-toggle-weight {
   font-size: 0.9em;
 }
@@ -1752,7 +1778,7 @@ tr.drag-previous {
  *
  * @see tableselect.js
  */
-/* line 839, ../sass/components/_misc.scss */
+/* line 855, ../sass/components/_misc.scss */
 tr.selected td {
   background: #ffc;
 }
@@ -1762,11 +1788,11 @@ tr.selected td {
  *
  * @see progress.js
  */
-/* line 848, ../sass/components/_misc.scss */
+/* line 864, ../sass/components/_misc.scss */
 .progress {
   font-weight: bold;
 }
-/* line 851, ../sass/components/_misc.scss */
+/* line 867, ../sass/components/_misc.scss */
 .progress .bar {
   background: #ccc;
   border-color: #666;
@@ -1777,7 +1803,7 @@ tr.selected td {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 857, ../sass/components/_misc.scss */
+/* line 873, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../images/progress.gif?1398863088');
@@ -1817,7 +1843,13 @@ tr.selected td {
   padding-top: 10px;
 }
 
-/* line 39, ../sass/components/_page.scss */
+/* line 40, ../sass/components/_page.scss */
+.islandora-inline-metadata.islandora-metadata-fields p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 46, ../sass/components/_page.scss */
 body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 13px;
@@ -1826,101 +1858,101 @@ body {
   margin-top: 30px;
   background: #fefefe url('../images/body-bg.jpg?1441913974');
 }
-/* line 47, ../sass/components/_page.scss */
+/* line 54, ../sass/components/_page.scss */
 body #page #footer {
   text-align: center;
   background-color: #ECF6FF;
 }
-/* line 52, ../sass/components/_page.scss */
+/* line 59, ../sass/components/_page.scss */
 body .bottom-wrapper {
   background-color: #373634;
 }
 
-/* line 57, ../sass/components/_page.scss */
+/* line 64, ../sass/components/_page.scss */
 .collection-image-service-links-wrapper {
   display: table !important;
   position: relative;
 }
 
-/* line 62, ../sass/components/_page.scss */
+/* line 69, ../sass/components/_page.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   padding-left: 20px;
 }
 
-/* line 66, ../sass/components/_page.scss */
+/* line 73, ../sass/components/_page.scss */
 .my-eye {
   background-image: url('../images/eye46.png?1442864819');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 72, ../sass/components/_page.scss */
+/* line 79, ../sass/components/_page.scss */
 .map-signs {
   background-image: url('../images/arrows106.png?1442865328');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 78, ../sass/components/_page.scss */
+/* line 85, ../sass/components/_page.scss */
 .icn-gears {
   background-image: url('../images/gears6.png?1442865534');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 84, ../sass/components/_page.scss */
+/* line 91, ../sass/components/_page.scss */
 .code-icon {
   background-image: url('../images/web2.png?1442923921');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 90, ../sass/components/_page.scss */
+/* line 97, ../sass/components/_page.scss */
 .menu-pages {
   background-image: url('../images/stationery1.png?1442924150');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 96, ../sass/components/_page.scss */
+/* line 103, ../sass/components/_page.scss */
 .menu-edit {
   background-image: url('../images/edit34.png?1442924337');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 102, ../sass/components/_page.scss */
+/* line 109, ../sass/components/_page.scss */
 .devel-link {
   background-image: url('../images/magic20.png?1442924422');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 108, ../sass/components/_page.scss */
+/* line 115, ../sass/components/_page.scss */
 .node-export {
   background-image: url('../images/export.png?1442924545');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 114, ../sass/components/_page.scss */
+/* line 121, ../sass/components/_page.scss */
 .document {
   background-image: url('../images/text70.png?1442925592');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
-/* line 121, ../sass/components/_page.scss */
+/* line 128, ../sass/components/_page.scss */
 .page-islandora-search #page-title {
   display: none;
 }
 
-/* line 126, ../sass/components/_page.scss */
+/* line 133, ../sass/components/_page.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   padding-left: 1.7em !important;
 }
 
-/* line 130, ../sass/components/_page.scss */
+/* line 137, ../sass/components/_page.scss */
 #block-service-links-service-links-not-node, .collection-image-wrapper {
   /*   display: table-cell; */
   /*   vertical-align: top; */
@@ -1930,33 +1962,33 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   /*   top: 0; */
 }
 
-/* line 139, ../sass/components/_page.scss */
+/* line 146, ../sass/components/_page.scss */
 .islandora-video-content, #mediaplayer, .islandora-audio-content {
   width: 100% !important;
 }
 
-/* line 143, ../sass/components/_page.scss */
+/* line 150, ../sass/components/_page.scss */
 #block-service-links-service-links-not-node {
   padding-left: 5px;
 }
 
-/* line 147, ../sass/components/_page.scss */
+/* line 154, ../sass/components/_page.scss */
 .solid-background, #navigation {
   background-color: white;
   width: 100%;
 }
-/* line 150, ../sass/components/_page.scss */
+/* line 157, ../sass/components/_page.scss */
 .solid-background .block-islandora-solr, #navigation .block-islandora-solr {
   margin-top: -20px;
 }
 
-/* line 155, ../sass/components/_page.scss */
+/* line 162, ../sass/components/_page.scss */
 .main-content-wrapper {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 159, ../sass/components/_page.scss */
+/* line 166, ../sass/components/_page.scss */
 header {
   margin-left: auto;
   margin-right: auto;
@@ -1964,19 +1996,19 @@ header {
   padding-top: 10px;
 }
 
-/* line 166, ../sass/components/_page.scss */
+/* line 173, ../sass/components/_page.scss */
 .fixed-width {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 172, ../sass/components/_page.scss */
+/* line 179, ../sass/components/_page.scss */
 .slideshow-region.fixed-width {
   padding-bottom: 5px;
 }
 
-/* line 176, ../sass/components/_page.scss */
+/* line 183, ../sass/components/_page.scss */
 #book-page-viewer {
   max-width: 99%;
 }
@@ -1987,12 +2019,12 @@ header {
 /* #book-page-viewer .islandora-openseadragon{ */
 /*   display: table-cell !important; */
 /* } */
-/* line 188, ../sass/components/_page.scss */
+/* line 195, ../sass/components/_page.scss */
 div#BRpage {
   padding-left: 0px;
 }
 
-/* line 192, ../sass/components/_page.scss */
+/* line 199, ../sass/components/_page.scss */
 #mediaplayer {
   max-width: 100%;
 }
@@ -2000,17 +2032,17 @@ div#BRpage {
 /* #block-service-links-service-links-not-node, { */
 /*   display: table; */
 /* } */
-/* line 201, ../sass/components/_page.scss */
+/* line 208, ../sass/components/_page.scss */
 .book-object-wrapper .block-service-links li {
   display: inline;
 }
 
-/* line 206, ../sass/components/_page.scss */
+/* line 213, ../sass/components/_page.scss */
 #book-viewer {
   max-width: 100%;
 }
 
-/* line 209, ../sass/components/_page.scss */
+/* line 216, ../sass/components/_page.scss */
 .block-service-links {
   /*   position: absolute; */
   /*   right: 0; */
@@ -2020,17 +2052,20 @@ div#BRpage {
   padding-right: 5px;
 }
 
-/* line 218, ../sass/components/_page.scss */
+/* line 225, ../sass/components/_page.scss */
 .islandora-pdf-content {
   width: auto;
 }
 
-/* line 222, ../sass/components/_page.scss */
+/* line 229, ../sass/components/_page.scss */
 .page-inner-content-wrapper {
   background-color: white;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 25px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -2048,30 +2083,30 @@ div#BRpage {
 /* .islandora-large-image-content{ */
 /*   display: table; */
 /* } */
-/* line 247, ../sass/components/_page.scss */
+/* line 257, ../sass/components/_page.scss */
 #block-service-links-service-links-not-node {
   display: table-cell;
 }
 
-/* line 251, ../sass/components/_page.scss */
+/* line 261, ../sass/components/_page.scss */
 .header-content-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 256, ../sass/components/_page.scss */
+/* line 266, ../sass/components/_page.scss */
 .breadcrumb {
   padding-bottom: 1em;
 }
 
-/* line 260, ../sass/components/_page.scss */
+/* line 270, ../sass/components/_page.scss */
 .front-page-library-view .view-content {
   border-right-color: -moz-use-text-color;
   border-right-style: solid;
   border-right-width: 1px;
 }
 
-/* line 265, ../sass/components/_page.scss */
+/* line 275, ../sass/components/_page.scss */
 .region-navigation .form-submit {
   position: absolute;
   left: 6px;
@@ -2084,7 +2119,7 @@ div#BRpage {
   text-indent: -9999px;
 }
 
-/* line 278, ../sass/components/_page.scss */
+/* line 288, ../sass/components/_page.scss */
 .region-navigation .form-item-islandora-simple-search-query input {
   font-style: italic;
   line-height: 18px;
@@ -2096,12 +2131,12 @@ div#BRpage {
   border-radius: 10px;
 }
 
-/* line 290, ../sass/components/_page.scss */
+/* line 300, ../sass/components/_page.scss */
 .inner-div {
   display: table;
 }
 
-/* line 294, ../sass/components/_page.scss */
+/* line 304, ../sass/components/_page.scss */
 #widgets-element-socialmedia_addthis-tweet, #widgets-element-socialmedia_addthis-addthis-counter, #widgets-element-socialmedia_addthis-google-plusone {
   display: none;
 }
@@ -2122,6 +2157,13 @@ div#BRpage {
 }
 
 /* line 16, ../sass/components/_blocks.scss */
+#block-islandora-solr-basic-facets h3 {
+  padding-top: .8em;
+  font-weight: normal;
+  font-family: Adobe Garamond Pro;
+}
+
+/* line 23, ../sass/components/_blocks.scss */
 #block-views-powered-by-dgi-block .views-field.views-field-title {
   color: white;
   display: table-cell;
@@ -2130,62 +2172,62 @@ div#BRpage {
   padding-right: 20px;
   vertical-align: middle;
 }
-/* line 24, ../sass/components/_blocks.scss */
+/* line 31, ../sass/components/_blocks.scss */
 #block-views-powered-by-dgi-block .views-field.views-field-field-block-image {
   display: table-cell;
   padding-top: 3px;
 }
-/* line 27, ../sass/components/_blocks.scss */
+/* line 34, ../sass/components/_blocks.scss */
 #block-views-powered-by-dgi-block .views-field.views-field-field-block-image img {
   max-width: 114px;
 }
 
-/* line 33, ../sass/components/_blocks.scss */
+/* line 40, ../sass/components/_blocks.scss */
 .block-islandora-collection-search .form-item-islandora-simple-search-query .form-text {
   font-size: 70%;
 }
 
-/* line 38, ../sass/components/_blocks.scss */
+/* line 45, ../sass/components/_blocks.scss */
 #block-views-nyhs-contact-info-view-block .field-content {
   font-size: 85%;
 }
 
-/* line 44, ../sass/components/_blocks.scss */
+/* line 51, ../sass/components/_blocks.scss */
 #block-islandora-collection-search-islandora-collection-search .form-submit {
   display: none;
 }
-/* line 47, ../sass/components/_blocks.scss */
+/* line 54, ../sass/components/_blocks.scss */
 #block-islandora-collection-search-islandora-collection-search h1 {
   display: inline;
   font-size: 100%;
 }
-/* line 52, ../sass/components/_blocks.scss */
+/* line 59, ../sass/components/_blocks.scss */
 #block-islandora-collection-search-islandora-collection-search .form-item-collection-select input, #block-islandora-collection-search-islandora-collection-search .form-item-collection-select select, #block-islandora-collection-search-islandora-collection-search .form-item-islandora-simple-search-query input, #block-islandora-collection-search-islandora-collection-search .form-item-islandora-simple-search-query select {
   width: 40%;
 }
 
-/* line 58, ../sass/components/_blocks.scss */
+/* line 65, ../sass/components/_blocks.scss */
 #block-islandora-usage-stats-top-usage {
   list-style-type: none;
 }
 
-/* line 63, ../sass/components/_blocks.scss */
+/* line 70, ../sass/components/_blocks.scss */
 .block-islandora-usage-stats span {
   color: lightgrey;
 }
 
 /* Islandora Advanced Search */
-/* line 69, ../sass/components/_blocks.scss */
+/* line 76, ../sass/components/_blocks.scss */
 #block-islandora-solr-advanced {
   font-weight: normal !important;
   font-family: Adobe Garamond Pro !important;
 }
-/* line 72, ../sass/components/_blocks.scss */
+/* line 79, ../sass/components/_blocks.scss */
 #block-islandora-solr-advanced h2 {
   font-size: 2em;
 }
 
-/* line 78, ../sass/components/_blocks.scss */
+/* line 85, ../sass/components/_blocks.scss */
 #islandora-solr-advanced-terms label {
   font-weight: normal !important;
   font-size: 2em;
@@ -2193,20 +2235,20 @@ div#BRpage {
   color: #e28c05;
 }
 
-/* line 86, ../sass/components/_blocks.scss */
+/* line 93, ../sass/components/_blocks.scss */
 .service-links ul {
   padding-left: 0px;
 }
-/* line 88, ../sass/components/_blocks.scss */
+/* line 95, ../sass/components/_blocks.scss */
 .service-links ul li {
   list-style-type: none;
 }
-/* line 90, ../sass/components/_blocks.scss */
+/* line 97, ../sass/components/_blocks.scss */
 .service-links ul li a {
   font-size: 0;
 }
 
-/* line 97, ../sass/components/_blocks.scss */
+/* line 104, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul, .islandora-objects-display-switch li {
   display: inline;
   padding-bottom: 0;
@@ -2216,7 +2258,7 @@ div#BRpage {
   float: right;
 }
 
-/* line 107, ../sass/components/_blocks.scss */
+/* line 114, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid, .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
   background-repeat: no-repeat;
   line-height: 0;
@@ -2228,53 +2270,53 @@ div#BRpage {
   width: 30px;
 }
 
-/* line 118, ../sass/components/_blocks.scss */
+/* line 125, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch, #block-islandora-solr-sort, #block-islandora-solr-display-switch {
   width: 100%;
 }
-/* line 120, ../sass/components/_blocks.scss */
+/* line 127, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display, #block-islandora-solr-sort ul.islandora-solr-display, #block-islandora-solr-display-switch ul.islandora-solr-display {
   margin-top: 5px;
   margin-bottom: 0px;
 }
-/* line 123, ../sass/components/_blocks.scss */
+/* line 130, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark {
   background-image: url('../images/display-bookmark.png?1437665023');
 }
-/* line 127, ../sass/components/_blocks.scss */
+/* line 134, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default {
   background-image: url('../images/display-grid-list.png?1438019500');
 }
-/* line 131, ../sass/components/_blocks.scss */
+/* line 138, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid {
   background-image: url('../images/display-grid.png?1438019500');
 }
-/* line 136, ../sass/components/_blocks.scss */
+/* line 143, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort, #block-islandora-solr-sort ul.islandora-solr-sort, #block-islandora-solr-display-switch ul.islandora-solr-sort {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   /*     float: left !important; */
 }
-/* line 140, ../sass/components/_blocks.scss */
+/* line 147, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort li, #block-islandora-solr-sort ul.islandora-solr-sort li, #block-islandora-solr-display-switch ul.islandora-solr-sort li {
   float: left;
 }
-/* line 142, ../sass/components/_blocks.scss */
+/* line 149, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"] {
   background-image: url('../images/sort.png?1442501323');
 }
-/* line 146, ../sass/components/_blocks.scss */
+/* line 153, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
   background-image: url('../images/calendar.png?1442501390');
 }
 
-/* line 154, ../sass/components/_blocks.scss */
+/* line 161, ../sass/components/_blocks.scss */
 #block-islandora-solr-display-switch {
   float: right;
   width: 100%;
 }
 
-/* line 159, ../sass/components/_blocks.scss */
+/* line 166, ../sass/components/_blocks.scss */
 .ui-slider-handle {
   width: 0 !important;
   height: 0 !important;
@@ -2286,120 +2328,123 @@ div#BRpage {
   border-top-style: none !important;
 }
 
-/* line 171, ../sass/components/_blocks.scss */
+/* line 178, ../sass/components/_blocks.scss */
 #block-islandora-solr-basic-facets h2 {
   line-height: 20px;
 }
 
-/* line 176, ../sass/components/_blocks.scss */
+/* line 183, ../sass/components/_blocks.scss */
 .islandora-solr-facet-wrapper {
   margin-bottom: 1.5em;
 }
-/* line 178, ../sass/components/_blocks.scss */
+/* line 184, ../sass/components/_blocks.scss */
+.islandora-solr-facet-wrapper ul {
+  margin-top: .8em;
+}
+/* line 188, ../sass/components/_blocks.scss */
 .islandora-solr-facet-wrapper h3 {
   margin-bottom: 0;
-  margin-top: 0;
 }
 
-/* line 183, ../sass/components/_blocks.scss */
+/* line 192, ../sass/components/_blocks.scss */
 .ui-slider-handle {
   top: 0px !important;
 }
 
-/* line 188, ../sass/components/_blocks.scss */
+/* line 197, ../sass/components/_blocks.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   height: 1px;
 }
 
-/* line 192, ../sass/components/_blocks.scss */
+/* line 201, ../sass/components/_blocks.scss */
 .slider-popup-to-wrapper, .slider-popup-from-wrapper {
   display: none !important;
 }
 
-/* line 195, ../sass/components/_blocks.scss */
+/* line 204, ../sass/components/_blocks.scss */
 #edit-range-slider-submit {
   margin-top: 15px;
 }
 
-/* line 199, ../sass/components/_blocks.scss */
+/* line 208, ../sass/components/_blocks.scss */
 .recently-added-to-collection-PID {
   width: 20px;
   height: 20px;
 }
 
-/* line 205, ../sass/components/_blocks.scss */
+/* line 214, ../sass/components/_blocks.scss */
 .collection-view-recently-added .views-row {
   float: left;
   clear: left;
   display: inline;
   padding: 3px;
 }
-/* line 210, ../sass/components/_blocks.scss */
+/* line 219, ../sass/components/_blocks.scss */
 .collection-view-recently-added .views-row div.views-field {
   float: left;
   padding: 3px;
 }
 
-/* line 218, ../sass/components/_blocks.scss */
+/* line 227, ../sass/components/_blocks.scss */
 .islandora-metadata-sidebar h2 {
   display: none;
 }
 
-/* line 223, ../sass/components/_blocks.scss */
+/* line 232, ../sass/components/_blocks.scss */
 .date-range-slider-canvas-wrapper canvas {
   max-width: 100%;
 }
 
-/* line 227, ../sass/components/_blocks.scss */
+/* line 236, ../sass/components/_blocks.scss */
 .islandora-large-image-content, #book-viewer {
   position: relative;
 }
 
-/* line 231, ../sass/components/_blocks.scss */
+/* line 240, ../sass/components/_blocks.scss */
 .subsequent-pages-wrapper {
   padding-top: 10px;
 }
 
-/* line 236, ../sass/components/_blocks.scss */
+/* line 245, ../sass/components/_blocks.scss */
 .view-subsequent-pages .flex-direction-nav a::before {
   font-size: 18px !important;
 }
-/* line 239, ../sass/components/_blocks.scss */
+/* line 248, ../sass/components/_blocks.scss */
 .view-subsequent-pages .slides > li {
   padding-top: 20px;
 }
-/* line 242, ../sass/components/_blocks.scss */
+/* line 251, ../sass/components/_blocks.scss */
 .view-subsequent-pages .flex-viewport {
   margin: 20px;
 }
-/* line 245, ../sass/components/_blocks.scss */
+/* line 254, ../sass/components/_blocks.scss */
 .view-subsequent-pages .view-content {
   background-color: #eeeeee;
   border-radius: 5px;
 }
-/* line 249, ../sass/components/_blocks.scss */
+/* line 258, ../sass/components/_blocks.scss */
 .view-subsequent-pages .flexslider {
   background-color: transparent !important;
   border: none !important;
 }
 
-/* line 255, ../sass/components/_blocks.scss */
+/* line 264, ../sass/components/_blocks.scss */
 .slideshow-subsequent-page-PID-field-wrapper {
   text-align: center;
 }
 
-/* line 260, ../sass/components/_blocks.scss */
+/* line 269, ../sass/components/_blocks.scss */
 .view-nyhs-contact-info-view p {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 266, ../sass/components/_blocks.scss */
+/* line 275, ../sass/components/_blocks.scss */
 #footer .block {
   margin-bottom: .5em;
 }
 
-/* line 270, ../sass/components/_blocks.scss */
+/* line 279, ../sass/components/_blocks.scss */
 #block-fblikebutton-fblikebutton-static-block {
   /*   iframe{ */
   /*     max-width: 100px; */
@@ -3173,9 +3218,9 @@ div#BRpage {
   /* line 37, ../sass/layouts/_islandora-object-view.scss */
   .social-islandora-content-wrapper .page-content-wrapper {
     float: left;
-    width: 93.33333%;
+    width: 95%;
     margin-left: 0%;
-    margin-right: -93.33333%;
+    margin-right: -95%;
     padding-left: 5px;
     padding-right: 5px;
     -moz-box-sizing: border-box;
@@ -3187,8 +3232,8 @@ div#BRpage {
   /* line 40, ../sass/layouts/_islandora-object-view.scss */
   .social-islandora-content-wrapper .block-service-links {
     float: left;
-    width: 6.66667%;
-    margin-left: 93.33333%;
+    width: 5%;
+    margin-left: 95%;
     margin-right: -100%;
     padding-left: 5px;
     padding-right: 5px;

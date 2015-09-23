@@ -5,7 +5,7 @@
 
 @import "zen";
 
-$zen-column-count: 15;
+$zen-column-count: 20;
 $zen-gutter-width: 10px;
 $zen-auto-include-item-base: true;
 
@@ -14,7 +14,7 @@ $zen-auto-include-item-base: true;
     @include zen-grid-container;
     .block-service-links{
       
-      @include zen-grid-item(15, 1);
+      @include zen-grid-item(20, 1);
       text-align: center;
       ul {
         margin-top: 0px;
@@ -26,7 +26,7 @@ $zen-auto-include-item-base: true;
     }
     .page-content-wrapper{ 
       @include zen-clear();
-      @include zen-grid-item(15, 1);
+      @include zen-grid-item(20, 1);
     }
   }
 }
@@ -35,10 +35,10 @@ $zen-auto-include-item-base: true;
   .social-islandora-content-wrapper{
   @include zen-grid-container;
   .page-content-wrapper{ 
-    @include zen-grid-item(14, 1);
+    @include zen-grid-item(19, 1);
   }
   .block-service-links{
-    @include zen-grid-item(1, 15);
+    @include zen-grid-item(1, 20);
     text-align: center;
   }
 }

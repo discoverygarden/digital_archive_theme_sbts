@@ -36,6 +36,13 @@
   }
 }
 
+.islandora-inline-metadata.islandora-metadata-fields{
+  p{
+    margin-top: 0px ;
+    margin-bottom: 0px ;
+  }
+}
+
 body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 13px;
@@ -223,7 +230,10 @@ div#BRpage{
   background-color: white;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 25px;
+  padding-left:5px;
+  padding-top:10px;
+  padding-left:5px;
+  padding-bottom:5px;
   margin-bottom: 20px;
   position: relative;
 }

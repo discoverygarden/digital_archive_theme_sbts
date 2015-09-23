@@ -24,6 +24,13 @@ $zen-auto-include-item-base: false;
 // Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
 @if $zen-reverse-all-floats == false {
 
+@media (max-width: 700px) {
+  #islandora-solr-advanced-terms{
+  label{
+    font-size: 1.5em !important;
+  }
+}
+	}
 /**
  * Center the page.
  *

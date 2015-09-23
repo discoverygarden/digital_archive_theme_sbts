@@ -19,7 +19,7 @@
   <div class="islandora-basic-image-metadata">
     <?php if ($parent_collections): ?>
       <div>
-        <h2><?php print t('In collections'); ?></h2>
+        <h2><?php print t('In Collection(s)'); ?></h2>
         <ul>
           <?php foreach ($parent_collections as $collection): ?>
             <li><?php print l($collection->label, "islandora/object/{$collection->id}"); ?></li>

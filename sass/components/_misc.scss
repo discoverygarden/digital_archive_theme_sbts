@@ -170,10 +170,16 @@
   }
 }
 
+.not-front{
+  #main{
+    padding-top: 0px !important;
+  }
+}
 /**
  * Breadcrumb navigation.
  */
 .breadcrumb {
+  padding-bottom: 0.2em !important;
   ol {
     margin: 0;
     padding: 0;
@@ -361,6 +367,12 @@ a.tabs-primary__tab-link.is-active {
   @extend %tabs-primary__tab-link-is-active;
   border: none;
 }
+
+ul.tabs-primary {
+  margin-top: .2em !important;
+  margin-bottom: .8em !important;
+}
+
 
 /* Secondary tabs. */
 .tabs-secondary {
@@ -814,6 +826,10 @@ td.menu-disabled {
     font-size: 0.9em;
     margin-left: 0.5em;
   }
+}
+
+fieldset{
+  border: none;
 }
 
 /**
