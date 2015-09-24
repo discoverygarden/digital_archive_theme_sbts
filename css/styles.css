@@ -1806,7 +1806,7 @@ tr.selected td {
 /* line 873, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1398863088');
+  background-image: url('../images/progress.gif?1443099907');
 }
 
 /**
@@ -1856,7 +1856,7 @@ body {
   line-height: 18px;
   color: #60605b;
   margin-top: 30px;
-  background: #fefefe url('../images/body-bg.jpg?1441913974');
+  background: #fefefe url('../images/body-bg.jpg?1443099907');
 }
 /* line 54, ../sass/components/_page.scss */
 body #page #footer {
@@ -1881,63 +1881,63 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 
 /* line 73, ../sass/components/_page.scss */
 .my-eye {
-  background-image: url('../images/eye46.png?1442864819');
+  background-image: url('../images/eye46.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 79, ../sass/components/_page.scss */
 .map-signs {
-  background-image: url('../images/arrows106.png?1442865328');
+  background-image: url('../images/arrows106.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 85, ../sass/components/_page.scss */
 .icn-gears {
-  background-image: url('../images/gears6.png?1442865534');
+  background-image: url('../images/gears6.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 91, ../sass/components/_page.scss */
 .code-icon {
-  background-image: url('../images/web2.png?1442923921');
+  background-image: url('../images/web2.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 97, ../sass/components/_page.scss */
 .menu-pages {
-  background-image: url('../images/stationery1.png?1442924150');
+  background-image: url('../images/stationery1.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 103, ../sass/components/_page.scss */
 .menu-edit {
-  background-image: url('../images/edit34.png?1442924337');
+  background-image: url('../images/edit34.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 109, ../sass/components/_page.scss */
 .devel-link {
-  background-image: url('../images/magic20.png?1442924422');
+  background-image: url('../images/magic20.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 115, ../sass/components/_page.scss */
 .node-export {
-  background-image: url('../images/export.png?1442924545');
+  background-image: url('../images/export.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 121, ../sass/components/_page.scss */
 .document {
-  background-image: url('../images/text70.png?1442925592');
+  background-image: url('../images/text70.png?1443099907');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
@@ -2111,7 +2111,7 @@ div#BRpage {
   position: absolute;
   left: 6px;
   top: 3px;
-  background: url('../images/magnifier.png?1442588181');
+  background: url('../images/magnifier.png?1443099907');
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
@@ -2281,15 +2281,15 @@ div#BRpage {
 }
 /* line 130, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark {
-  background-image: url('../images/display-bookmark.png?1437665023');
+  background-image: url('../images/display-bookmark.png?1443099907');
 }
 /* line 134, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default {
-  background-image: url('../images/display-grid-list.png?1438019500');
+  background-image: url('../images/display-grid-list.png?1443099907');
 }
 /* line 138, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid {
-  background-image: url('../images/display-grid.png?1438019500');
+  background-image: url('../images/display-grid.png?1443099907');
 }
 /* line 143, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort, #block-islandora-solr-sort ul.islandora-solr-sort, #block-islandora-solr-display-switch ul.islandora-solr-sort {
@@ -2303,11 +2303,11 @@ div#BRpage {
 }
 /* line 149, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"] {
-  background-image: url('../images/sort.png?1442501323');
+  background-image: url('../images/sort.png?1443099907');
 }
 /* line 153, ../sass/components/_blocks.scss */
 .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
-  background-image: url('../images/calendar.png?1442501390');
+  background-image: url('../images/calendar.png?1443099907');
 }
 
 /* line 161, ../sass/components/_blocks.scss */
@@ -2758,7 +2758,7 @@ div#BRpage {
   right: 0;
   box-sizing: border-box;
   padding: 25px;
-  background-image: url('../images/orange-bg.png?1441994485');
+  background-image: url('../images/orange-bg.png?1443099907');
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: repeat;
@@ -2838,7 +2838,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/add.png?1442595292');
+  background: url('../images/add.png?1443099907');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -2863,7 +2863,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/rounded.png?1442595330');
+  background: url('../images/rounded.png?1443099907');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
