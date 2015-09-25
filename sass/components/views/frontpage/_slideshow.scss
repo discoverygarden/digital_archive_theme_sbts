@@ -91,6 +91,15 @@
 }
 }
 
+.flex-control-paging li{
+  a{
+    background-color: lightgrey !important;
+  }
+  a.flex-active{
+    background-color: white !important;
+  }
+}
+
 @media (max-width: 620px) {
   .front .flexslider .slides li .info-content-wrapper{
     width: 70%;

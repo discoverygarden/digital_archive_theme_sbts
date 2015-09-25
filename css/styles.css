@@ -2765,8 +2765,17 @@ div#BRpage {
   background-size: auto auto;
 }
 
+/* line 95, ../sass/components/views/frontpage/_slideshow.scss */
+.flex-control-paging li a {
+  background-color: lightgrey !important;
+}
+/* line 98, ../sass/components/views/frontpage/_slideshow.scss */
+.flex-control-paging li a.flex-active {
+  background-color: white !important;
+}
+
 @media (max-width: 620px) {
-  /* line 95, ../sass/components/views/frontpage/_slideshow.scss */
+  /* line 104, ../sass/components/views/frontpage/_slideshow.scss */
   .front .flexslider .slides li .info-content-wrapper {
     width: 70%;
   }
