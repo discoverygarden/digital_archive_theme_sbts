@@ -142,6 +142,7 @@ settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 1
 settings[zen_wireframes]           = 0
 settings[collection_bg_datastream] = TN
+settings[slideshow_bg_datastream]  = JPG
 
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.
