@@ -24,4 +24,10 @@ function nyhs_theme_form_system_theme_settings_alter(&$form, &$form_state, $form
     '#default_value' => theme_get_setting('collection_bg_datastream'),
     '#description'   => t("The datastream to use as an objects image representation in the collection view (EX: OBJ, MEDIUM, TN), defaults to TN"),
   );
+    $form['nyhs_theme_settings']['slideshow_bg_datastream'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Frontpage Slideshow Background Datastream'),
+    '#default_value' => theme_get_setting('slideshow_bg_datastream'),
+    '#description'   => t("The datastream to use as an objects image representation in the collection view (EX: OBJ, MEDIUM, TN), defaults to TN"),
+  );
 }

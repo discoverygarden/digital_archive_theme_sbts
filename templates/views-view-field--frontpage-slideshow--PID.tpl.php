@@ -25,6 +25,6 @@
 <a href="/islandora/object/<?php print $output?>">
   <div
     class="front-page-slideshow-PID-field"
-    style="background: url(/islandora/object/<?php print $output; ?>/datastream/JPG/view) no-repeat center center; background-size: cover; width:100%; height: 400px;">
+    style="background: url(/islandora/object/<?php print $output; ?>/datastream/<?php print theme_get_setting('slideshow_bg_datastream'); ?>/view) no-repeat center center; background-size: cover; width:100%; height: 400px;">
   </div>
 </a>
