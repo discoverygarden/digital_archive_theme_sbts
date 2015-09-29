@@ -69,57 +69,21 @@ function nyhs_theme_views_pre_render(&$view) {
     foreach($view->result as $r => $result) {
       $view->result[$r]->{'SORT_BY_ME'} = intval($view->result[$r]->{'RELS_EXT_isPageNumber_literal_s'});
     }
-    $view->result = nyhs_theme_sort_view_result($view->result, 'SORT_BY_ME');
+    usort($view->result, 'sort_objects_by_page_num');
   }
 }
 
 /**
- * Sort the subsequet pages view by page number.
- *
- * @param unknown $array
- * @param unknown $property
- * @return unknown
+ * Helper function, sorts
+ * @param unknown $a
+ * @param unknown $b
+ * @return number
  */
-function nyhs_theme_sort_view_result($array, $property) {
-  // Adopted sorting technique from :
-  // http://www.frandieguez.com/blog/2011/02/sort-an-array-of-objects-by-one-of-the-object-property-with-php/
-  $cur = 1;
-  $stack[1]['l'] = 0;
-  $stack[1]['r'] = count($array)-1;
-
-  do {
-    $l = $stack[$cur]['l'];
-    $r = $stack[$cur]['r'];
-    $cur--;
-    do {
-      $i = $l;
-      $j = $r;
-      $tmp = isset($array[(int)( ($l+$r)/2 )]) ? $array[(int)( ($l+$r)/2 )] : NULL;
-
-      // split the array in to parts
-      // first: objects with "smaller" property $property
-      // second: objects with "bigger" property $property
-      do {
-        while( isset($array[$i]->{$property}) && isset($tmp->{$property}) && $array[$i]->{$property} < $tmp->{$property} ) $i++;
-        while( isset($tmp->{$property}) && isset($array[$j]->{$property}) && $tmp->{$property} < $array[$j]->{$property} ) $j--;
-        // Swap elements of two parts if necesary
-        if ( $i <= $j) {
-          $w = $array[$i];
-          $array[$i] = $array[$j];
-          $array[$j] = $w;
-          $i++;
-          $j--;
-        }
-      } while ( $i <= $j );
-      if ( $i < $r ) {
-        $cur++;
-        $stack[$cur]['l'] = $i;
-        $stack[$cur]['r'] = $r;
-      }
-      $r = $j;
-    } while ( $l < $r );
-  } while ( $cur != 0 );
-  return $array;
+function sort_objects_by_page_num($a, $b) {
+  if($a->{'SORT_BY_ME'} == $b->{'SORT_BY_ME'}){
+    return 0;
+  }
+  return ($a->{'SORT_BY_ME'} < $b->{'SORT_BY_ME'}) ? -1 : 1;
 }
 
 /**
