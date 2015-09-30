@@ -164,9 +164,8 @@ function nyhs_theme_preprocess_islandora_objects(&$variables) {
       $variables['display_links'][$key]['attributes']['class'][] = 'display-default';
     }
   }
-
-
 }
+
 /**
  * Setup template variables for the both SPARQL and Solr Display Generation.
  *
