@@ -154,6 +154,19 @@ function nyhs_theme_preprocess_page(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess().
+ */
+function nyhs_theme_preprocess_islandora_objects(&$variables) {
+  foreach ($variables['display_links'] as $key => $value ) {
+    if ($variables['display_links'][$key]{'title'} == "Grid view") {
+      $variables['display_links'][$key]['attributes']['class'][] = 'display-grid';
+    } else if ($variables['display_links'][$key]{'title'} == "List view") {
+      $variables['display_links'][$key]['attributes']['class'][] = 'display-default';
+    }
+  }
+}
+
+/**
  * Setup template variables for the both SPARQL and Solr Display Generation.
  *
  * @param unknown $variables

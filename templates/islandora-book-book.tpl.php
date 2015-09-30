@@ -11,8 +11,10 @@
 
   </div>
   <div class="subsequent-pages-wrapper">
-    <h1 class="block__title block-title"><?php print t("Subsequent Pages"); ?></h1>
-    <?php print views_embed_view('subsequent_pages', 'block', $object->id); ?>
+    <?php if (theme_get_setting('show_subsequent_pages') != 0):?>
+      <h1 class="block__title block-title"><?php print t("Subsequent Pages"); ?></h1>
+      <?php print views_embed_view('subsequent_pages', 'block', $object->id); ?>
+    <?php endif; ?>
   </div>
 <?php endif; ?>
 
