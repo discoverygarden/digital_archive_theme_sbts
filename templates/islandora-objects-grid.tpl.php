@@ -5,6 +5,7 @@
  * Render a bunch of objects in a list or grid view.
  */
 ?>
+
 <div class="islandora-objects-grid clearfix in-theme">
  <?php foreach($objects as $object): ?>
    <div class="islandora-objects-grid-item">

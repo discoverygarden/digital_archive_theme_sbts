@@ -24,10 +24,20 @@ function nyhs_theme_form_system_theme_settings_alter(&$form, &$form_state, $form
     '#default_value' => theme_get_setting('collection_bg_datastream'),
     '#description'   => t("The datastream to use as an objects image representation in the collection view (EX: OBJ, MEDIUM, TN), defaults to TN"),
   );
-    $form['nyhs_theme_settings']['slideshow_bg_datastream'] = array(
+  $form['nyhs_theme_settings']['slideshow_bg_datastream'] = array(
     '#type' => 'textfield',
     '#title' => t('Frontpage Slideshow Background Datastream'),
     '#default_value' => theme_get_setting('slideshow_bg_datastream'),
     '#description'   => t("The datastream to use as an objects image representation in the collection view (EX: OBJ, MEDIUM, TN), defaults to TN"),
+  );
+  $form['nyhs_theme_settings']['show_subsequent_pages'] = array(
+   '#type' => 'select',
+   '#title' => t('Show Subsequent pages view on book objects'),
+   '#options' => array(
+      0 => t('No'),
+      1 => t('Yes'),
+    ),
+   '#default_value' => theme_get_setting('show_subsequent_pages'),
+   '#description' => t('Set this to <em>Yes</em> if you would like this enable the subsequent pages view on book objects.'),
   );
 }

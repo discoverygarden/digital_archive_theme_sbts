@@ -130,9 +130,9 @@
   width: 30px;
 }
 
-.islandora-basic-collection-display-switch, #block-islandora-solr-sort, #block-islandora-solr-display-switch{
+.islandora-objects-display-switch, .islandora-basic-collection-display-switch, #block-islandora-solr-sort, #block-islandora-solr-display-switch{
   width: 100%;
-  ul.islandora-solr-display{
+  ul.islandora-solr-display, ul.links{
     margin-top: 5px;
     margin-bottom: 0px;
     li a.display-bookmark{
