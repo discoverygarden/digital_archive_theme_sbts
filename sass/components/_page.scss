@@ -3,7 +3,7 @@
  * Basic page styling
  */
 
-.block__title.block-title, #page-title, .page-content-wrapper h2, .collection-view-about-this-collection h1, .collection-view-recently-added h1, .collection-view-descriptive-meta h1, #islandora-solr-result-count h1{
+.block__title.block-title, #page-title, .page-content-wrapper h2, .islandora-video-metadata h2, .page-content-wrapper h1, .collection-view-about-this-collection h1, .collection-view-recently-added h1, .collection-view-descriptive-meta h1, #islandora-solr-result-count h1{
   font-weight: normal;
   font-family: Adobe Garamond Pro;
 }
@@ -28,6 +28,17 @@
       display: none;
     }
   }
+}
+
+.islandora-object-caption > a {
+  display: inline-block;
+  max-width: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .not-front{

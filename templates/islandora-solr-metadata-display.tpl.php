@@ -20,7 +20,8 @@
 ?>
 <?php if ($found):
   if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_values', FALSE))):?>
-<h2><?php print t('Descriptive Metadata'); ?></h2>
+  <div class="collection-view-descriptive-meta">
+    <h1><?php print t('Descriptive Metadata'); ?></h1>
 <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata collapsible"');?>>
   <legend><span class="fieldset-legend"><?php print t('Details'); ?></span></legend>
   <div class="fieldset-wrapper">
@@ -38,9 +39,12 @@
     </dl>
   </div>
 </fieldset>
+  </div>
+
 <?php endif; ?>
 <?php else: ?>
-  <h2><?php print t('Descriptive Metadata'); ?></h2>
+  <div class="collection-view-descriptive-meta">
+  <h1><?php print t('Descriptive Metadata'); ?></h1>
   <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata collapsible collapsed"');?>>
     <legend><span class="fieldset-legend"><?php print t('Details'); ?></span></legend>
     <?php //XXX: Hack in markup for message. ?>
@@ -48,4 +52,6 @@
       <?php print $not_found_message; ?>
     </div>
   </fieldset>
+  </div>
+
 <?php endif; ?>
