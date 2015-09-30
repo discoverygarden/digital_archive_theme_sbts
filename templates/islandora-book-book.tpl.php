@@ -22,7 +22,7 @@
   <div class="islandora-book-metadata">
     <?php if($parent_collections): ?>
   <div>
-        <h2><?php print t('In Collection(s)'); ?></h2>
+        <h1><?php print t('In Collection(s)'); ?></h1>
     <ul>
       <?php foreach ($parent_collections as $collection): ?>
         <li><?php print l($collection->label, "islandora/object/{$collection->id}"); ?></li>

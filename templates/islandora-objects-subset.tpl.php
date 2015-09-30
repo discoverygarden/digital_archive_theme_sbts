@@ -30,7 +30,6 @@
 
   <?php if (isset($collection_metadata) && !empty($collection_metadata)): ?>
   <div class="collection-view-descriptive-meta">
-    <h1 class="page__title title">Descriptive Metadata</h1>
     <p><?php print $collection_metadata; ?></p>
   </div>
   <?php endif; ?>

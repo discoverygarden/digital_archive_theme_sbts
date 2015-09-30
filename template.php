@@ -62,6 +62,21 @@ function nyhs_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
 }
 
 /**
+ * Implements islandora_hook_view_cmodel_pid_alter().
+ */
+function nyhs_theme_islandora_collectionCModel_islandora_view_object_alter(AbstractObject $object, &$rendered){
+  if (isset($rendered['wrapper']['description'])) {
+    $rendered['wrapper']['description'] = NULL;
+  }
+  if (isset($rendered['wrapper']['collections'])) {
+    $rendered['wrapper']['collections'] = NULL;
+  }
+  if (isset($rendered['wrapper']['metadata'])) {
+    $rendered['wrapper']['metadata'] = NULL;
+  }
+}
+
+/**
  * Implements HOOK_views_pre_render();
  */
 function nyhs_theme_views_pre_render(&$view) {
@@ -99,7 +114,6 @@ function nyhs_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
  */
 function nyhs_theme_preprocess_islandora_objects_subset(&$variables) {
   $islandora_object = menu_get_object('islandora_object', 2);
-  $variables['description'] = islandora_solr_metadata_description_callback($islandora_object);
   nyhs_theme_built_add_vars_for_collection_page($variables, $islandora_object);
 }
 
@@ -126,7 +140,6 @@ function nyhs_theme_preprocess_islandora_solr_wrapper(&$variables) {
   $variables['islandora_solr_result_count'] = "<div class='solr-result-label-count'><h1>Search Results</h1>" . "<div>" . t("Displaying ") . $variables['islandora_solr_result_count'] . "</div></div>";
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
 
-  //drupal_set_title('');
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
   $variables['solr_display_switch'] = nyhs_theme_block_render('islandora_solr', 'display_switch');//islandora_solr_display();
   $variables['solr_sort'] = nyhs_theme_block_render('islandora_solr', 'sort');//islandora_solr_sort();
@@ -140,6 +153,7 @@ function nyhs_theme_preprocess_page(&$variables) {
   $cp_exp = explode("/", $current_path);
   $flag = FALSE;
   $islandora_object = menu_get_object('islandora_object', 2);
+
   // Dont show this extra data on the search results page.
   if (count($cp_exp) > 1 && $cp_exp[0] != "islandora" && $cp_exp[1] != "search") {
     $flag = TRUE;
@@ -174,20 +188,25 @@ function nyhs_theme_preprocess_islandora_objects(&$variables) {
  */
 function nyhs_theme_built_add_vars_for_collection_page(&$variables, $islandora_object) {
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
+  module_load_include('inc', 'islandora', 'includes/metadata');
   $variables['islandora_object'] = $islandora_object;
 
+  $variables['description'] = islandora_retrieve_description_markup($islandora_object);
+
+    // Be sure to add the required Drupal libraries for the metadata form.
+  drupal_add_js('misc/form.js');
+  drupal_add_js('misc/collapse.js');
+
+  $variables['display_metadata'] = variable_get('islandora_collection_metadata_display', FALSE);
+  if ($variables['display_metadata']) {
+    $variables['collection_metadata'] = islandora_retrieve_metadata_markup($islandora_object);
+  }
   // Add our collection search on collection view pages.
   $variables['collection_search'] = nyhs_theme_block_render('islandora_collection_search', 'islandora_collection_search');
 
   // Include the required metadata functionality.
   module_load_include('inc', 'islandora', 'includes/metadata');
 
-  // Be sure to add the required Drupal libraries for the metadata form.
-  drupal_add_js('misc/form.js');
-  drupal_add_js('misc/collapse.js');
-
-  // Set our metadata variable to be printed in the template.
-  $variables['collection_metadata'] = islandora_retrieve_metadata_markup($islandora_object);
   $variables['solr_display_switch'] = islandora_solr_display();
   $variables['solr_sort'] = islandora_solr_sort();
 }
