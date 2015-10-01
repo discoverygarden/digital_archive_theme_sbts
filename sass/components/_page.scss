@@ -41,6 +41,10 @@
   white-space: nowrap;
 }
 
+#main-menu{
+  outline: 0 !important;
+}
+
 .not-front{
   #content, .sidebars{
     padding-top: 10px;
