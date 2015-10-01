@@ -229,3 +229,50 @@ function nyhs_theme_block_render($module, $delta, $as_renderable = FALSE) {
   $block_rendered = drupal_render($build);
   return $block_rendered;
 }
+
+/**
+ * Implements hook_preprocess().
+ */
+function nyhs_theme_preprocess_islandora_solr_search_navigation_block(&$variables) {
+  if (isset($variables['prev_link'])) {
+    $parsed_url = parse_url($variables['prev_link']);
+
+    $object_pid = str_replace("/islandora/object/", "", $parsed_url['path']);
+    $object_pid = urldecode($object_pid);
+    $prev_obj = islandora_object_load($object_pid);
+
+    $path = $parsed_url['path'] . $parsed_url['query'];
+    $variables['prev_pid'] = $object_pid;
+    $variables['prev_text'] = $variables['prev_text'] . " ($prev_obj->label)";
+    $variables['prev'] = l("", $variables['prev_link'], array('attributes' => array('class' => array('fa', 'fa-backward', 'fa-lg'), 'title' => $variables['prev_text'])));
+  };
+  if (isset($variables['return_link'])) {
+     $variables['return'] = $variables['return_link'];
+  }
+  if (isset($variables['next_link'])) {
+    $parsed_url = parse_url($variables['next_link']);
+
+    $object_pid = str_replace("/islandora/object/", "", $parsed_url['path']);
+    $object_pid = urldecode($object_pid);
+    $next_obj = islandora_object_load($object_pid);
+
+    $path = $parsed_url['path'] . $parsed_url['query'];
+    $variables['next_text'] = $variables['next_text'] . " ($next_obj->label)";
+    $variables['next'] = l("", $variables['next_link'], array('attributes' => array('class' => array('fa', 'fa-forward', 'fa-lg'), 'title' => $variables['next_text'])));
+  }
+}
+
+/**
+ * Implements hook_process_islandora_solr_search_navigation_block().
+ */
+function nyhs_theme_process_islandora_solr_search_navigation_block(&$variables) {
+  if ($variables['prev_link']) {
+    $variables['prev_link'] = $variables['prev'];
+  }
+  if ($variables['next_link']) {
+    $variables['next_link'] = $variables['next'];
+  }
+  if ($variables['return_link']) {
+    $variables['return_link'] = '<a title="' . t('Return To Search') . '" class="fa fa-search fa-lg" href="' . $variables['return'] . '"></a>';
+  }
+}
