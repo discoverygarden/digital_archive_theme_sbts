@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Basic view grid styling for the advanced search Layout.
+ */
+
+@import "zen";
+
+$zen-column-count: 3;
+$zen-gutter-width: 10px;
+$zen-auto-include-item-base: true;
+
+
+.search-navigation-block-template-wrapper{
+  @include zen-grid-container;
+  #islandora-solr-search-prev-link{
+    @include zen-grid-item(1, 1);
+    text-align: left;
+  }
+  #islandora-solr-search-return-link {
+    @include zen-grid-item(1, 2);
+    text-align: center;
+  }
+  #islandora-solr-search-next-link{
+    @include zen-grid-item(1, 3);
+    text-align: right;
+  }
+}
