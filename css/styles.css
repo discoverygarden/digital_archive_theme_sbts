@@ -2445,33 +2445,43 @@ div#BRpage {
   margin: 20px;
 }
 /* line 262, ../sass/components/_blocks.scss */
-.view-subsequent-pages .view-content {
-  background-color: #eeeeee;
-  border-radius: 5px;
-}
-/* line 266, ../sass/components/_blocks.scss */
 .view-subsequent-pages .flexslider {
   background-color: transparent !important;
   border: none !important;
 }
 
-/* line 272, ../sass/components/_blocks.scss */
+/* line 268, ../sass/components/_blocks.scss */
+.owl-wrapper-outer {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+/* line 271, ../sass/components/_blocks.scss */
+.owl-wrapper-outer img.lazyOwl {
+  max-height: 80px;
+  padding-top: 5px;
+}
+/* line 275, ../sass/components/_blocks.scss */
+.owl-wrapper-outer .owl-item {
+  text-align: center;
+}
+
+/* line 280, ../sass/components/_blocks.scss */
 .slideshow-subsequent-page-PID-field-wrapper {
   text-align: center;
 }
 
-/* line 277, ../sass/components/_blocks.scss */
+/* line 285, ../sass/components/_blocks.scss */
 .view-nyhs-contact-info-view p {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 283, ../sass/components/_blocks.scss */
+/* line 291, ../sass/components/_blocks.scss */
 #footer .block {
   margin-bottom: .5em;
 }
 
-/* line 287, ../sass/components/_blocks.scss */
+/* line 295, ../sass/components/_blocks.scss */
 #block-fblikebutton-fblikebutton-static-block {
   /*   iframe{ */
   /*     max-width: 100px; */
