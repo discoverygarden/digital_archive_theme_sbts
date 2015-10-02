@@ -22,11 +22,4 @@
  * the view is modified.
  */
 ?>
-<div class="slideshow-subsequent-page-PID-field-wrapper">
-  <a href="/islandora/object/<?php print $output?>">
-    <div
-      class="slideshow-subsequent-page-PID-field"
-      style="background: url(/islandora/object/<?php print $output; ?>/datastream/TN/view) no-repeat center center; background-size: cover; width:80px; height: 80px;">
-    </div>
-  </a>
-</div>
+<a href="/islandora/object/<?php print $output; ?>"><img class="lazyOwl" data-src="/islandora/object/<?php print $output; ?>/datastream/TN/view"></img></a>
