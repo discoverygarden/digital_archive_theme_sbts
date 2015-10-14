@@ -23,6 +23,10 @@ function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_s
   $form['simple']['search_form'] = $for;
 }
 
+// function islandora_basic_collection_islandora_collectionCModel_islandora_view_object_alter(&$object, &$rendered){
+// dsm($rendered, "rendered");
+// }
+
 /**
  * Implements hook_form_alter().
  */
@@ -58,6 +62,16 @@ function nyhs_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
         $tab['#link']['localized_options']['attributes']['class'][] = 'document';
       }
     }
+  }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function nyhs_theme_js_alter(&$javascript) {
+  if (isset($javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js'])){
+    $javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js']['data'] =
+    'sites/all/themes/nyhs_theme/js/table_of_contents.js';
   }
 }
 

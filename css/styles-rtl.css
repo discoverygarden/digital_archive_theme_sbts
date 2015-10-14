@@ -82,10 +82,10 @@ ul {
   }
   /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
-    float: right;
-    width: 33.33333%;
-    margin-right: 66.66667%;
-    margin-left: -100%;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
   }
 
   /**
@@ -113,10 +113,10 @@ ul {
   }
   /* line 128, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
-    float: right;
+    float: left;
     width: 100%;
-    margin-right: 0%;
-    margin-left: -100%;
+    margin-left: 0%;
+    margin-right: -100%;
     padding-left: 0;
     padding-right: 0;
     clear: right;
@@ -138,23 +138,23 @@ ul {
   /* line 138, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: right;
-    width: 33.33333%;
-    margin-right: 0%;
-    margin-left: -33.33333%;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
     clear: right;
   }
   /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: right;
-    width: 33.33333%;
+    width: 66.66667%;
     margin-right: 33.33333%;
-    margin-left: -66.66667%;
+    margin-left: -100%;
   }
   /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: right;
-    width: 33.33333%;
-    margin-right: 66.66667%;
+    width: 66.66667%;
+    margin-right: 33.33333%;
     margin-left: -100%;
   }
 }
@@ -233,10 +233,10 @@ ul {
   }
   /* line 206, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
-    float: right;
+    float: left;
     width: 20%;
-    margin-right: 80%;
-    margin-left: -100%;
+    margin-left: 0%;
+    margin-right: -20%;
   }
 }
 /* Custom Responsive */
