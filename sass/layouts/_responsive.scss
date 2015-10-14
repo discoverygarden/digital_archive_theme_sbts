@@ -106,7 +106,7 @@ $zen-auto-include-item-base: false;
 
     /* Span 1 column, starting in 3rd column from left. */
     .region-sidebar-second {
-      @include zen-grid-item(1, 3);
+      @include zen-grid-item(3, 1, right);
     }
   }
 
@@ -126,7 +126,7 @@ $zen-auto-include-item-base: false;
 
     /* Start a new row and span all 3 columns. */
     .region-sidebar-second {
-      @include zen-grid-item(3, 1);
+      @include zen-grid-item(3, 1, right);
       @include zen-nested-container(); // Since we're making every block in this region be a grid item.
       @include zen-clear();
 
@@ -136,16 +136,16 @@ $zen-auto-include-item-base: false;
       }
       /* Span 1 column, starting in the 1st column from left. */
       .block:nth-child(3n+1) {
-        @include zen-grid-item(1, 1);
+        @include zen-grid-item(2, 2);
         @include zen-clear();
       }
       /* Span 1 column, starting in the 2nd column from left. */
       .block:nth-child(3n+2) {
-        @include zen-grid-item(1, 2);
+        @include zen-grid-item(2, 2);
       }
       /* Span 1 column, starting in the 3rd column from left. */
       .block:nth-child(3n) {
-        @include zen-grid-item(1, 3);
+        @include zen-grid-item(2, 2);
       }
     }
   }
@@ -204,7 +204,7 @@ $zen-auto-include-item-base: false;
 
     /* Span 1 column, starting in 5th column from left. */
     .region-sidebar-second {
-      @include zen-grid-item(1, 5);
+      @include zen-grid-item(1, 1, right);
     }
   }
 }
