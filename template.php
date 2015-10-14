@@ -23,10 +23,6 @@ function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_s
   $form['simple']['search_form'] = $for;
 }
 
-// function islandora_basic_collection_islandora_collectionCModel_islandora_view_object_alter(&$object, &$rendered){
-// dsm($rendered, "rendered");
-// }
-
 /**
  * Implements hook_form_alter().
  */
