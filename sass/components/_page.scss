@@ -139,11 +139,11 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-position: 2px 2px;
 }
 
-.page-islandora-search{
-  #page-title{
-    display: none;
-  }
-}
+/* .page-islandora-search{ */
+/*   #page-title{ */
+/*     display: none; */
+/*   } */
+/* } */
 
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active{
   padding-left: 1.7em !important;
@@ -289,12 +289,42 @@ div#BRpage{
 }
 .region-navigation .form-submit{
   position: absolute;
-  left: 6px;
-  top: 3px;
+  right: 1px;
+  top: 1px;
   background: image-url("magnifier.png");
   background-repeat: no-repeat;
-  width:16px;
-  height:16px;
+  background-color: #CCCCCC;
+  background-position: 2px 2px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  text-indent: -9999px;
+}
+
+#islandora-collection-search-form #edit-submit{
+  position: relative;
+  right: 22px;
+  top: 1px;
+  background: image-url("magnifier.png");
+  background-repeat: no-repeat;
+  background-color: #CCCCCC;
+  background-position: 2px 2px;
+  width: 20px;
+  height: 19px;
+  border: 0;
+  text-indent: -9999px;
+}
+
+#block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-submit{
+  position: relative;
+  right: 22px;
+  top: 1px;
+  background: image-url("magnifier.png");
+  background-repeat: no-repeat;
+  background-color: #CCCCCC;
+  background-position: 2px 2px;
+  width: 20px;
+  height: 19px;
   border: 0;
   text-indent: -9999px;
 }
@@ -303,12 +333,12 @@ div#BRpage{
   input{
     font-style: italic;
     line-height: 18px;
-    text-align: left;
-    padding-left: 25px;
+    text-align: right;
+    padding-right: 25px;
     margin: 0 auto;
     border: none;
     border:solid 1px $base-header-color;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 }
 

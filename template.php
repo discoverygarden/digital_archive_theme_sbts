@@ -27,7 +27,6 @@ function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_s
  * Implements hook_form_alter().
  */
 function nyhs_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
-  $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search");
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 30;
 }
 
@@ -167,6 +166,8 @@ function nyhs_theme_preprocess_page(&$variables) {
   // Dont show this extra data on the search results page.
   if (count($cp_exp) > 1 && $cp_exp[0] != "islandora" && $cp_exp[1] != "search") {
     $flag = TRUE;
+  } else if (count($cp_exp) > 1 && $cp_exp[0] == "islandora" && $cp_exp[1] == "search") {
+    drupal_set_title("Advanced Search");
   }
   if (isset($islandora_object) && !in_array('islandora:collectionCModel', $islandora_object->models) && $flag == FALSE) {
     $variables['description'] = islandora_solr_metadata_description_callback($islandora_object);
@@ -191,7 +192,7 @@ function nyhs_theme_preprocess_islandora_objects(&$variables) {
 }
 
 /**
- * Setup template variables for the both SPARQL and Solr Display Generation.
+ * Setup template variables for Solr Display Generation.
  *
  * @param unknown $variables
  * @param unknown $islandora_object

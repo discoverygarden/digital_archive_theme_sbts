@@ -33,7 +33,6 @@
     <p><?php print nl2br($dc_array['dc:description']['value']); ?></p>
   </div>
   <?php endif; ?>
-
   <?php if (isset($collection_metadata) && !empty($collection_metadata)): ?>
   <div class="collection-view-descriptive-meta">
     <p><?php print $collection_metadata; ?></p>

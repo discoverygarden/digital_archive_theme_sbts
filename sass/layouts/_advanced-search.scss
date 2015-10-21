@@ -54,10 +54,10 @@ $zen-auto-include-item-base: true;
   div:last-child.form-type-select{
     @include zen-grid-item(2, 19);
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
+    top: 4.5%;
+    -webkit-transform: translateY(135%);
+    -ms-transform: translateY(135%);
+    transform: translateY(135%);
     select{
       width: 100%;
     }
