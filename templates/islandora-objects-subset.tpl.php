@@ -5,12 +5,11 @@
  * Render a bunch of objects in a list or grid view.
  */
 ?>
+
 <div class="islandora-objects clearfix islandora-basic-collection-wrapper">
 
 <div class="collection-image-service-links-wrapper">
 
-  <div class="collection-image-wrapper" style="background: url(/islandora/object/<?php print $islandora_object->id; ?>/datastream/<?php print theme_get_setting('collection_bg_datastream'); ?>/view) no-repeat center center; background-size: cover; width:100%; height: 400px;">
-  </div>
 </div>
   <?php if (isset($collection_search) && !empty($collection_search)): ?>
   <div class="collection-view-collection-search-wrapper"><p><?php print $collection_search; ?></p></div>
