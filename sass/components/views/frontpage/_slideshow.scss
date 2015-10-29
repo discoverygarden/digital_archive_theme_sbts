@@ -6,7 +6,7 @@
 .flexslider-processed{
   margin-bottom: 0px;
   .flex-control-nav {
-    bottom: 0;
+    bottom: 5px;
     float: right;
     position: absolute;
     right: 0;
@@ -102,6 +102,6 @@
 
 @media (max-width: 620px) {
   .front .flexslider .slides li .info-content-wrapper{
-    width: 70%;
+    width: 75%;
   }
 }
