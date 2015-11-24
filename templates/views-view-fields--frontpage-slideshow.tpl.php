@@ -52,7 +52,6 @@
       <?php print $field->separator; ?>
     <?php endif; ?>
     <?php print $field->wrapper_prefix; ?>
-      <?php dsm($field, "raw field");?>
       <a href="/islandora/object/<?php print $field->raw; ?>"><?php print t("READ MORE"); ?><span><?php print " ››"; ?></span></a>
     <?php print $field->wrapper_suffix; ?>
   <?php endif; ?>
