@@ -44,7 +44,7 @@
     <?php endif; ?>
     <?php print $field->wrapper_prefix; ?>
       <?php print $field->label_html; ?>
-      <a href="/islandora/object/<?php print $field->raw; ?>"><?php print $field->content; ?></a>
+      <a href="/islandora/object/<?php print $fields['PID']->{'raw'}; ?>"><?php print $field->content; ?></a>
     <?php print $field->wrapper_suffix; ?>
   <?php endif; ?>
   <?php if ($field->class == "PID"): ?>
