@@ -15,11 +15,6 @@
   <div class="collection-view-collection-search-wrapper"><p><?php print $collection_search; ?></p></div>
   <?php endif; ?>
 
-  <div class="collection-view-recently-added">
-    <h1 class="page__title title">Recently Added</h1>
-    <p><?php print views_embed_view('recently_added_to_collection', 'block', $islandora_object->id); ?></p>
-  </div>
-
   <?php if (!empty($description)): ?>
   <div class="collection-view-about-this-collection">
     <h1 class="page__title title">About this collection</h1>

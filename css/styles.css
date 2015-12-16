@@ -3028,25 +3028,11 @@ div#BRpage {
     word-wrap: break-word;
   }
   /* line 22, ../sass/layouts/_collection-view.scss */
-  .islandora-basic-collection-wrapper .collection-view-recently-added {
+  .islandora-basic-collection-wrapper .collection-view-about-this-collection {
     clear: left;
     float: left;
-    width: 50%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 5px;
-    padding-right: 5px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  /* line 26, ../sass/layouts/_collection-view.scss */
-  .islandora-basic-collection-wrapper .collection-view-about-this-collection {
-    float: left;
-    width: 50%;
-    margin-left: 50%;
     margin-right: -100%;
     padding-left: 5px;
     padding-right: 5px;
@@ -3056,7 +3042,7 @@ div#BRpage {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 29, ../sass/layouts/_collection-view.scss */
+  /* line 26, ../sass/layouts/_collection-view.scss */
   .islandora-basic-collection-wrapper .collection-view-descriptive-meta {
     clear: left;
     float: left;
@@ -3071,7 +3057,7 @@ div#BRpage {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 33, ../sass/layouts/_collection-view.scss */
+  /* line 30, ../sass/layouts/_collection-view.scss */
   .islandora-basic-collection-wrapper .islandora-basic-collection.clearfix {
     clear: left;
     float: left;
@@ -3087,19 +3073,30 @@ div#BRpage {
     word-wrap: break-word;
   }
 }
-/* line 40, ../sass/layouts/_collection-view.scss */
+/* line 37, ../sass/layouts/_collection-view.scss */
 .islandora-objects-grid dl {
   text-align: center;
   vertical-align: middle;
 }
 
-/* line 45, ../sass/layouts/_collection-view.scss */
+/* line 42, ../sass/layouts/_collection-view.scss */
 .hrm {
   display: table;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+}
+
+/* line 51, ../sass/layouts/_collection-view.scss */
+.view-recently-added-to-collection .views-row > div {
+  display: table-cell;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+/* line 56, ../sass/layouts/_collection-view.scss */
+.view-recently-added-to-collection .views-row > div:nth-child(2) {
+  padding-left: 5px;
 }
 
 /**
