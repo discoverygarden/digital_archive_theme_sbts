@@ -9,8 +9,22 @@
   background-color: grey;
 }
 
-.front-page-collection-view-PID-field-wrapper{
-  padding: 4px;
-  box-sizing: border-box;
-  border: 1px solid;
+.view-frontpage-highlighted{
+  .views-field-uri{
+    .field-content >div{
+      padding: 4px;
+      box-sizing: border-box;
+      border: 1px solid;
+    }
+  }
+}
+
+.front-page-library{
+  .view-content{
+    box-sizing: border-box;
+    margin: 10px;
+    border-right-color: -moz-use-text-color;
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
 }

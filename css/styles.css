@@ -1806,7 +1806,7 @@ tr.selected td {
 /* line 873, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1398863088');
+  background-image: url('../images/progress.gif?1459348584');
 }
 
 /**
@@ -1873,7 +1873,7 @@ body {
   line-height: 18px;
   color: #60605b;
   margin-top: 30px;
-  background: #fefefe url('../images/body-bg.jpg?1441913974');
+  background: #fefefe url('../images/body-bg.jpg?1459348584');
 }
 /* line 69, ../sass/components/_page.scss */
 body #page #footer {
@@ -1898,63 +1898,63 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 
 /* line 88, ../sass/components/_page.scss */
 .my-eye {
-  background-image: url('../images/eye46.png?1442864819');
+  background-image: url('../images/eye46.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 94, ../sass/components/_page.scss */
 .map-signs {
-  background-image: url('../images/arrows106.png?1442865328');
+  background-image: url('../images/arrows106.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 100, ../sass/components/_page.scss */
 .icn-gears {
-  background-image: url('../images/gears6.png?1442865534');
+  background-image: url('../images/gears6.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 106, ../sass/components/_page.scss */
 .code-icon {
-  background-image: url('../images/web2.png?1442923921');
+  background-image: url('../images/web2.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 112, ../sass/components/_page.scss */
 .menu-pages {
-  background-image: url('../images/stationery1.png?1442924150');
+  background-image: url('../images/stationery1.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 118, ../sass/components/_page.scss */
 .menu-edit {
-  background-image: url('../images/edit34.png?1442924337');
+  background-image: url('../images/edit34.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 124, ../sass/components/_page.scss */
 .devel-link {
-  background-image: url('../images/magic20.png?1442924422');
+  background-image: url('../images/magic20.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 130, ../sass/components/_page.scss */
 .node-export {
-  background-image: url('../images/export.png?1442924545');
+  background-image: url('../images/export.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 136, ../sass/components/_page.scss */
 .document {
-  background-image: url('../images/text70.png?1442925592');
+  background-image: url('../images/text70.png?1459348584');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
@@ -2128,7 +2128,7 @@ div#BRpage {
   position: absolute;
   right: 1px;
   top: 1px;
-  background: url('../images/magnifier.png?1442588181');
+  background: url('../images/magnifier.png?1459348584');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2143,7 +2143,7 @@ div#BRpage {
   position: relative;
   right: 22px;
   top: 0px;
-  background: url('../images/magnifier.png?1442588181');
+  background: url('../images/magnifier.png?1459348584');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2158,7 +2158,7 @@ div#BRpage {
   position: relative;
   right: 22px;
   top: 0px;
-  background: url('../images/magnifier.png?1442588181');
+  background: url('../images/magnifier.png?1459348584');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2347,15 +2347,15 @@ div#BRpage {
 }
 /* line 142, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-objects-display-switch ul.links li a.display-bookmark, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-basic-collection-display-switch ul.links li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.links li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.links li a.display-bookmark {
-  background-image: url('../images/display-bookmark.png?1437665023');
+  background-image: url('../images/display-bookmark.png?1459348584');
 }
 /* line 146, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-default, .islandora-objects-display-switch ul.links li a.display-default, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, .islandora-basic-collection-display-switch ul.links li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.links li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.links li a.display-default {
-  background-image: url('../images/display-grid-list.png?1438019500');
+  background-image: url('../images/display-grid-list.png?1459348584');
 }
 /* line 150, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-grid, .islandora-objects-display-switch ul.links li a.display-grid, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, .islandora-basic-collection-display-switch ul.links li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.links li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.links li a.display-grid {
-  background-image: url('../images/display-grid.png?1438019500');
+  background-image: url('../images/display-grid.png?1459348584');
 }
 /* line 155, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort, .islandora-basic-collection-display-switch ul.islandora-solr-sort, #block-islandora-solr-sort ul.islandora-solr-sort, #block-islandora-solr-display-switch ul.islandora-solr-sort {
@@ -2369,11 +2369,11 @@ div#BRpage {
 }
 /* line 161, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort li a[title="Label"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"] {
-  background-image: url('../images/sort.png?1442501323');
+  background-image: url('../images/sort.png?1459348584');
 }
 /* line 165, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort li a[title="Date"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
-  background-image: url('../images/calendar.png?1442501390');
+  background-image: url('../images/calendar.png?1459348584');
 }
 
 /* line 173, ../sass/components/_blocks.scss */
@@ -2554,31 +2554,31 @@ div#BRpage {
 }
 
 /* line 11, ../sass/components/views/frontpage/library/_elements.scss */
-.view-front-page-collection-views {
+.view-frontpage-highlighted {
   border-top: 1px solid;
 }
 /* line 13, ../sass/components/views/frontpage/library/_elements.scss */
-.view-front-page-collection-views .view-content {
+.view-frontpage-highlighted .view-content {
   box-sizing: border-box;
   margin: 10px;
 }
 
 @media (min-width: 620px) {
   /* line 27, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row {
+  .view-frontpage-highlighted .views-row {
     padding-top: 20px;
   }
   /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .view-front-page-collection-views .views-row:before, .view-front-page-collection-views .views-row:after {
+  .view-frontpage-highlighted .views-row:before, .view-frontpage-highlighted .views-row:after {
     content: "";
     display: table;
   }
   /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .view-front-page-collection-views .views-row:after {
+  .view-frontpage-highlighted .views-row:after {
     clear: both;
   }
   /* line 30, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-PID {
+  .view-frontpage-highlighted .views-row .views-field-uri {
     float: left;
     width: 20%;
     margin-left: 0%;
@@ -2592,7 +2592,7 @@ div#BRpage {
     word-wrap: break-word;
   }
   /* line 33, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dctitle {
+  .view-frontpage-highlighted .views-row .views-field-title {
     float: right;
     width: 80%;
     margin-right: 0%;
@@ -2606,13 +2606,13 @@ div#BRpage {
     word-wrap: break-word;
   }
   /* line 35, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dctitle .field-content {
+  .view-frontpage-highlighted .views-row .views-field-title .field-content {
     text-transform: uppercase;
     padding-bottom: 5px;
     font-size: 110%;
   }
   /* line 41, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dcdescription {
+  .view-frontpage-highlighted .views-row .views-field-body {
     clear: right;
     float: right;
     width: 80%;
@@ -2626,23 +2626,28 @@ div#BRpage {
     box-sizing: border-box;
     word-wrap: break-word;
   }
+  /* line 44, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row .views-field-body p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 950px) {
-  /* line 49, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row {
+  /* line 53, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row {
     padding-top: 20px;
   }
   /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .view-front-page-collection-views .views-row:before, .view-front-page-collection-views .views-row:after {
+  .view-frontpage-highlighted .views-row:before, .view-frontpage-highlighted .views-row:after {
     content: "";
     display: table;
   }
   /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .view-front-page-collection-views .views-row:after {
+  .view-frontpage-highlighted .views-row:after {
     clear: both;
   }
-  /* line 52, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-PID {
+  /* line 56, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row .views-field-uri {
     float: left;
     width: 40%;
     margin-left: 0%;
@@ -2655,8 +2660,8 @@ div#BRpage {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 55, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dctitle {
+  /* line 59, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row .views-field-title {
     float: right;
     width: 60%;
     margin-right: 0%;
@@ -2669,14 +2674,14 @@ div#BRpage {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 57, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dctitle .field-content {
+  /* line 61, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row .views-field-title .field-content {
     text-transform: uppercase;
     padding-bottom: 5px;
     font-size: 110%;
   }
-  /* line 63, ../sass/components/views/frontpage/library/_elements.scss */
-  .view-front-page-collection-views .views-row .views-field-dcdescription {
+  /* line 67, ../sass/components/views/frontpage/library/_elements.scss */
+  .view-frontpage-highlighted .views-row .views-field-body {
     clear: right;
     float: right;
     width: 60%;
@@ -2702,11 +2707,20 @@ div#BRpage {
   background-color: grey;
 }
 
-/* line 12, ../sass/components/views/frontpage/library/_elementsgrid.scss */
-.front-page-collection-view-PID-field-wrapper {
+/* line 14, ../sass/components/views/frontpage/library/_elementsgrid.scss */
+.view-frontpage-highlighted .views-field-uri .field-content > div {
   padding: 4px;
   box-sizing: border-box;
   border: 1px solid;
+}
+
+/* line 23, ../sass/components/views/frontpage/library/_elementsgrid.scss */
+.front-page-library .view-content {
+  box-sizing: border-box;
+  margin: 10px;
+  border-right-color: -moz-use-text-color;
+  border-right-style: solid;
+  border-right-width: 1px;
 }
 
 /**
@@ -2797,7 +2811,7 @@ div#BRpage {
 .front .slideshow-item-text-top {
   font-family: Adobe Garamond Pro;
   line-height: 50px;
-  font-size: 40px;
+  font-size: 35px;
   color: black !important;
   margin-top: 2em;
 }
@@ -2834,7 +2848,7 @@ div#BRpage {
   right: 0;
   box-sizing: border-box;
   padding: 25px;
-  background-image: url('../images/orange-bg.png?1441994485');
+  background-image: url('../images/orange-bg.png?1459348584');
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: repeat;
@@ -2851,11 +2865,39 @@ div#BRpage {
 }
 
 @media (max-width: 620px) {
-  /* line 104, ../sass/components/views/frontpage/_slideshow.scss */
+  /* line 105, ../sass/components/views/frontpage/_slideshow.scss */
   .front .flexslider .slides li .info-content-wrapper {
     width: 75%;
   }
+  /* line 107, ../sass/components/views/frontpage/_slideshow.scss */
+  .front .flexslider .slides li .info-content-wrapper .slideshow-item-text-top {
+    font-size: 6vw;
+  }
 }
+/* line 113, ../sass/components/views/frontpage/_slideshow.scss */
+.frontpage-image-inner {
+  height: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 119, ../sass/components/views/frontpage/_slideshow.scss */
+.views-field-field-read-more-text {
+  bottom: 20px;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+}
+/* line 124, ../sass/components/views/frontpage/_slideshow.scss */
+.views-field-field-read-more-text a {
+  color: black !important;
+}
+
+/* line 131, ../sass/components/views/frontpage/_slideshow.scss */
+.slideshow-item-text-bottom a > div {
+  color: #ffffff !important;
+}
+
 /**
  * @file
  * Basic view grid styling for the advanced search Layout.
@@ -2923,7 +2965,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/add.png?1442595292');
+  background: url('../images/add.png?1459348584');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -2948,7 +2990,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/rounded.png?1442595330');
+  background: url('../images/rounded.png?1459348584');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -3188,7 +3230,7 @@ div#BRpage {
   #block-islandora-collection-search-islandora-collection-search #edit-simple #edit-submit, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper #edit-submit {
     position: relative;
     right: 10%;
-    background: url('../images/magnifier.png?1442588181');
+    background: url('../images/magnifier.png?1459348584');
     background-repeat: no-repeat;
     background-color: #CCCCCC;
     background-position: 2px 2px;
@@ -3203,7 +3245,7 @@ div#BRpage {
   #block-islandora-collection-search-islandora-collection-search #edit-simple .form-submit, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-submit {
     position: relative;
     right: 10%;
-    background: url('../images/magnifier.png?1442588181');
+    background: url('../images/magnifier.png?1459348584');
     background-repeat: no-repeat;
     background-color: #CCCCCC;
     background-position: 2px 2px;

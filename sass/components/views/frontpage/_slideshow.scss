@@ -42,7 +42,7 @@
 .slideshow-item-text-top{
   font-family: Adobe Garamond Pro;
   line-height: 50px;
-  font-size: 40px;
+  font-size: 35px;
   color: black !important;
   margin-top: 2em;
   span{
@@ -100,8 +100,36 @@
   }
 }
 
+
 @media (max-width: 620px) {
   .front .flexslider .slides li .info-content-wrapper{
     width: 75%;
+    .slideshow-item-text-top{
+      font-size: 6vw;
+    }
+  }
+}
+
+.frontpage-image-inner{
+  height: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.views-field-field-read-more-text {
+  bottom: 20px;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  a{
+    color: black !important;
+  }
+}
+
+.slideshow-item-text-bottom{
+  a{
+    >div{
+      color: #ffffff !important;
+    }
   }
 }
