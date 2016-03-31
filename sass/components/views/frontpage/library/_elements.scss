@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.view-front-page-collection-views {
+.view-frontpage-highlighted {
   border-top: 1px solid;
   .view-content {
     box-sizing: border-box;
@@ -24,13 +24,13 @@ $zen-gutter-width: 10px;
 $zen-auto-include-item-base: true;
   
 @media (min-width: 620px) {
-  .view-front-page-collection-views .views-row{
+  .view-frontpage-highlighted .views-row{
     padding-top: 20px;
     @include zen-grid-container;
-    .views-field-PID{
+    .views-field-uri{
       @include zen-grid-item(1, 1);
     }
-    .views-field-dctitle{
+    .views-field-title{
       @include zen-grid-item(4, 1, right);
       .field-content{
         text-transform: uppercase;
@@ -38,21 +38,25 @@ $zen-auto-include-item-base: true;
         font-size: 110%;
       }
     }
-    .views-field-dcdescription{
+    .views-field-body{
       @include zen-clear(right);
       @include zen-grid-item(4, 1, right);
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
     }
   }
 }
 
 @media (max-width: 950px) {
-  .view-front-page-collection-views .views-row{
+  .view-frontpage-highlighted .views-row{
     padding-top: 20px;
     @include zen-grid-container;
-    .views-field-PID{
+    .views-field-uri{
       @include zen-grid-item(2, 1);
     }
-    .views-field-dctitle{
+    .views-field-title{
       @include zen-grid-item(3, 1, right);
       .field-content{
         text-transform: uppercase;
@@ -60,7 +64,7 @@ $zen-auto-include-item-base: true;
         font-size: 110%;
       }
     }
-    .views-field-dcdescription{
+    .views-field-body{
       @include zen-clear(right);
       @include zen-grid-item(3, 1, right);
     }
