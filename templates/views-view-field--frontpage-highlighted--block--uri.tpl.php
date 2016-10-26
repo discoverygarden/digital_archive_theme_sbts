@@ -28,7 +28,7 @@
   <a target="<?php print $target[0]['raw']['value'];?>" href="<?php print $current[0]['raw']['safe_value'];?>">
     <div
       class="front-page-collection-view-PID-field"
-      style="background: grey url(<?php print file_create_url($output);?>) no-repeat center center;">
+      style="background: grey url(<?php print file_create_url($output);?>) no-repeat center center / 100% auto">
     </div>
   </a>
 </div>

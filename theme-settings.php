@@ -14,7 +14,7 @@ function nyhs_theme_form_system_theme_settings_alter(&$form, &$form_state, $form
   }
   $form['nyhs_theme_settings'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Custom NYHS Theme Settings'),
+    '#title' => t('Custom Theme Settings'),
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );

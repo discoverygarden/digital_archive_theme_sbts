@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = NYHS Theme
+name        = Digital Archive Theme
 description = New York Historical Society Drupal 7 Zen based Sub-Theme
 
 
@@ -153,3 +153,64 @@ settings[show_subsequent_pages]    = 0;
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: https://drupal.org/node/495654
 ;plugins[panels][layouts] = panels-layouts
+
+; Background color
+designkit[color][background][title] = "Background"
+designkit[color][background][description] = "Background color."
+designkit[color][background][default] = "#ffffff"              
+
+; Highlight color
+designkit[color][highlight][title] = "Highlight"
+designkit[color][highlight][description] = "Highlight color"
+designkit[color][highlight][default] = "#cc0099"
+
+; Slideshow Region Color
+designkit[color][slideshow][title] = "Slideshow Region"
+designkit[color][slideshow][description] = "Slideshow Region Color"
+designkit[color][slideshow][default] = "#cc0099"
+
+; Links color
+designkit[color][links][title] = "Links"
+designkit[color][links][description] = "Links color"
+designkit[color][links][default] = "#cc0099"
+
+; Body Text color
+designkit[color][text][title] = "Body Text"
+designkit[color][text][description] = "Body Text color"
+designkit[color][text][default] = "#cc0099"
+
+; Main menu color
+designkit[color][mainmenu][title] = "Main Menu Text"
+designkit[color][mainmenu][description] = "Main Menu Text color"
+designkit[color][mainmenu][default] = "#cc0099"
+
+; Page Title color
+designkit[color][pagetitle][title] = "Page Title"
+designkit[color][pagetitle][description] = "Page Title color"
+designkit[color][pagetitle][default] = "#000000"
+
+; Header color
+designkit[color][header][title] = "Header"
+designkit[color][header][description] = "Header color"
+designkit[color][header][default] = "#cc0099"
+
+; Content color
+designkit[color][content][title] = "Content"
+designkit[color][content][description] = "Content color"
+designkit[color][content][default] = "#cc0099"
+
+; Bottom wrapper color
+designkit[color][bottomwrapper][title] = "Bottom Wrapper"
+designkit[color][bottomwrapper][description] = "Bottom Wrapper Color"
+designkit[color][bottomwrapper][default] = "#cc0099"
+
+; Footer color
+designkit[color][footer][title] = "Footer"
+designkit[color][footer][description] = "Footer Color"
+designkit[color][footer][default] = "#cc0099"
+
+; Site logo
+designkit[image][logo][title] = "Site logo"
+designkit[image][logo][description] = "Header logo."
+designkit[image][logo][effect] = "image_scale:200x50"
+

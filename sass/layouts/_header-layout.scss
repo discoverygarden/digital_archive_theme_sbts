@@ -4,21 +4,32 @@
  */
 
 
-@import "zen";
+/* @import "zen"; */
 
-$zen-column-count: 7;
-$zen-gutter-width: 10px;
-$zen-auto-include-item-base: true;
+/* $zen-column-count: 7; */
+/* $zen-gutter-width: 10px; */
+/* $zen-auto-include-item-base: true; */
   
-@media (min-width: 620px) {
-  .inner-div-header{
-    @include zen-grid-container;
-    .header{
-      @include zen-grid-item(7, 1);
-    }
-    #navigation{
-      @include zen-clear();
-      @include zen-grid-item(7, 1);
-    }
-  }
+/* @media (min-width: 620px) { */
+/*   .inner-div-header{ */
+/*     margin: 10px auto; */
+/*     @include zen-grid-container; */
+/*     .header{ */
+/*       @include zen-grid-item(7, 1); */
+/*     } */
+/*     #navigation{ */
+/*       @include zen-clear(); */
+/*       @include zen-grid-item(7, 1); */
+/*     } */
+/*   } */
+/* } */
+
+.inner-div-header {
+  padding: 10px;
+}
+
+#header,
+#navigation {
+  background-color: transparent;
+  background: transparent;
 }

@@ -28,6 +28,7 @@ function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_s
  */
 function nyhs_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 30;
+  $form['simple']['islandora_simple_search_query']['#title_display'] = 'invisible';
 }
 
 function nyhs_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
@@ -287,3 +288,44 @@ function nyhs_theme_process_islandora_solr_search_navigation_block(&$variables) 
     $variables['return_link'] = '<a title="' . t('Return To Search') . '" class="fa fa-search fa-lg" href="' . $variables['return'] . '"></a>';
   }
 }
+
+/* Convert hexdec color string to rgb(a) string */
+
+function nyhs_theme_hextorgb($color, $opacity = false) {
+
+	$default = 'rgb(0,0,0)';
+
+	//Return default if no color provided
+	if(empty($color))
+          return $default;
+
+	//Sanitize $color if "#" is provided
+        if ($color[0] == '#' ) {
+        	$color = substr( $color, 1 );
+        }
+
+        //Check if color has 6 or 3 characters and get values
+        if (strlen($color) == 6) {
+                $hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
+        } elseif ( strlen( $color ) == 3 ) {
+                $hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
+        } else {
+                return $default;
+        }
+
+        //Convert hexadec to rgb
+        $rgb =  array_map('hexdec', $hex);
+
+        //Check if opacity is set(rgba or rgb)
+        if($opacity){
+        	if(abs($opacity) > 1)
+        		$opacity = 1.0;
+        	$output = 'rgba('.implode(",",$rgb).','.$opacity.')';
+        } else {
+        	$output = 'rgb('.implode(",",$rgb).')';
+        }
+
+        //Return rgb(a) color string
+        return $output;
+}
+
