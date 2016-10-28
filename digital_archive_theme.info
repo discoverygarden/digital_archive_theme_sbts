@@ -161,52 +161,52 @@ designkit[color][background][default] = "#ffffff"
 ; Highlight color
 designkit[color][highlight][title] = "Highlight"
 designkit[color][highlight][description] = "Highlight color"
-designkit[color][highlight][default] = "#cc0099"
+designkit[color][highlight][default] = "#9e2224"
 
 ; Slideshow Region Color
 designkit[color][slideshow][title] = "Slideshow Region"
 designkit[color][slideshow][description] = "Slideshow Region Color"
-designkit[color][slideshow][default] = "#cc0099"
+designkit[color][slideshow][default] = "#f0f0f0"
 
 ; Links color
 designkit[color][links][title] = "Links"
 designkit[color][links][description] = "Links color"
-designkit[color][links][default] = "#cc0099"
+designkit[color][links][default] = "#9e2224"
 
 ; Body Text color
 designkit[color][text][title] = "Body Text"
 designkit[color][text][description] = "Body Text color"
-designkit[color][text][default] = "#cc0099"
+designkit[color][text][default] = "#000000"
 
 ; Main menu color
 designkit[color][mainmenu][title] = "Main Menu Text"
 designkit[color][mainmenu][description] = "Main Menu Text color"
-designkit[color][mainmenu][default] = "#cc0099"
+designkit[color][mainmenu][default] = "#ffffff"
 
 ; Page Title color
 designkit[color][pagetitle][title] = "Page Title"
 designkit[color][pagetitle][description] = "Page Title color"
-designkit[color][pagetitle][default] = "#000000"
+designkit[color][pagetitle][default] = "#d31212"
 
 ; Header color
 designkit[color][header][title] = "Header"
 designkit[color][header][description] = "Header color"
-designkit[color][header][default] = "#cc0099"
+designkit[color][header][default] = "#3c3c3c"
 
 ; Content color
 designkit[color][content][title] = "Content"
 designkit[color][content][description] = "Content color"
-designkit[color][content][default] = "#cc0099"
+designkit[color][content][default] = "#ffffff"
 
 ; Bottom wrapper color
 designkit[color][bottomwrapper][title] = "Bottom Wrapper"
 designkit[color][bottomwrapper][description] = "Bottom Wrapper Color"
-designkit[color][bottomwrapper][default] = "#cc0099"
+designkit[color][bottomwrapper][default] = "#3c3c3c"
 
 ; Footer color
 designkit[color][footer][title] = "Footer"
 designkit[color][footer][description] = "Footer Color"
-designkit[color][footer][default] = "#cc0099"
+designkit[color][footer][default] = "#f0f0f0"
 
 ; Site logo
 designkit[image][logo][title] = "Site logo"
