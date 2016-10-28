@@ -10,7 +10,7 @@
 /**
  * Implements hook_form_alter().
  */
-function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_state, $form_id) {
+function digital_archive_theme_form_islandora_collection_search_form_alter(&$form, &$form_state, $form_id) {
   $label = array(
     '#markup' => "<h1>" . t("Search") . "</h1>",
     '#weight' => -1,
@@ -26,12 +26,12 @@ function nyhs_theme_form_islandora_collection_search_form_alter(&$form, &$form_s
 /**
  * Implements hook_form_alter().
  */
-function nyhs_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
+function digital_archive_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 30;
   $form['simple']['islandora_simple_search_query']['#title_display'] = 'invisible';
 }
 
-function nyhs_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+function digital_archive_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
   //http://drupal.stackexchange.com/questions/87404/how-to-style-menu-local-tasks
   // hack job way of doing this, but it works.
   if (isset($data['tabs']) && count($data['tabs'])) {
@@ -64,7 +64,7 @@ function nyhs_theme_menu_local_tasks_alter(&$data, $router_item, $root_path) {
 /**
  * Implements hook_js_alter().
  */
-function nyhs_theme_js_alter(&$javascript) {
+function digital_archive_theme_js_alter(&$javascript) {
   if (isset($javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js'])){
     $javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js']['data'] =
     'sites/all/themes/nyhs_theme/js/table_of_contents.js';
@@ -74,7 +74,7 @@ function nyhs_theme_js_alter(&$javascript) {
 /**
  * Implements islandora_hook_view_cmodel_pid_alter().
  */
-function nyhs_theme_islandora_collectionCModel_islandora_view_object_alter(AbstractObject $object, &$rendered){
+function digital_archive_theme_islandora_collectionCModel_islandora_view_object_alter(AbstractObject $object, &$rendered){
   if (isset($rendered['wrapper']['description'])) {
     $rendered['wrapper']['description'] = NULL;
   }
@@ -89,7 +89,7 @@ function nyhs_theme_islandora_collectionCModel_islandora_view_object_alter(Abstr
 /**
  * Implements HOOK_views_pre_render();
  */
-function nyhs_theme_views_pre_render(&$view) {
+function digital_archive_theme_views_pre_render(&$view) {
   if ($view->name=='subsequent_pages') {
     foreach($view->result as $r => $result) {
       $view->result[$r]->{'SORT_BY_ME'} = intval($view->result[$r]->{'RELS_EXT_isPageNumber_literal_s'});
@@ -114,7 +114,7 @@ function sort_objects_by_page_num($a, $b) {
 /**
  * Implements hook_preprocess().
  */
-function nyhs_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
+function digital_archive_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
   $islandora_object = menu_get_object('islandora_object', 2);
   nyhs_theme_built_add_vars_for_collection_page($variables, $variables['islandora_object']);
 }
@@ -122,7 +122,7 @@ function nyhs_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
 /**
  * Implements hook_preprocess().
  */
-function nyhs_theme_preprocess_islandora_objects_subset(&$variables) {
+function digital_archive_theme_preprocess_islandora_objects_subset(&$variables) {
   $islandora_object = menu_get_object('islandora_object', 2);
   nyhs_theme_built_add_vars_for_collection_page($variables, $islandora_object);
 }
@@ -130,7 +130,7 @@ function nyhs_theme_preprocess_islandora_objects_subset(&$variables) {
 /**
  * Implements hook_preprocess().
  */
-function nyhs_theme_preprocess_islandora_book_page(&$variables) {
+function digital_archive_theme_preprocess_islandora_book_page(&$variables) {
   // Include the required metadata functionality.
   module_load_include('inc', 'islandora', 'includes/metadata');
 
@@ -146,7 +146,7 @@ function nyhs_theme_preprocess_islandora_book_page(&$variables) {
   $variables['parent_collections'] = islandora_get_parents_from_rels_ext($variables['object']);
 }
 
-function nyhs_theme_preprocess_islandora_solr_wrapper(&$variables) {
+function digital_archive_theme_preprocess_islandora_solr_wrapper(&$variables) {
   $variables['islandora_solr_result_count'] = "<div class='solr-result-label-count'><h1>Search Results</h1>" . "<div>" . t("Displaying ") . $variables['islandora_solr_result_count'] . "</div></div>";
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
 
@@ -158,7 +158,7 @@ function nyhs_theme_preprocess_islandora_solr_wrapper(&$variables) {
 /**
  * Implements hook_preprocess_page().
  */
-function nyhs_theme_preprocess_page(&$variables) {
+function digital_archive_theme_preprocess_page(&$variables) {
   $current_path = current_path();
   $cp_exp = explode("/", $current_path);
   $flag = FALSE;
@@ -182,7 +182,7 @@ function nyhs_theme_preprocess_page(&$variables) {
 /**
  * Implements hook_preprocess().
  */
-function nyhs_theme_preprocess_islandora_objects(&$variables) {
+function digital_archive_theme_preprocess_islandora_objects(&$variables) {
   foreach ($variables['display_links'] as $key => $value ) {
     if ($variables['display_links'][$key]{'title'} == "Grid view") {
       $variables['display_links'][$key]['attributes']['class'][] = 'display-grid';
@@ -198,7 +198,7 @@ function nyhs_theme_preprocess_islandora_objects(&$variables) {
  * @param unknown $variables
  * @param unknown $islandora_object
  */
-function nyhs_theme_built_add_vars_for_collection_page(&$variables, $islandora_object) {
+function digital_archive_theme_built_add_vars_for_collection_page(&$variables, $islandora_object) {
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
   module_load_include('inc', 'islandora', 'includes/metadata');
   $variables['islandora_object'] = $islandora_object;
@@ -231,7 +231,7 @@ function nyhs_theme_built_add_vars_for_collection_page(&$variables, $islandora_o
  * @param string $as_renderable
  * @return unknown
  */
-function nyhs_theme_block_render($module, $delta, $as_renderable = FALSE) {
+function digital_archive_theme_block_render($module, $delta, $as_renderable = FALSE) {
   $block = block_load($module, $delta);
   $block_content = _block_render_blocks(array($block));
   $build = _block_get_renderable_array($block_content);
@@ -245,7 +245,7 @@ function nyhs_theme_block_render($module, $delta, $as_renderable = FALSE) {
 /**
  * Implements hook_preprocess().
  */
-function nyhs_theme_preprocess_islandora_solr_search_navigation_block(&$variables) {
+function digital_archive_theme_preprocess_islandora_solr_search_navigation_block(&$variables) {
   if (isset($variables['prev_link'])) {
     $parsed_url = parse_url($variables['prev_link']);
 
@@ -277,7 +277,7 @@ function nyhs_theme_preprocess_islandora_solr_search_navigation_block(&$variable
 /**
  * Implements hook_process_islandora_solr_search_navigation_block().
  */
-function nyhs_theme_process_islandora_solr_search_navigation_block(&$variables) {
+function digital_archive_theme_process_islandora_solr_search_navigation_block(&$variables) {
   if ($variables['prev_link']) {
     $variables['prev_link'] = $variables['prev'];
   }
@@ -291,7 +291,7 @@ function nyhs_theme_process_islandora_solr_search_navigation_block(&$variables) 
 
 /* Convert hexdec color string to rgb(a) string */
 
-function nyhs_theme_hextorgb($color, $opacity = false) {
+function digital_archive_theme_hextorgb($color, $opacity = false) {
 
 	$default = 'rgb(0,0,0)';
 

@@ -45,7 +45,7 @@ body p {
 }
 
 .flexslider .slides li .info-content-wrapper {
-  background: <?php $bg_color = designkit_colorshift($slideshow, '#ffffff', .5); print nyhs_theme_hextorgb($bg_color, 0.8); ?>;
+  background: <?php $bg_color = designkit_colorshift($slideshow, '#ffffff', .5); print digital_archive_theme_hextorgb($bg_color, 0.8); ?>;
   color: <?php print (designkit_colorhsl($slideshow, 'l') > .5) ? '#fff' : '#000' ?>;
 }
 
