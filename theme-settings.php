@@ -12,13 +12,13 @@ function digital_archive_theme_form_system_theme_settings_alter(&$form, &$form_s
   if (isset($form_id)) {
     return;
   }
-  $form['nyhs_theme_settings'] = array(
+  $form['digital_archive_theme_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Custom Theme Settings'),
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );
-  $form['nyhs_theme_settings']['show_subsequent_pages'] = array(
+  $form['digital_archive_theme_settings']['show_subsequent_pages'] = array(
    '#type' => 'select',
    '#title' => t('Show Subsequent pages view on book objects'),
    '#options' => array(

@@ -67,7 +67,7 @@ function digital_archive_theme_menu_local_tasks_alter(&$data, $router_item, $roo
 function digital_archive_theme_js_alter(&$javascript) {
   if (isset($javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js'])){
     $javascript['sites/all/modules/islandora_solr_table_of_contents/js/table_of_contents.js']['data'] =
-    'sites/all/themes/nyhs_theme/js/table_of_contents.js';
+    'sites/all/themes/digital_archive_theme/js/table_of_contents.js';
   }
 }
 
@@ -116,7 +116,7 @@ function sort_objects_by_page_num($a, $b) {
  */
 function digital_archive_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
   $islandora_object = menu_get_object('islandora_object', 2);
-  nyhs_theme_built_add_vars_for_collection_page($variables, $variables['islandora_object']);
+  digital_archive_theme_built_add_vars_for_collection_page($variables, $variables['islandora_object']);
 }
 
 /**
@@ -124,7 +124,7 @@ function digital_archive_theme_preprocess_islandora_basic_collection_wrapper(&$v
  */
 function digital_archive_theme_preprocess_islandora_objects_subset(&$variables) {
   $islandora_object = menu_get_object('islandora_object', 2);
-  nyhs_theme_built_add_vars_for_collection_page($variables, $islandora_object);
+  digital_archive_theme_built_add_vars_for_collection_page($variables, $islandora_object);
 }
 
 /**
@@ -151,8 +151,8 @@ function digital_archive_theme_preprocess_islandora_solr_wrapper(&$variables) {
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
 
   module_load_include('inc', 'islandora_solr', 'includes/blocks');
-  $variables['solr_display_switch'] = nyhs_theme_block_render('islandora_solr', 'display_switch');//islandora_solr_display();
-  $variables['solr_sort'] = nyhs_theme_block_render('islandora_solr', 'sort');//islandora_solr_sort();
+  $variables['solr_display_switch'] = digital_archive_theme_block_render('islandora_solr', 'display_switch');//islandora_solr_display();
+  $variables['solr_sort'] = digital_archive_theme_block_render('islandora_solr', 'sort');//islandora_solr_sort();
 }
 
 /**
@@ -175,7 +175,7 @@ function digital_archive_theme_preprocess_page(&$variables) {
   }
   $alias = drupal_get_path_alias($current_path);
   if (count($cp_exp) >= 1 && $cp_exp[0] == "islandora" && count($cp_exp) > 1 && ($cp_exp[0] != "islandora" || $cp_exp[1] != "search")) {
-    $variables['service_links'] = nyhs_theme_block_render('service_links', 'service_links_not_node');
+    $variables['service_links'] = digital_archive_theme_block_render('service_links', 'service_links_not_node');
   }
 }
 
@@ -214,7 +214,7 @@ function digital_archive_theme_built_add_vars_for_collection_page(&$variables, $
     $variables['collection_metadata'] = islandora_retrieve_metadata_markup($islandora_object);
   }
   // Add our collection search on collection view pages.
-  $variables['collection_search'] = nyhs_theme_block_render('islandora_collection_search', 'islandora_collection_search');
+  $variables['collection_search'] = digital_archive_theme_block_render('islandora_collection_search', 'islandora_collection_search');
 
   // Include the required metadata functionality.
   module_load_include('inc', 'islandora', 'includes/metadata');
