@@ -24,7 +24,7 @@
 <div class="islandora-large-image-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="ImageObject">
   <div class="islandora-large-image-content-wrapper clearfix">
     <?php if ($islandora_content): ?>
-      <?php if (isset($image_clip)): ?>
+      <?php if (theme_get_setting('show_image_clip') && isset($image_clip)): ?>
         <?php print $image_clip; ?>
       <?php endif; ?>
       <div class="islandora-large-image-content">

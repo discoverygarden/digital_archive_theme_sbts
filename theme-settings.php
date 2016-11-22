@@ -28,4 +28,14 @@ function digital_archive_theme_form_system_theme_settings_alter(&$form, &$form_s
    '#default_value' => theme_get_setting('show_subsequent_pages'),
    '#description' => t('Set this to <em>Yes</em> if you would like this enable the subsequent pages view on book objects.'),
   );
+  $form['digital_archive_theme_settings']['show_image_clip'] = array(
+    '#type' => 'select',
+    '#title' => t('Show large image clipper'),
+    '#options' => array(
+      0 => t('No'),
+      1 => t('Yes'),
+    ),
+    '#default_value' => theme_get_setting('show_image_clip'),
+    '#description' => t('Allow the usage of the large image clipper on large image content model objects.'),
+  );
 }
