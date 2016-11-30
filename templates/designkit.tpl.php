@@ -11,20 +11,16 @@
 a.active,
 .flex-direction-nav a::before,
 .flex-direction-nav a,
-.flex-control-paging li a.flex-active,
-#main-menu ul li a.active {
+.flex-control-paging li a.flex-active {
   color: <?php print $highlight ?>;
 }
 
-#main-menu ul li a {
+#main-menu ul li a,
+#main-menu ul li a.active,
+#secondary-menu ul li a,
+#secondary-menu ul li a.active {
   color: <?php print $mainmenu ?>;
 }
-
-#main-menu ul li a:hover {
-  color: <?php print designkit_colorshift($mainmenu, $highlight, .5) ?>;
-}
-
-designkit_colorshift($slideshow, '#ffffff', .5);
 
 .flex-control-paging li a.flex-active {
   background: <?php print $highlight ?>;
