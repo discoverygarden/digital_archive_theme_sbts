@@ -159,6 +159,7 @@ function digital_archive_theme_preprocess_islandora_solr_wrapper(&$variables) {
  * Implements hook_preprocess_page().
  */
 function digital_archive_theme_preprocess_page(&$variables) {
+  //dsm($variables['logo'], "vars:");
   $current_path = current_path();
   $cp_exp = explode("/", $current_path);
   $flag = FALSE;
@@ -177,6 +178,21 @@ function digital_archive_theme_preprocess_page(&$variables) {
   if (count($cp_exp) >= 1 && $cp_exp[0] == "islandora" && count($cp_exp) > 1 && ($cp_exp[0] != "islandora" || $cp_exp[1] != "search")) {
     $variables['service_links'] = digital_archive_theme_block_render('service_links', 'service_links_not_node');
   }
+  if (!isset($variables['logo']) || is_null($variables['logo'])) {
+    $logo_path = drupal_get_path('theme', 'digital_archive_theme') . "/logo.png";
+    $site_name = variable_get('site_name', "Digital Archive");
+    $variables['logo'] = theme_image(
+      array(
+        'path' => $logo_path,
+        'title' => $site_name,
+        'alt' => $site_name,
+        'width' => 200,
+        'height' => 46,
+        'attributes' => array(),
+      )
+    );
+  }
+
 }
 
 /**

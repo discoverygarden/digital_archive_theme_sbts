@@ -7,7 +7,6 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
 <div id="page">
 
 <div class="solid-background inner-div inner-div-header">
