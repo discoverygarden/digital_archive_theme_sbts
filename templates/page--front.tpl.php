@@ -84,13 +84,8 @@
     </div>
 </div>
 
-
-
 <div id="main" class="fixed-width">
     <div class="main-content-wrapper">
-
-
-
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
@@ -108,9 +103,9 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php print render($page['sub_content']); ?>
       <?php print $feed_icons; ?>
     </div>
-
 
     <?php
       // Render the sidebars to see if there's anything in them.

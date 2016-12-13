@@ -1805,7 +1805,7 @@ tr.selected td {
 /* line 872, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1480106191');
+  background-image: url('../images/progress.gif?1481636785');
 }
 
 /**
@@ -1872,7 +1872,7 @@ body {
   line-height: 18px;
   color: #60605b;
   margin-top: 30px;
-  background: #fefefe url('../images/body-bg.jpg?1480106191');
+  background: #fefefe url('../images/body-bg.jpg?1481636785');
 }
 /* line 68, ../sass/components/_page.scss */
 body #page #footer {
@@ -1897,63 +1897,63 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 
 /* line 87, ../sass/components/_page.scss */
 .my-eye {
-  background-image: url('../images/eye46.png?1480106191');
+  background-image: url('../images/eye46.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 93, ../sass/components/_page.scss */
 .map-signs {
-  background-image: url('../images/arrows106.png?1480106191');
+  background-image: url('../images/arrows106.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 99, ../sass/components/_page.scss */
 .icn-gears {
-  background-image: url('../images/gears6.png?1480106191');
+  background-image: url('../images/gears6.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 105, ../sass/components/_page.scss */
 .code-icon {
-  background-image: url('../images/web2.png?1480106191');
+  background-image: url('../images/web2.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 111, ../sass/components/_page.scss */
 .menu-pages {
-  background-image: url('../images/stationery1.png?1480106191');
+  background-image: url('../images/stationery1.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 117, ../sass/components/_page.scss */
 .menu-edit {
-  background-image: url('../images/edit34.png?1480106191');
+  background-image: url('../images/edit34.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 123, ../sass/components/_page.scss */
 .devel-link {
-  background-image: url('../images/magic20.png?1480106191');
+  background-image: url('../images/magic20.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 129, ../sass/components/_page.scss */
 .node-export {
-  background-image: url('../images/export.png?1480106191');
+  background-image: url('../images/export.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
 
 /* line 135, ../sass/components/_page.scss */
 .document {
-  background-image: url('../images/text70.png?1480106191');
+  background-image: url('../images/text70.png?1481636785');
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
@@ -1969,41 +1969,39 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
 }
 
 /* line 151, ../sass/components/_page.scss */
-#block-service-links-service-links-not-node, .collection-image-wrapper {
-  /*   display: table-cell; */
-  /*   vertical-align: top; */
-  /*   position: absolute; */
-  /*   right: 0; */
-  /*   padding-right: 10px; */
-  /*   top: 0; */
+.region.region-sub-content {
+  clear: left;
+  display: table;
+  float: left;
+  width: 100%;
 }
 
-/* line 160, ../sass/components/_page.scss */
+/* line 158, ../sass/components/_page.scss */
 .islandora-video-content, #mediaplayer, .islandora-audio-content {
   width: 100% !important;
 }
 
-/* line 164, ../sass/components/_page.scss */
+/* line 162, ../sass/components/_page.scss */
 #block-service-links-service-links-not-node {
   padding-left: 5px;
 }
 
-/* line 168, ../sass/components/_page.scss */
+/* line 166, ../sass/components/_page.scss */
 .solid-background, #navigation {
   width: 100%;
 }
-/* line 170, ../sass/components/_page.scss */
+/* line 168, ../sass/components/_page.scss */
 .solid-background .block-islandora-solr, #navigation .block-islandora-solr {
   margin-top: -20px;
 }
 
-/* line 175, ../sass/components/_page.scss */
+/* line 173, ../sass/components/_page.scss */
 .main-content-wrapper {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 179, ../sass/components/_page.scss */
+/* line 177, ../sass/components/_page.scss */
 header {
   margin-left: auto;
   margin-right: auto;
@@ -2011,19 +2009,19 @@ header {
   padding-top: 10px;
 }
 
-/* line 186, ../sass/components/_page.scss */
+/* line 184, ../sass/components/_page.scss */
 .fixed-width {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 192, ../sass/components/_page.scss */
+/* line 190, ../sass/components/_page.scss */
 .slideshow-region.fixed-width {
   padding-bottom: 5px;
 }
 
-/* line 196, ../sass/components/_page.scss */
+/* line 194, ../sass/components/_page.scss */
 #book-page-viewer {
   max-width: 99%;
 }
@@ -2034,12 +2032,12 @@ header {
 /* #book-page-viewer .islandora-openseadragon{ */
 /*   display: table-cell !important; */
 /* } */
-/* line 208, ../sass/components/_page.scss */
+/* line 206, ../sass/components/_page.scss */
 div#BRpage {
   padding-left: 0px;
 }
 
-/* line 212, ../sass/components/_page.scss */
+/* line 210, ../sass/components/_page.scss */
 #mediaplayer {
   max-width: 100%;
 }
@@ -2047,17 +2045,17 @@ div#BRpage {
 /* #block-service-links-service-links-not-node, { */
 /*   display: table; */
 /* } */
-/* line 221, ../sass/components/_page.scss */
+/* line 219, ../sass/components/_page.scss */
 .book-object-wrapper .block-service-links li {
   display: inline;
 }
 
-/* line 226, ../sass/components/_page.scss */
+/* line 224, ../sass/components/_page.scss */
 #book-viewer {
   max-width: 100%;
 }
 
-/* line 229, ../sass/components/_page.scss */
+/* line 227, ../sass/components/_page.scss */
 .block-service-links {
   /*   position: absolute; */
   /*   right: 0; */
@@ -2067,12 +2065,12 @@ div#BRpage {
   padding-right: 5px;
 }
 
-/* line 238, ../sass/components/_page.scss */
+/* line 236, ../sass/components/_page.scss */
 .islandora-pdf-content {
   width: auto;
 }
 
-/* line 242, ../sass/components/_page.scss */
+/* line 240, ../sass/components/_page.scss */
 .page-inner-content-wrapper {
   background-color: white;
   border-radius: 5px;
@@ -2098,35 +2096,35 @@ div#BRpage {
 /* .islandora-large-image-content{ */
 /*   display: table; */
 /* } */
-/* line 270, ../sass/components/_page.scss */
+/* line 268, ../sass/components/_page.scss */
 #block-service-links-service-links-not-node {
   display: table-cell;
 }
 
-/* line 274, ../sass/components/_page.scss */
+/* line 272, ../sass/components/_page.scss */
 .header-content-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 279, ../sass/components/_page.scss */
+/* line 277, ../sass/components/_page.scss */
 .breadcrumb {
   padding-bottom: 1em;
 }
 
-/* line 283, ../sass/components/_page.scss */
+/* line 281, ../sass/components/_page.scss */
 .front-page-library-view .view-content {
   border-right-color: -moz-use-text-color;
   border-right-style: solid;
   border-right-width: 1px;
 }
 
-/* line 288, ../sass/components/_page.scss */
+/* line 286, ../sass/components/_page.scss */
 .region-navigation .form-submit {
   position: absolute;
   right: 1px;
   top: 1px;
-  background: url('../images/magnifier.png?1480106191');
+  background: url('../images/magnifier.png?1481636785');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2136,12 +2134,12 @@ div#BRpage {
   text-indent: -9999px;
 }
 
-/* line 302, ../sass/components/_page.scss */
+/* line 300, ../sass/components/_page.scss */
 #islandora-collection-search-form #edit-submit {
   position: relative;
   right: 22px;
   top: 0px;
-  background: url('../images/magnifier.png?1480106191');
+  background: url('../images/magnifier.png?1481636785');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2151,12 +2149,12 @@ div#BRpage {
   text-indent: -9999px;
 }
 
-/* line 316, ../sass/components/_page.scss */
+/* line 314, ../sass/components/_page.scss */
 #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-submit {
   position: relative;
   right: 22px;
   top: 0px;
-  background: url('../images/magnifier.png?1480106191');
+  background: url('../images/magnifier.png?1481636785');
   background-repeat: no-repeat;
   background-color: #CCCCCC;
   background-position: 2px 2px;
@@ -2166,7 +2164,7 @@ div#BRpage {
   text-indent: -9999px;
 }
 
-/* line 331, ../sass/components/_page.scss */
+/* line 329, ../sass/components/_page.scss */
 .region-navigation .form-item-islandora-simple-search-query input {
   font-style: italic;
   line-height: 18px;
@@ -2178,12 +2176,12 @@ div#BRpage {
   border-radius: 0px;
 }
 
-/* line 343, ../sass/components/_page.scss */
+/* line 341, ../sass/components/_page.scss */
 .inner-div {
   display: table;
 }
 
-/* line 347, ../sass/components/_page.scss */
+/* line 345, ../sass/components/_page.scss */
 #widgets-element-socialmedia_addthis-tweet, #widgets-element-socialmedia_addthis-addthis-counter, #widgets-element-socialmedia_addthis-google-plusone {
   display: none;
 }
@@ -2348,15 +2346,15 @@ div#BRpage {
 }
 /* line 142, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-objects-display-switch ul.links li a.display-bookmark, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-bookmark, .islandora-basic-collection-display-switch ul.links li a.display-bookmark, #block-islandora-solr-sort ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-sort ul.links li a.display-bookmark, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-bookmark, #block-islandora-solr-display-switch ul.links li a.display-bookmark {
-  background-image: url('../images/display-bookmark.png?1480106191');
+  background-image: url('../images/display-bookmark.png?1481636785');
 }
 /* line 146, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-default, .islandora-objects-display-switch ul.links li a.display-default, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-default, .islandora-basic-collection-display-switch ul.links li a.display-default, #block-islandora-solr-sort ul.islandora-solr-display li a.display-default, #block-islandora-solr-sort ul.links li a.display-default, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-default, #block-islandora-solr-display-switch ul.links li a.display-default {
-  background-image: url('../images/display-grid-list.png?1480106191');
+  background-image: url('../images/display-grid-list.png?1481636785');
 }
 /* line 150, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-display li a.display-grid, .islandora-objects-display-switch ul.links li a.display-grid, .islandora-basic-collection-display-switch ul.islandora-solr-display li a.display-grid, .islandora-basic-collection-display-switch ul.links li a.display-grid, #block-islandora-solr-sort ul.islandora-solr-display li a.display-grid, #block-islandora-solr-sort ul.links li a.display-grid, #block-islandora-solr-display-switch ul.islandora-solr-display li a.display-grid, #block-islandora-solr-display-switch ul.links li a.display-grid {
-  background-image: url('../images/display-grid.png?1480106191');
+  background-image: url('../images/display-grid.png?1481636785');
 }
 /* line 155, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort, .islandora-basic-collection-display-switch ul.islandora-solr-sort, #block-islandora-solr-sort ul.islandora-solr-sort, #block-islandora-solr-display-switch ul.islandora-solr-sort {
@@ -2370,11 +2368,11 @@ div#BRpage {
 }
 /* line 161, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort li a[title="Label"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Label"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Label"] {
-  background-image: url('../images/sort.png?1480106191');
+  background-image: url('../images/sort.png?1481636785');
 }
 /* line 165, ../sass/components/_blocks.scss */
 .islandora-objects-display-switch ul.islandora-solr-sort li a[title="Date"], .islandora-basic-collection-display-switch ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-sort ul.islandora-solr-sort li a[title="Date"], #block-islandora-solr-display-switch ul.islandora-solr-sort li a[title="Date"] {
-  background-image: url('../images/calendar.png?1480106191');
+  background-image: url('../images/calendar.png?1481636785');
 }
 
 /* line 173, ../sass/components/_blocks.scss */
@@ -2963,7 +2961,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/add.png?1480106191');
+  background: url('../images/add.png?1481636785');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -2988,7 +2986,7 @@ div#BRpage {
   -webkit-transform: translateY(200%);
   -ms-transform: translateY(200%);
   transform: translateY(200%);
-  background: url('../images/rounded.png?1480106191');
+  background: url('../images/rounded.png?1481636785');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -3228,7 +3226,7 @@ div#BRpage {
   #block-islandora-collection-search-islandora-collection-search #edit-simple #edit-submit, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper #edit-submit {
     position: relative;
     right: 10%;
-    background: url('../images/magnifier.png?1480106191');
+    background: url('../images/magnifier.png?1481636785');
     background-repeat: no-repeat;
     background-color: #CCCCCC;
     background-position: 2px 2px;
@@ -3243,7 +3241,7 @@ div#BRpage {
   #block-islandora-collection-search-islandora-collection-search #edit-simple .form-submit, #block-islandora-collection-search-islandora-collection-search .container-inline.form-wrapper .form-submit {
     position: relative;
     right: 10%;
-    background: url('../images/magnifier.png?1480106191');
+    background: url('../images/magnifier.png?1481636785');
     background-repeat: no-repeat;
     background-color: #CCCCCC;
     background-position: 2px 2px;

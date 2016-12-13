@@ -13,7 +13,7 @@
 
 screenshot  = screenshot.png
 name        = Digital Archive Theme
-description = New York Historical Society Drupal 7 Zen based Sub-Theme
+description = Drupal 7 Zen based Sub-Theme For use with Islandora
 
 
 
@@ -94,6 +94,7 @@ regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
+regions[sub_content]    = Sub Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
