@@ -148,13 +148,11 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active{
   padding-left: 1.7em !important;
 }
 
-#block-service-links-service-links-not-node, .collection-image-wrapper {
-/*   display: table-cell; */
-/*   vertical-align: top; */
-/*   position: absolute; */
-/*   right: 0; */
-/*   padding-right: 10px; */
-/*   top: 0; */
+.region.region-sub-content {
+  clear: left;
+  display: table;
+  float: left;
+  width: 100%;
 }
 
 .islandora-video-content, #mediaplayer, .islandora-audio-content{

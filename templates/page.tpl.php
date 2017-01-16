@@ -113,6 +113,7 @@
 
           <div class="page-content-wrapper">
             <?php print render($page['content']); ?>
+            <?php print render($page['sub_content']); ?>
           </div>
         </div>
 
